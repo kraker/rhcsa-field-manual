@@ -1,0 +1,9 @@
+[project]
+name = "rhcsa-study-guide"
+version = "0.1.0"
+description = "RHCSA Study Guide"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "quarto-cli>=1.9.36",
+]
