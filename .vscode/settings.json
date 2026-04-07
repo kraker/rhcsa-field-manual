@@ -1,0 +1,3 @@
+{
+  "quarto.path": "${workspaceFolder}/.venv/bin/quarto"
+}
