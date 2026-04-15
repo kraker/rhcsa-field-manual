@@ -1,4 +1,4 @@
 .claude/
-.venv/
-__pycache__/
-*.pyc
+/_book/
+/.quarto/
+**/*.quarto_ipynb
