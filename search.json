@@ -1,0 +1,319 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "The RHCSA Field Manual",
+    "section": "",
+    "text": "Introduction\nThe RHCSA Field Manual is a practical, hands-on guide to learning the Red Hat Enterprise Linux (RHEL) Operating System and preparing for the Red Hat Certified System Administrator (RHCSA) exam (EX200). It’s geared towards practical skills the Linux Sysadmin is likely to encounter in their day-to-day. This book is largely hands-on and each chapter is intended for the learner to work through the exercises as they go along. Labs for key topic areas should reinforce the material covered in the chapter. And practice exams at the end of the book are designed to provide comprehensive exam prep under simulated exam conditions.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "index.html#the-rhcsa-exam",
+    "href": "index.html#the-rhcsa-exam",
+    "title": "The RHCSA Field Manual",
+    "section": "The RHCSA Exam",
+    "text": "The RHCSA Exam\nLike all of the Red Hat certifications the exam is 100% performance-based and test takers must demonstrate the ability to administer systems hands-on under conditions simulating real-world. It’s for this reason the Red Hat exams can be some of the most challenging but also among the most well-regarded industry certifications. For Linux System Administrators and those who work with Linux in their day-to-day, even if it’s not Red Hat, becoming a Red Hat Certified System Administrator is a signal that you possess real battle-tested Linux Sysadmin chops making it arguably the industry leading entry-level Linux cert. The certification is evidentiary of technical skills and aptitude that aren’t just theoretical knowledge but a demonstrated ability to diagnose and solve real problems “hands on keyboard” in a Linux terminal.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "acknowledge.html",
+    "href": "acknowledge.html",
+    "title": "Acknowledgements",
+    "section": "",
+    "text": "Firstly, I have to thank an old college buddy of mine who introduced me to Linux many years ago and set me down this path of developing a passion for Linux and open-source. Ben, if you’re reading this, cheers.",
+    "crumbs": [
+      "Front Matter",
+      "Acknowledgements"
+    ]
+  },
+  {
+    "objectID": "prereqs/00-linux-cli.html",
+    "href": "prereqs/00-linux-cli.html",
+    "title": "1  The Linux Command Line",
+    "section": "",
+    "text": "1.1 Learning the Linux CLI\nJust like with anything we have to walk before we can run. This is a primer on the Linux CLI to get you up to speed if you’re a beginner (or in need of a refresher). If you already know the Linux CLI feel free to skip this chapter.\nA thorough treatment of Linux CLI fundamentals is outside of the scope of this book. We’re going to briefly cover the basics but if you have the time I would encourage you to check out one of the following free resources I’m going to recommend. Any of one of them functions as a stand-in for this chapter.\nOther notable mentions:\nBecoming proficient in the Linux CLI is a pre-requisite to learning RHEL and preparing for the RHCSA exam. It’s worth spending some time on acquiring this skill if you can afford it.",
+    "crumbs": [
+      "Prerequisites",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>The Linux Command Line</span>"
+    ]
+  },
+  {
+    "objectID": "prereqs/00-linux-cli.html#learning-the-linux-cli",
+    "href": "prereqs/00-linux-cli.html#learning-the-linux-cli",
+    "title": "1  The Linux Command Line",
+    "section": "",
+    "text": "Learning the Shell from LinuxCommand.org\n\n\n\n\n\n\n\nTip\n\n\n\nWhile you’re there I also recommend checking out The Linux Command Line by William Shotts. This is my #1 go-to recommendation for beginners that want to learn Linux and the Linux CLI. This is where I first learned Linux and the Linux CLI many years ago.\n\n\n\nCommand Line Crash Course from Learn Python the Hard Way by Zed Shaw\nMIT Missing Semester Series: Introduction to the Shell & Command-line Environment\n\n\n\nLinux Upskill Challenge\nThis is a shameless plug, as I’m involved with this project.\nLinux Commands for Beginners YouTube Playlist by (LearnLinuxTV?)",
+    "crumbs": [
+      "Prerequisites",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>The Linux Command Line</span>"
+    ]
+  },
+  {
+    "objectID": "prereqs/00-linux-cli.html#primer-on-the-linux-cli",
+    "href": "prereqs/00-linux-cli.html#primer-on-the-linux-cli",
+    "title": "1  The Linux Command Line",
+    "section": "1.2 Primer on the Linux CLI",
+    "text": "1.2 Primer on the Linux CLI",
+    "crumbs": [
+      "Prerequisites",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>The Linux Command Line</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/title_ideas.html",
+    "href": "appendices/title_ideas.html",
+    "title": "Appendix A — Title Ideas",
+    "section": "",
+    "text": "A.1 Titles of Books I Like",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Title Ideas</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/title_ideas.html#titles-of-books-i-like",
+    "href": "appendices/title_ideas.html#titles-of-books-i-like",
+    "title": "Appendix A — Title Ideas",
+    "section": "",
+    "text": "Ansible for DevOps\nThink Stats, Think Python, Think Java\nAutomate the Boring Suff with Python\nEloquent Javascript\nClojure for the Brave and True\nLearn Python the Hard Way\nLearn Vimscript the Hard Way\nLearn Kubernetes the Hard Way\nThe Kubernetes Book\nSudo Mastery\nThe Linux Command Line\nComputer Networking: A Top-Down Approach\nHow to Take Smart Notes",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Title Ideas</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/title_ideas.html#other-titles-i-havent-read",
+    "href": "appendices/title_ideas.html#other-titles-i-havent-read",
+    "title": "Appendix A — Title Ideas",
+    "section": "A.2 Other titles I haven’t read",
+    "text": "A.2 Other titles I haven’t read\n\nPodman in Action\nDemystifying Ansible Automation Platform",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Title Ideas</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/title_ideas.html#target-audience",
+    "href": "appendices/title_ideas.html#target-audience",
+    "title": "Appendix A — Title Ideas",
+    "section": "A.3 Target Audience",
+    "text": "A.3 Target Audience\nSelf-taught learner. Values practical, hands-on skills vs. theoretical knowledge. The “learn by doing” approach to technical skills acquisition.\n“Ansible for DevOps”, “Automate the Boring Stuff with Python”, and “The Kubernetes Book” are all exemplary of this.\nThe type of learner who will type the code in by hand and make it run.\nThis learner seeks not just to learn by wrote to pass the exam but wants depth. They develop a mental model for how the system works. This type of learner works forward from first principles. The Feynman method. Linux from Scratch.\nThis person is a tinkerer and likes building things. The type of user that is likely to enjoy building a homelab and trying out things for real.\nThis is ideal for the RHCSA because it’s a practical hands-on “performance based” exam.\nThe “Linux Upskill Challenge” and the “Linux Sysadmin Pipeline”.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Title Ideas</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/command-reference.html",
+    "href": "appendices/command-reference.html",
+    "title": "Appendix B — Command Reference",
+    "section": "",
+    "text": "C Command Reference\nCommand reference organized by topic area.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Command Reference</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/command-reference.html#system-information-and-management",
+    "href": "appendices/command-reference.html#system-information-and-management",
+    "title": "Appendix B — Command Reference",
+    "section": "C.1 System Information and Management",
+    "text": "C.1 System Information and Management\n\nC.1.1 Hardware and System Information\n\nid\n\nuid=1000(stovepipe) gid=1000(stovepipe) groups=1000(stovepipe),10(wheel),63(audio),71(realtime),973(docker) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023\n\n\n# System information\nuname -a                       # System kernel and architecture\nuname -r                       # Kernel version\nhostnamectl                    # Hostname and system info\nhostnamectl set-hostname NAME  # Set system hostname\nuptime                         # System uptime and load\nwho                            # Currently logged in users\nw                              # Detailed user activity\nid                             # Current user ID and groups\nwhoami                         # Current username\n\n# Hardware information\nlscpu                          # CPU information\nlsmem                          # Memory information  \nlsblk                          # Block device information\nlspci                          # PCI device information\nlsusb                          # USB device information\nlshw                           # Detailed hardware information\ndmidecode                      # Hardware DMI information\n\n# Memory and disk usage\nfree -h                        # Memory usage (human readable)\ndf -h                          # Disk space usage (human readable)\ndu -sh /path                   # Directory size\ndu -h --max-depth=1 /path      # Subdirectory sizes\n\n\nC.1.2 Date and Time Management\n# Time and timezone\ndate                        # Current date and time\ntimedatectl                 # System time settings\ntimedatectl set-time TIME   # Set system time\ntimedatectl set-timezone ZONE  # Set timezone\ntimedatectl list-timezones  # List available timezones\nhwclock                     # Hardware clock\nchrony                      # Time synchronization service\nsystemctl status chronyd   # Check time sync status",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Command Reference</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/command-reference.html#file-system-and-storage-management",
+    "href": "appendices/command-reference.html#file-system-and-storage-management",
+    "title": "Appendix B — Command Reference",
+    "section": "C.2 File System and Storage Management",
+    "text": "C.2 File System and Storage Management\n\nC.2.1 Basic File Operations\n# Directory navigation\npwd                         # Print working directory\ncd /path                    # Change directory\ncd ~                        # Go to home directory\ncd -                        # Go to previous directory\n\n# File listing\nls                          # List files\nls -l                       # Long format listing\nls -la                      # Include hidden files\nls -lh                      # Human readable sizes\nls -ltr                     # Sort by time, newest last\nls -Z                       # Show SELinux contexts\n\n# File operations\ncp source dest              # Copy file\ncp -r source dest           # Copy directory recursively\ncp -p source dest           # Preserve permissions and timestamps\nmv source dest              # Move/rename file\nrm file                     # Remove file\nrm -r directory             # Remove directory recursively\nrm -rf directory            # Force remove directory\nmkdir directory             # Create directory\nmkdir -p path/to/dir        # Create parent directories\nrmdir directory             # Remove empty directory\ntouch file                  # Create empty file or update timestamp\n\n\nC.2.2 File Searching and Finding\n# Find files and directories\nfind /path -name \"pattern\"  # Find by name\nfind /path -type f          # Find files only\nfind /path -type d          # Find directories only\nfind /path -user username   # Find by owner\nfind /path -group groupname # Find by group\nfind /path -perm 755        # Find by permissions\nfind /path -size +100M      # Find large files (&gt;100MB)\nfind /path -mtime -7        # Modified in last 7 days\nfind /path -atime +30       # Accessed more than 30 days ago\nfind /path -exec command {} \\;  # Execute command on results\n\n# Alternative find commands\nlocate filename             # Fast file location (updatedb)\nwhich command               # Find command location\nwhereis command             # Find command, source, manual\ntype command                # Show command type and location\n\n\nC.2.3 File Linking\n# Hard and soft links\nln source hard_link         # Create hard link\nln -s target soft_link      # Create symbolic link\nreadlink link               # Show link target\nstat file                   # Show file statistics and links\n\n\nC.2.4 File Compression and Archives\n# tar archives\ntar -czf archive.tar.gz files/     # Create gzipped tar\ntar -xzf archive.tar.gz            # Extract gzipped tar\ntar -cjf archive.tar.bz2 files/    # Create bzip2 tar\ntar -xjf archive.tar.bz2           # Extract bzip2 tar\ntar -tf archive.tar.gz             # List archive contents\ntar -czf archive.tar.gz --exclude=pattern files/  # Exclude pattern\n\n# Individual compression\ngzip file                   # Compress with gzip\ngunzip file.gz              # Decompress gzip\nbzip2 file                  # Compress with bzip2\nbunzip2 file.bz2            # Decompress bzip2\nzip archive.zip files       # Create zip archive\nunzip archive.zip           # Extract zip archive",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Command Reference</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/command-reference.html#text-processing-and-file-content",
+    "href": "appendices/command-reference.html#text-processing-and-file-content",
+    "title": "Appendix B — Command Reference",
+    "section": "C.3 Text Processing and File Content",
+    "text": "C.3 Text Processing and File Content\n\nC.3.1 Viewing File Contents\n# Display file contents\ncat file                    # Display entire file\ncat -n file                 # Display with line numbers\ntac file                    # Display in reverse order\nhead file                   # First 10 lines\nhead -n 20 file             # First 20 lines\ntail file                   # Last 10 lines\ntail -n 20 file             # Last 20 lines\ntail -f file                # Follow file changes\nless file                   # Page through file\nmore file                   # Page through file (simpler)\n\n\nC.3.2 Text Processing Tools\n# Search and filter\ngrep pattern file           # Search for pattern\ngrep -i pattern file        # Case insensitive search\ngrep -v pattern file        # Invert match (exclude pattern)\ngrep -r pattern directory   # Recursive search\ngrep -n pattern file        # Show line numbers\ngrep -E \"regex\" file        # Extended regex\ngrep -A 3 pattern file      # Show 3 lines after match\ngrep -B 3 pattern file      # Show 3 lines before match\ngrep -C 3 pattern file      # Show 3 lines before and after\n\n# Text manipulation\nsort file                   # Sort lines\nsort -n file                # Numeric sort\nsort -r file                # Reverse sort\nsort -k 2 file              # Sort by second field\nuniq file                   # Remove duplicate lines\nuniq -c file                # Count occurrences\ncut -d: -f1 file            # Extract first field (: delimiter)\ncut -c1-10 file             # Extract characters 1-10\nawk '{print $1}' file       # Print first field\nawk -F: '{print $1}' file   # Custom field separator\nsed 's/old/new/g' file      # Replace all occurrences\nsed '1,10d' file            # Delete lines 1-10\ntr 'a-z' 'A-Z' &lt; file       # Convert lowercase to uppercase\n\n# Line and word counts\nwc file                     # Lines, words, characters\nwc -l file                  # Line count only\nwc -w file                  # Word count only\nwc -c file                  # Character count only\n\n\nC.3.3 Text Editors\n# vim editor\nvim file                    # Open file in vim\n# vim modes: i (insert), ESC (normal), :wq (save and quit)\n# :q! (quit without saving), :w (save), /pattern (search)\n\n# nano editor\nnano file                   # Open file in nano\n# Ctrl+X to exit, Ctrl+O to save, Ctrl+K to cut line",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Command Reference</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/command-reference.html#permissions-and-security",
+    "href": "appendices/command-reference.html#permissions-and-security",
+    "title": "Appendix B — Command Reference",
+    "section": "C.4 Permissions and Security",
+    "text": "C.4 Permissions and Security\n\nC.4.1 File Permissions\n# View permissions\nls -l file                  # Show permissions\nstat file                   # Detailed file information\ngetfacl file                # Show ACL permissions\n\n# Change permissions (symbolic)\nchmod u+x file              # Add execute for user\nchmod g-w file              # Remove write for group  \nchmod o=r file              # Set other to read only\nchmod a+r file              # Add read for all\nchmod +x file               # Add execute for all\n\n# Change permissions (octal)\nchmod 755 file              # rwxr-xr-x\nchmod 644 file              # rw-r--r--\nchmod 600 file              # rw-------\nchmod 777 file              # rwxrwxrwx\n\n# Change ownership\nchown user file             # Change owner\nchown user:group file       # Change owner and group\nchgrp group file            # Change group only\nchown -R user:group directory  # Recursive ownership change\n\n# Default permissions\numask                       # Show current umask\numask 022                   # Set umask (755 for dirs, 644 for files)\numask 077                   # Set umask (700 for dirs, 600 for files)\n\n\nC.4.2 Special Permissions\n# Special permission bits\nchmod +s file               # Set setuid/setgid\nchmod +t directory          # Set sticky bit\nchmod 4755 file             # setuid (4000 + 755)\nchmod 2755 directory        # setgid (2000 + 755)\nchmod 1755 directory        # sticky bit (1000 + 755)\n\n# Find special permissions\nfind / -perm -4000 2&gt;/dev/null  # Find setuid files\nfind / -perm -2000 2&gt;/dev/null  # Find setgid files\nfind / -perm -1000 2&gt;/dev/null  # Find sticky bit files\n\n\nC.4.3 Access Control Lists (ACLs) — Supplementary (not on RHEL 10 exam)\n# Manage ACLs\nsetfacl -m u:username:rwx file      # Set user ACL\nsetfacl -m g:groupname:rx file      # Set group ACL\nsetfacl -m d:u:username:rwx dir     # Set default ACL\nsetfacl -x u:username file          # Remove user ACL\nsetfacl -b file                     # Remove all ACLs\ngetfacl file                        # Display ACLs",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Command Reference</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/command-reference.html#user-and-group-management",
+    "href": "appendices/command-reference.html#user-and-group-management",
+    "title": "Appendix B — Command Reference",
+    "section": "C.5 User and Group Management",
+    "text": "C.5 User and Group Management\n\nC.5.1 User Account Management\n# Create users\nuseradd username            # Create user with defaults\nuseradd -u 1001 username    # Specify UID\nuseradd -g group username   # Specify primary group\nuseradd -G groups username  # Specify supplementary groups\nuseradd -s /bin/bash username  # Specify shell\nuseradd -d /home/user username  # Specify home directory\nuseradd -c \"Full Name\" username  # Add comment\nuseradd -m username         # Create home directory\nuseradd -r username         # Create system account\n\n# Modify users\nusermod -aG group username  # Add to supplementary group\nusermod -g group username   # Change primary group\nusermod -s /bin/bash username  # Change shell\nusermod -d /new/home username  # Change home directory\nusermod -c \"New Name\" username  # Change comment\nusermod -L username         # Lock account\nusermod -U username         # Unlock account\nusermod -e 2024-12-31 username  # Set expiration date\n\n# Delete users\nuserdel username            # Delete user (keep home)\nuserdel -r username         # Delete user and home directory\n\n# User information\nid username                 # Show user ID and groups\ngroups username             # Show user groups\nfinger username             # User information (if available)\n\n\nC.5.2 Password Management\n# Password operations\npasswd username             # Set user password\npasswd -l username          # Lock password\npasswd -u username          # Unlock password\npasswd -d username          # Delete password\npasswd -e username          # Expire password (force change)\n\n# Password aging\nchage username              # Interactive password aging\nchage -l username           # List password aging info\nchage -M 90 username        # Max password age (90 days)\nchage -m 7 username         # Min password age (7 days)\nchage -W 7 username         # Warning period (7 days)\nchage -d 0 username         # Force password change on next login\nchage -E 2024-12-31 username  # Account expiration date\n\n\nC.5.3 Group Management\n# Create groups\ngroupadd groupname          # Create group\ngroupadd -g 1001 groupname  # Specify GID\ngroupadd -r groupname       # Create system group\n\n# Modify groups\ngroupmod -n newname oldname # Rename group\ngroupmod -g 1002 groupname  # Change GID\ngpasswd -a user group       # Add user to group\ngpasswd -d user group       # Remove user from group\ngpasswd -A admin group      # Set group administrator\n\n# Delete groups\ngroupdel groupname          # Delete group\n\n# Group information\ngroups                      # Show current user groups\ngetent group groupname      # Show group information\n\n\nC.5.4 User Information and Login History\n# Current activity\nwho                         # Currently logged in users\nw                           # Detailed user activity\nusers                       # Simple list of logged in users\nlast                        # Login history\nlastb                       # Failed login attempts\nlastlog                     # Last login for all users",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Command Reference</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/command-reference.html#process-and-job-management",
+    "href": "appendices/command-reference.html#process-and-job-management",
+    "title": "Appendix B — Command Reference",
+    "section": "C.6 Process and Job Management",
+    "text": "C.6 Process and Job Management\n\nC.6.1 Process Monitoring\n# View processes\nps                          # Current session processes\nps aux                      # All processes (BSD style)\nps -ef                      # All processes (Unix style)\nps -u username              # Processes by user\nps -C processname           # Processes by name\npstree                      # Process tree\ntop                         # Real-time process monitor\nhtop                        # Enhanced process monitor\n\n\nC.6.2 Process Control\n# Find processes\npgrep processname           # Find process IDs by name\npgrep -u username           # Find processes by user\npidof processname           # Find PID of running process\n\n# Kill processes  \nkill PID                    # Terminate process by PID\nkill -9 PID                 # Force kill process\nkill -15 PID                # Graceful termination (default)\nkillall processname         # Kill all processes by name\npkill processname           # Kill processes by name\npkill -u username           # Kill processes by user\n\n# Process priority\nnice -n 10 command          # Start with priority 10\nrenice 5 PID                # Change priority of running process\nrenice -5 -u username       # Change priority for user processes\n\n\nC.6.3 Job Control\n# Background jobs\ncommand &                   # Run in background\njobs                        # List active jobs\nbg %1                       # Put job 1 in background\nfg %1                       # Bring job 1 to foreground\ndisown %1                   # Remove job from shell\nnohup command &             # Run immune to hangups\n\n# Job control signals\nCtrl+Z                      # Suspend current job\nCtrl+C                      # Interrupt current job",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Command Reference</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/command-reference.html#system-services-and-systemd",
+    "href": "appendices/command-reference.html#system-services-and-systemd",
+    "title": "Appendix B — Command Reference",
+    "section": "C.7 System Services and Systemd",
+    "text": "C.7 System Services and Systemd\n\nC.7.1 Service Management\n# Service operations\nsystemctl start service     # Start service\nsystemctl stop service      # Stop service\nsystemctl restart service   # Restart service\nsystemctl reload service    # Reload configuration\nsystemctl enable service    # Enable at boot\nsystemctl disable service   # Disable at boot\nsystemctl enable --now service  # Enable and start\nsystemctl mask service      # Mask service (prevent start)\nsystemctl unmask service    # Unmask service\n\n# Service status\nsystemctl status service    # Service status\nsystemctl is-active service # Check if running\nsystemctl is-enabled service # Check if enabled\nsystemctl is-failed service # Check if failed\nsystemctl list-units --type=service  # List all services\nsystemctl list-units --state=failed  # List failed services\nsystemctl --failed          # Show failed services\n\n\nC.7.2 Systemd Targets\n# Target management\nsystemctl get-default       # Show default target\nsystemctl set-default multi-user.target  # Set default target\nsystemctl isolate rescue.target  # Switch to target\nsystemctl list-units --type=target  # List targets\nsystemctl list-dependencies target  # Show target dependencies\n\n\nC.7.3 Unit Files and Configuration\n# Unit file management\nsystemctl daemon-reload     # Reload unit files\nsystemctl cat service       # Show unit file content\nsystemctl edit service      # Edit unit file (override)\nsystemctl revert service    # Revert unit file changes\nsystemctl show service      # Show unit properties",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Command Reference</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/command-reference.html#logging-and-monitoring",
+    "href": "appendices/command-reference.html#logging-and-monitoring",
+    "title": "Appendix B — Command Reference",
+    "section": "C.8 Logging and Monitoring",
+    "text": "C.8 Logging and Monitoring\n\nC.8.1 Journal (systemd logs)\n# View logs\njournalctl                  # All journal entries\njournalctl -u service       # Service-specific logs\njournalctl -f               # Follow (tail) logs\njournalctl -n 50            # Last 50 entries\njournalctl -p err           # Error priority and above\njournalctl --since \"1 hour ago\"  # Recent entries\njournalctl --since \"2024-01-01\"  # Since date\njournalctl --until \"2024-01-31\"  # Until date\njournalctl -b               # Current boot logs\njournalctl --list-boots     # List boot sessions\njournalctl -k               # Kernel messages\njournalctl --disk-usage     # Journal disk usage\n\n\nC.8.2 Traditional Logs\n# Log files\ntail -f /var/log/messages   # Follow system messages\ntail -f /var/log/secure     # Follow security logs\ntail -f /var/log/maillog    # Follow mail logs\nless /var/log/cron          # Cron job logs\nlogger \"test message\"       # Send message to syslog\n\n\nC.8.3 Log Rotation\n# Logrotate\nlogrotate -d /etc/logrotate.conf  # Debug/test rotation\nlogrotate -f /etc/logrotate.conf  # Force rotation",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Command Reference</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/command-reference.html#network-configuration-and-management",
+    "href": "appendices/command-reference.html#network-configuration-and-management",
+    "title": "Appendix B — Command Reference",
+    "section": "C.9 Network Configuration and Management",
+    "text": "C.9 Network Configuration and Management\n\nC.9.1 Network Information\n# Network interfaces\nip addr show                # Show IP addresses\nip link show                # Show network interfaces\nip route show               # Show routing table\nip route get 8.8.8.8        # Show route to destination\n\n# Legacy commands (still available)\nifconfig                    # Show interfaces (deprecated)\nroute -n                    # Show routing table (deprecated)\n\n\nC.9.2 NetworkManager with nmcli\n# Connection management\nnmcli device status         # Device status\nnmcli connection show       # Show connections\nnmcli con show \"connection\" # Show connection details\nnmcli device wifi list     # List WiFi networks\n\n# Create connections\nnmcli con add type ethernet con-name \"conn1\" ifname eth0\nnmcli con add type wifi con-name \"wifi1\" ifname wlan0 ssid \"SSID\"\n\n# Modify connections\nnmcli con modify \"conn1\" ipv4.addresses \"192.168.1.100/24\"\nnmcli con modify \"conn1\" ipv4.gateway \"192.168.1.1\"\nnmcli con modify \"conn1\" ipv4.dns \"8.8.8.8,8.8.4.4\"\nnmcli con modify \"conn1\" ipv4.method manual\nnmcli con modify \"conn1\" autoconnect yes\n\n# Control connections\nnmcli con up \"conn1\"        # Activate connection\nnmcli con down \"conn1\"      # Deactivate connection\nnmcli con reload            # Reload configurations\nnmcli con delete \"conn1\"    # Delete connection\n\n\nC.9.3 Network Testing and Troubleshooting\n# Connectivity testing\nping host                   # Test connectivity\nping -c 4 host              # Send 4 packets\ntraceroute host             # Trace network path\nmtr host                    # Real-time traceroute\n\n# DNS resolution\nnslookup hostname           # DNS lookup\ndig hostname                # Detailed DNS lookup\ndig @server hostname        # Query specific DNS server\nhost hostname               # Simple DNS lookup\n\n# Network connections\nss -tuln                    # Show listening ports\nss -tupln                   # Show all connections with PIDs\nnetstat -tuln               # Legacy network connections\nlsof -i :80                 # Show what's using port 80\nlsof -i tcp:22              # Show SSH connections",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Command Reference</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/command-reference.html#network-file-system-nfs-and-autofs",
+    "href": "appendices/command-reference.html#network-file-system-nfs-and-autofs",
+    "title": "Appendix B — Command Reference",
+    "section": "C.10 Network File System (NFS) and AutoFS",
+    "text": "C.10 Network File System (NFS) and AutoFS\n\nC.10.1 NFS Client Operations\n# NFS package installation\ndnf install -y nfs-utils       # Install NFS client utilities\n\n# Discovering NFS shares\nshowmount -e server.example.com  # List exports from NFS server\nshowmount -e 192.168.1.100      # List exports using IP address\nshowmount -a server             # Show all client connections\nshowmount -d server             # Show directories being accessed\n\n# Manual NFS mounting\nmkdir /mnt/nfs-share            # Create mount point\nmount -t nfs server:/export/share /mnt/nfs-share  # Mount NFS share\nmount -t nfs -o nfsvers=4.2 server:/share /mnt    # Specify NFS version\nmount -o rw,intr server:/data /mnt/data            # Mount with options\n\n# NFS mount options\n# rw/ro                - read-write/read-only\n# hard/soft           - retry behavior on failure\n# intr                - allow interrupts\n# rsize=8192          - read buffer size\n# wsize=8192          - write buffer size\n# timeo=14            - timeout (1/10 second)\n# retrans=3           - retry attempts\n# _netdev             - wait for network\n\n# NFS unmounting\numount /mnt/nfs-share          # Unmount NFS share\numount -l /mnt/nfs-share       # Lazy unmount (when busy)\numount -f /mnt/nfs-share       # Force unmount\n\n# Testing NFS connectivity\nping nfs-server                # Basic connectivity\ntelnet nfs-server 2049         # Test NFS port\nrpcinfo -p nfs-server          # Show RPC services\n\n\nC.10.2 NFS Server Management\n# NFS server package installation\ndnf install -y nfs-utils       # Install NFS server utilities\n\n# Export configuration (/etc/exports)\n/export/share *(rw,sync)       # Export to all hosts\n/data 192.168.1.0/24(rw,sync) # Export to specific network\n/home server1(rw) server2(ro)  # Different permissions per host\n\n# Export management commands\nexportfs -avr                  # Export all shares with verbose output\nexportfs -v                    # Show current exports\nexportfs -u /export/share      # Unexport specific share\nexportfs -ra                   # Re-export all shares\n\n# NFS service management\nsystemctl enable --now nfs-server  # Start and enable NFS server\nsystemctl enable --now rpcbind     # Start and enable RPC service\nsystemctl status nfs-server        # Check NFS server status\n\n# Firewall configuration for NFS\nfirewall-cmd --add-service=nfs --permanent      # Allow NFS traffic\nfirewall-cmd --add-service=rpc-bind --permanent # Allow RPC bind\nfirewall-cmd --add-service=mountd --permanent   # Allow mountd\nfirewall-cmd --reload                          # Apply firewall changes\n\n\nC.10.3 AutoFS Configuration and Management\n# AutoFS installation\ndnf install -y autofs          # Install AutoFS package\n\n# Master map configuration (/etc/auto.master)\n/mnt/auto /etc/auto.nfs --timeout=60    # Indirect map with timeout\n/- /etc/auto.direct                     # Direct map entry\n\n# Indirect map configuration\n# Format: key [options] server:/path\nshared -rw server.example.com:/export/shared\ndata -ro,intr server:/export/data\n\n# Direct map configuration  \n# Format: mount-point [options] server:/path\n/mnt/shared-data -rw server:/export/data\n/opt/software -ro server:/export/software\n\n# Wildcard mapping for user directories\n# Format: * [options] server:/path/&\n* -rw server.example.com:/home/&        # Maps to server:/home/username\n\n# AutoFS service management\nsystemctl enable --now autofs          # Start and enable AutoFS\nsystemctl status autofs                # Check AutoFS status\nsystemctl reload autofs                # Reload configuration\nsystemctl restart autofs               # Restart AutoFS service\n\n# AutoFS monitoring and troubleshooting\nautomount -f -v                        # Run in foreground with verbose\ntail -f /var/log/messages | grep automount  # Watch AutoFS logs\nls -la /etc/auto.*                     # Check map file permissions\nmount | grep autofs                    # Show active automounts\n\n\nC.10.4 fstab Integration for NFS\n# fstab entry format for NFS\n# device mount-point type options dump fsck\nserver:/export/share /mnt/nfs nfs defaults,_netdev 0 0\n\n# Common fstab NFS options\ndefaults,_netdev                # Standard options with network dependency\nrw,_netdev,soft,intr           # Read-write, soft mount, interruptible\nro,_netdev,hard,retrans=3      # Read-only, hard mount, 3 retries\n\n# Testing fstab entries\nmount -a                       # Mount all fstab entries\numount /mnt/nfs && mount /mnt/nfs  # Test specific entry\nfindmnt /mnt/nfs              # Show mount details\n\n\nC.10.5 NFS and AutoFS Troubleshooting\n# NFS client troubleshooting\nshowmount -e server           # Test server connectivity\nrpcinfo -p server            # Check RPC services on server\nmount -v -t nfs server:/share /mnt  # Verbose mount output\nping server && telnet server 2049  # Test basic and NFS connectivity\n\n# NFS server troubleshooting  \nexportfs -v                   # Show current exports\nrpcinfo -p localhost          # Check local RPC services\nsystemctl status nfs-server rpcbind  # Check service status\nshowmount -e localhost        # Test local NFS exports\nnetstat -tuln | grep :2049   # Check NFS port listening\n\n# AutoFS troubleshooting\nsystemctl status autofs       # Check AutoFS service\nautomount -f -v              # Run AutoFS in foreground\nls -la /etc/auto.*           # Check map file permissions\ncat /etc/auto.master         # Verify master map syntax\ntail -f /var/log/messages | grep automount  # Watch logs\n\n# General network filesystem troubleshooting\nmount | grep nfs             # Show NFS mounts\ndf -t nfs                    # Show NFS filesystem usage\nfuser -mv /mnt/nfs-share     # Show processes using mount point\nlsof +D /mnt/nfs-share       # Show open files in NFS mount",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Command Reference</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/command-reference.html#package-management",
+    "href": "appendices/command-reference.html#package-management",
+    "title": "Appendix B — Command Reference",
+    "section": "C.11 Package Management",
+    "text": "C.11 Package Management\n\nC.11.1 DNF Package Manager\n# Package operations\ndnf install package         # Install package\ndnf update package          # Update package\ndnf remove package          # Remove package\ndnf upgrade                 # Update all packages\ndnf downgrade package       # Downgrade package\ndnf reinstall package       # Reinstall package\n\n# Package information\ndnf search keyword          # Search packages\ndnf info package            # Package information\ndnf list installed          # List installed packages\ndnf list available          # List available packages\ndnf list \"pattern*\"         # List packages matching pattern\ndnf provides /path/file     # Find package providing file\ndnf repoquery --requires package  # Show dependencies\n\n# Package groups\ndnf group list              # List package groups\ndnf group info \"group\"      # Group information\ndnf group install \"group\"   # Install package group\ndnf group remove \"group\"    # Remove package group\n\n# Repository management\ndnf repolist                # List repositories\ndnf repolist all            # List all repositories\ndnf config-manager --add-repo URL  # Add repository\ndnf config-manager --enable repo   # Enable repository\ndnf config-manager --disable repo  # Disable repository\n\n# History and cleanup\ndnf history                 # Transaction history\ndnf history info ID         # History transaction details\ndnf history undo ID         # Undo transaction\ndnf clean all               # Clean package cache\ndnf autoremove              # Remove unneeded packages\n\n\nC.11.2 RPM Package Manager\n# RPM queries\nrpm -qa                     # List all installed packages\nrpm -qi package             # Package information\nrpm -ql package             # List package files\nrpm -qf /path/file          # Find package owning file\nrpm -qd package             # List package documentation\nrpm -qc package             # List package configuration files\nrpm -q --requires package   # Show package dependencies\nrpm -q --provides package   # Show what package provides\n\n# RPM installation/removal\nrpm -ivh package.rpm        # Install package\nrpm -Uvh package.rpm        # Upgrade package\nrpm -e package              # Remove package\nrpm --import GPG-KEY        # Import GPG key\n\n# RPM verification\nrpm -V package              # Verify package integrity\nrpm -Va                     # Verify all packages",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Command Reference</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/command-reference.html#storage-management-and-file-systems",
+    "href": "appendices/command-reference.html#storage-management-and-file-systems",
+    "title": "Appendix B — Command Reference",
+    "section": "C.12 Storage Management and File Systems",
+    "text": "C.12 Storage Management and File Systems\n\nC.12.1 Disk and Partition Management\n# Disk information\nlsblk                       # List block devices\nlsblk -f                    # Show file systems\nblkid                       # Show UUIDs and file systems\nfdisk -l                    # List disk partitions\ndf -h                       # Show mounted file systems\ndu -sh directory            # Directory size\n\n# Partition management\nfdisk /dev/device           # Create/modify partitions\nparted /dev/device          # Alternative partitioning tool\npartprobe                   # Re-read partition table\nmkfs.ext4 /dev/partition    # Create ext4 file system\nmkfs.xfs /dev/partition     # Create XFS file system\ntune2fs -L label /dev/partition  # Set file system label\n\n\nC.12.2 LVM (Logical Volume Management)\n# Physical volumes\npvcreate /dev/device        # Create physical volume\npvdisplay                   # Show PV details\npvs                         # Show PV summary\npvremove /dev/device        # Remove physical volume\n\n# Volume groups\nvgcreate vg_name /dev/device  # Create volume group\nvgdisplay                   # Show VG details\nvgs                         # Show VG summary\nvgextend vg_name /dev/device  # Extend volume group\nvgreduce vg_name /dev/device  # Reduce volume group\nvgremove vg_name            # Remove volume group\n\n# Logical volumes\nlvcreate -L 1G -n lv_name vg_name      # Create LV (size)\nlvcreate -l 100%FREE -n lv_name vg_name  # Use all free space\nlvcreate -l 50%VG -n lv_name vg_name   # Use 50% of VG\nlvdisplay                   # Show LV details\nlvs                         # Show LV summary\nlvextend -L +1G /dev/vg/lv  # Extend logical volume\nlvextend -l +100%FREE /dev/vg/lv  # Extend to use all space\nlvreduce -L -1G /dev/vg/lv  # Reduce logical volume\nlvremove /dev/vg/lv         # Remove logical volume\n\n\nC.12.3 File System Operations\n# Mounting\nmount /dev/device /mountpoint     # Mount file system\nmount -t xfs /dev/device /mnt     # Mount with type\nmount -o ro /dev/device /mnt      # Mount read-only\numount /mountpoint                # Unmount file system\numount -l /mountpoint             # Lazy unmount\nmount -a                          # Mount all in /etc/fstab\n\n# File system resize\nxfs_growfs /mountpoint      # Grow XFS file system\nresize2fs /dev/device       # Resize ext4 file system\ne2fsck -f /dev/device       # Check ext4 file system\nxfs_repair /dev/device      # Repair XFS file system\n\n# Swap management\nmkswap /dev/device          # Create swap space\nswapon /dev/device          # Enable swap\nswapoff /dev/device         # Disable swap\nswapon --show               # Show active swap\nswapon -a                   # Enable all swap in fstab\n\n\nC.12.4 fstab Configuration\n# /etc/fstab format:\n# device mountpoint fstype options dump pass\n/dev/sda1 / ext4 defaults 0 1\nUUID=xxx /home xfs defaults 0 2\n/dev/vg/lv /data ext4 defaults 0 2\n/dev/sdb1 swap swap defaults 0 0\n\n# fstab options\ndefaults        # rw,suid,dev,exec,auto,nouser,async\nro              # Read-only\nrw              # Read-write\nnoauto          # Don't mount automatically\nuser            # Allow users to mount\nnoexec          # Don't allow execution\nnosuid          # Ignore setuid bits",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Command Reference</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/command-reference.html#firewall-management",
+    "href": "appendices/command-reference.html#firewall-management",
+    "title": "Appendix B — Command Reference",
+    "section": "C.13 Firewall Management",
+    "text": "C.13 Firewall Management\n\nC.13.1 firewalld Configuration\n# Firewall status\nfirewall-cmd --state        # Check if running\nfirewall-cmd --get-active-zones  # Show active zones\nfirewall-cmd --list-all     # Show all rules\nfirewall-cmd --list-services  # Show allowed services\nfirewall-cmd --list-ports   # Show allowed ports\n\n# Zone management\nfirewall-cmd --get-default-zone  # Show default zone\nfirewall-cmd --set-default-zone=public  # Set default zone\nfirewall-cmd --get-zones    # List all zones\nfirewall-cmd --zone=work --list-all  # Show zone rules\n\n# Service management\nfirewall-cmd --add-service=http  # Allow HTTP (temporary)\nfirewall-cmd --add-service=ssh --permanent  # Allow SSH (permanent)\nfirewall-cmd --remove-service=http  # Remove HTTP\nfirewall-cmd --list-services  # Show allowed services\n\n# Port management\nfirewall-cmd --add-port=8080/tcp  # Allow port (temporary)\nfirewall-cmd --add-port=443/tcp --permanent  # Allow port (permanent)\nfirewall-cmd --remove-port=8080/tcp  # Remove port\nfirewall-cmd --list-ports   # Show allowed ports\n\n# Rich rules\nfirewall-cmd --add-rich-rule='rule family=\"ipv4\" source address=\"192.168.1.0/24\" accept'\nfirewall-cmd --add-rich-rule='rule family=\"ipv4\" source address=\"10.0.0.5\" port port=\"22\" protocol=\"tcp\" accept'\n\n# Apply changes\nfirewall-cmd --reload       # Reload configuration\nfirewall-cmd --runtime-to-permanent  # Make runtime rules permanent",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Command Reference</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/command-reference.html#selinux-management",
+    "href": "appendices/command-reference.html#selinux-management",
+    "title": "Appendix B — Command Reference",
+    "section": "C.14 SELinux Management",
+    "text": "C.14 SELinux Management\n\nC.14.1 SELinux Status and Modes\n# SELinux status\ngetenforce                  # Current mode (Enforcing/Permissive/Disabled)\nsestatus                    # Detailed status\nsetenforce 0                # Set permissive mode (temporary)\nsetenforce 1                # Set enforcing mode (temporary)\n\n# Permanent mode change (edit /etc/selinux/config)\nSELINUX=enforcing          # or permissive, disabled\n\n\nC.14.2 File Contexts\n# View contexts\nls -Z file                  # Show file context\nps -eZ                      # Show process contexts\nid -Z                       # Show user context\n\n# Manage contexts\nrestorecon file             # Restore default context\nrestorecon -R directory     # Restore recursively\nrestorecon -v file          # Verbose output\n\n# Set custom contexts\nsemanage fcontext -a -t httpd_exec_t \"/web(/.*)?\"\nrestorecon -R /web          # Apply new context\nsemanage fcontext -l        # List file contexts\nsemanage fcontext -d \"/web(/.*)?\"  # Delete context rule\n\n\nC.14.3 SELinux Booleans\n# View booleans\ngetsebool -a                # List all booleans\ngetsebool httpd_can_network_connect  # Check specific boolean\nsetsebool httpd_can_network_connect on  # Set boolean (temporary)\nsetsebool -P httpd_can_network_connect on  # Set boolean (permanent)\n\n\nC.14.4 Port Contexts\n# Manage port contexts\nsemanage port -l            # List port contexts\nsemanage port -a -t http_port_t -p tcp 8080  # Add port context\nsemanage port -d -p tcp 8080  # Delete port context\nsemanage port -l | grep http  # Show HTTP ports\n\n\nC.14.5 SELinux Troubleshooting\n# Check for denials\nausearch -m AVC -ts recent  # Recent AVC denials\nausearch -m AVC -ts today   # Today's denials\nsealert -a /var/log/audit/audit.log  # Analyze denials\nsealert -l UUID             # Detailed denial analysis\n\n# Generate policies\naudit2allow -a              # Generate policy from all denials\naudit2allow -a -M mypolicy  # Generate policy module\nsemodule -i mypolicy.pp     # Install policy module",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Command Reference</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/command-reference.html#boot-process-and-grub",
+    "href": "appendices/command-reference.html#boot-process-and-grub",
+    "title": "Appendix B — Command Reference",
+    "section": "C.15 Boot Process and GRUB",
+    "text": "C.15 Boot Process and GRUB\n\nC.15.1 GRUB Configuration\n# GRUB management\ngrub2-editenv list          # List GRUB environment\ngrub2-mkconfig -o /boot/grub2/grub.cfg  # Generate GRUB config\ngrub2-set-default \"menu entry\"  # Set default boot entry\ngrub2-reboot \"menu entry\"   # Boot specific entry once\n\n# Kernel parameters (persistent)\ngrub2-editenv - set \"kernelopts=root=/dev/sda1 quiet\"\ngrub2-mkconfig -o /boot/grub2/grub.cfg\n\n\nC.15.2 Boot Targets and Runlevels\n# Systemd targets\nsystemctl get-default       # Show default target\nsystemctl set-default multi-user.target  # Set default target\nsystemctl isolate rescue.target  # Switch to rescue mode\nsystemctl isolate emergency.target  # Switch to emergency mode\n\n# Target management\nsystemctl list-units --type=target  # List all targets\nsystemctl list-dependencies graphical.target  # Show dependencies",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Command Reference</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/command-reference.html#scheduled-tasks",
+    "href": "appendices/command-reference.html#scheduled-tasks",
+    "title": "Appendix B — Command Reference",
+    "section": "C.16 Scheduled Tasks",
+    "text": "C.16 Scheduled Tasks\n\nC.16.1 Cron Jobs\n# User crontab\ncrontab -e                  # Edit user crontab\ncrontab -l                  # List user crontab\ncrontab -r                  # Remove user crontab\ncrontab -u username -e      # Edit another user's crontab\n\n# System crontab\nvim /etc/crontab            # System-wide crontab\nls /etc/cron.d/             # Additional cron files\nls /etc/cron.{hourly,daily,weekly,monthly}/  # Cron directories\n\n# Cron format: minute hour day month weekday command\n# Examples:\n0 2 * * * /path/script      # Daily at 2 AM\n*/15 * * * * /path/script   # Every 15 minutes\n0 0 * * 0 /path/script      # Weekly on Sunday\n0 3 1 * * /path/script      # Monthly on 1st at 3 AM\n\n\nC.16.2 At Jobs\n# Schedule one-time jobs\nat now + 5 minutes          # Schedule for 5 minutes from now\nat 15:30                    # Schedule for 3:30 PM today\nat 15:30 tomorrow           # Schedule for 3:30 PM tomorrow\nat -f script.sh now + 1 hour  # Run script in 1 hour\n\n# Manage at jobs\natq                         # List scheduled jobs\natrm job_number             # Remove scheduled job\nat -c job_number            # Show job details\n\n\nC.16.3 Systemd Timers\n# Timer management\nsystemctl list-timers       # List all timers\nsystemctl list-timers --all # List all timers (including inactive)\nsystemctl enable timer.timer  # Enable timer\nsystemctl start timer.timer   # Start timer\nsystemctl status timer.timer  # Check timer status",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Command Reference</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/command-reference.html#flatpak-software-management",
+    "href": "appendices/command-reference.html#flatpak-software-management",
+    "title": "Appendix B — Command Reference",
+    "section": "C.17 Flatpak Software Management",
+    "text": "C.17 Flatpak Software Management\n\nC.17.1 Remote and Application Management\n# Remote (repository) management\nflatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo\nflatpak remote-add --user flathub URL  # User-level remote\nflatpak remote-delete flathub          # Remove remote\nflatpak remotes                        # List configured remotes\nflatpak remote-ls flathub              # List available apps\n\n# Application management\nflatpak search keyword                 # Search for apps\nflatpak install flathub org.example.App  # Install app\nflatpak install --user flathub org.example.App  # User-level install\nflatpak uninstall org.example.App      # Remove app\nflatpak uninstall --unused             # Remove unused runtimes\nflatpak list --app                     # List installed apps\nflatpak list --runtime                 # List installed runtimes\nflatpak run org.example.App            # Run app\nflatpak update                         # Update all\nflatpak info org.example.App           # Show app details",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Command Reference</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/command-reference.html#ssh-and-remote-access",
+    "href": "appendices/command-reference.html#ssh-and-remote-access",
+    "title": "Appendix B — Command Reference",
+    "section": "C.18 SSH and Remote Access",
+    "text": "C.18 SSH and Remote Access\n\nC.18.1 SSH Client\n# SSH connections\nssh user@hostname           # Connect to remote host\nssh -p 2222 user@hostname   # Connect to custom port\nssh -i keyfile user@hostname  # Use specific key\nssh -L 8080:localhost:80 user@host  # Local port forwarding\nssh -R 8080:localhost:80 user@host  # Remote port forwarding\nssh -X user@hostname        # X11/Wayland forwarding\n\n# Key management\nssh-keygen -t rsa           # Generate RSA key pair\nssh-keygen -t ed25519       # Generate Ed25519 key pair\nssh-copy-id user@hostname   # Copy public key to remote\nssh-add keyfile             # Add key to SSH agent\nssh-agent bash              # Start SSH agent\n\n\nC.18.2 SSH Server Configuration\n# SSH daemon configuration (/etc/ssh/sshd_config)\nPort 22                     # Change SSH port\nPermitRootLogin no          # Disable root login\nPasswordAuthentication no   # Disable password auth\nPubkeyAuthentication yes    # Enable key-based auth\nAllowUsers user1 user2      # Restrict users\n\n# Apply SSH configuration\nsystemctl reload sshd       # Reload SSH daemon\nsshd -t                     # Test configuration\n\n\nC.18.3 File Transfer\n# SCP (Secure Copy)\nscp file user@host:/path    # Copy file to remote\nscp user@host:/path/file .  # Copy file from remote\nscp -r directory user@host:/path  # Copy directory\n\n# RSYNC\nrsync -av source/ destination/  # Sync directories\nrsync -av --delete source/ dest/  # Sync and delete extras\nrsync -av user@host:/path/ local/  # Sync from remote\nThis comprehensive command reference covers all major RHCSA topics with practical command examples organized by functional area for efficient study and quick reference during exam preparation.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Command Reference</span>"
+    ]
+  }
+]
