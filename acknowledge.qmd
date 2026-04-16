@@ -1,0 +1,5 @@
+# Acknowledgements {.unnumbered }
+
+Firstly, I have to thank an old college buddy of mine who introduced me to Linux
+many years ago and set me down this path of developing a passion for Linux and
+open-source. Ben, if you're reading this, cheers.

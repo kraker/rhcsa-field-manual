@@ -1,0 +1,43 @@
+# The Linux Command Line
+
+Just like with anything we have to walk before we can run. This is a primer
+on the Linux CLI to get you up to speed if you're a beginner (or in need of a
+refresher). If you already know the Linux CLI feel free to skip this chapter.
+
+## Learning the Linux CLI
+
+A thorough treatment of Linux CLI fundamentals is outside of the scope of this
+book. We're going to briefly cover the basics but if you have the time I would
+encourage you to check out one of the following _free_ resources I'm going to
+recommend. Any of one of them functions as a stand-in for this chapter.
+
+1. [Learning the Shell](https://www.linuxcommand.org/lc3_learning_the_shell.php)
+  from **LinuxCommand.org**
+
+::: {.callout-tip}
+While you're there I also recommend checking out 
+[The Linux Command Line](https://www.linuxcommand.org/tlcl.php) by William
+Shotts. This is my #1 go-to recommendation for beginners that want to
+learn Linux and the Linux CLI. This is where I first learned Linux and the Linux
+CLI many years ago.
+:::
+
+2. [Command Line Crash Course](https://learnpythonthehardway.org/book/appendixa.html)
+  from **Learn Python the Hard Way** by Zed Shaw
+3. MIT **Missing Semester** Series:
+  [Introduction to the Shell](https://missing.csail.mit.edu/2026/course-shell/) &
+  [Command-line Environment](https://missing.csail.mit.edu/2026/command-line-environment/)
+
+Other notable mentions:
+
+4. [Linux Upskill Challenge](https://linuxupskillchallenge.org/)\
+  This is a shameless plug, as I'm involved with this project.
+5. [Linux Commands for Beginners](https://youtube.com/playlist?list=PLT98CRl2KxKHaKA9-4_I38sLzK134p4GJ&si=fhFuZX3oHMk0puAO)
+  YouTube Playlist by [@LearnLinuxTV](https://www.youtube.com/@LearnLinuxTV)
+
+Becoming proficient in the Linux CLI is a pre-requisite to learning RHEL and
+preparing for the RHCSA exam. It's worth spending some time on acquiring this
+skill if you can afford it.
+
+## Primer on the Linux CLI
+

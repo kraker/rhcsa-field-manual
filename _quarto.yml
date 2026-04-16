@@ -2,34 +2,46 @@ project:
   type: book
 
 book:
+  # Working title
   title: "The RHCSA Field Manual"
-  # title: "The RHCSA Field Manual: A hands-on guide to Red Hat Enterprise Linux 10 and the EX200 exam"
+  subtitle: "A hands-on guide to Red Hat Enterprise Linux 10 and the EX200 exam"
   author: "Alex Kraker"
   date: "4/14/2026"
   chapters:
     - index.qmd
-    - preface.qmd
-    - chapters/01-exam-overview.qmd
-    - chapters/02-installation.qmd
-    - chapters/03-file-management.qmd
-    - chapters/04-users-groups.qmd
-    - chapters/05-shell-scripting.qmd
-    - chapters/06-permissions.qmd
-    - chapters/07-processes-services.qmd
-    - chapters/08-package-management.qmd
-    - chapters/09-storage-lvm.qmd
-    - chapters/10-networking.qmd
-    - chapters/11-selinux.qmd
-    - chapters/12-firewall.qmd
-    - chapters/13-boot-grub.qmd
-    - chapters/14-logging.qmd
-    - chapters/15-scheduled-tasks.qmd
-    - chapters/16-flatpak.qmd
-    - chapters/17-troubleshooting.qmd
-    - chapters/18-practice-exam-1.qmd
-    - chapters/19-practice-exam-2.qmd
-
+    - part: "Front Matter"
+      chapters:
+        - preface.qmd
+        - acknowledge.qmd
+    - part: "Prerequisites"
+      chapters:
+        - prereqs/00-linux-cli.qmd
+        - prereqs/01-lab-setup.qmd
+    - part: "Chapters"
+      chapters:
+        - chapters/01-exam-overview.qmd
+        # - chapters/02-installation.qmd
+        # - chapters/03-file-management.qmd
+        # - chapters/04-users-groups.qmd
+        # - chapters/05-shell-scripting.qmd
+        # - chapters/06-permissions.qmd
+        # - chapters/07-processes-services.qmd
+        # - chapters/08-package-management.qmd
+        # - chapters/09-storage-lvm.qmd
+        # - chapters/10-networking.qmd
+        # - chapters/11-selinux.qmd
+        # - chapters/12-firewall.qmd
+        # - chapters/13-boot-grub.qmd
+        # - chapters/14-logging.qmd
+        # - chapters/15-scheduled-tasks.qmd
+        # - chapters/16-flatpak.qmd
+        # - chapters/17-troubleshooting.qmd
+    - part: "Practice Exams"
+      chapters:
+        - practice/practice-exam-1.qmd
+        - practice/practice-exam-2.qmd
   appendices:
+    - appendices/title_ideas.qmd
     - appendices/command-reference.qmd
     - appendices/glossary.qmd
 

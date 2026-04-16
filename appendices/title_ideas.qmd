@@ -1,0 +1,69 @@
+# Title Ideas
+
+* Learn RHEL the Hard Way\
+  Zed Shaw basically owns this space and might be too similar to his title
+  "Learn Unix the Hard Way", although there are other entrants: 
+  "Learn Vimscript the Hard Way" and "Learn Kubernetes the Hard Way".
+* The RHCSA Field Manual: A hands-on guide to Red Hat Enterprise Linux 10 and the EX200 exam
+* RHCSA Certification Study Guide
+* The RHCSA Study Guide
+* Red Hat System Administration for Wizards, Mages, and Spell-Casters
+* Red Hat System ADministration for the Brave and True
+* Practical RHCSA
+* Hands-on RHCSA
+* Hands-on RHEL System Administration
+* RHEL System Administration: A Practical Hands-on Study Guide for the RHCSA EX200
+  exam
+* The Sysadmin's guide to RHEL and the RHCSA
+* RHCSA Prep for the Linux Sysadmin: A pragmatic hands-on guide to Red Hat
+  Enterprise Linux 10 and the EX200 exam
+* Teach Yourself Red Hat System Administration: Hands-on RHEL 10 prep for the RHCSA EX200 exam
+* Teach Yourself Enterprise Linux
+* Red Hat System Administration 
+* Unofficial RHCSA Study Guide
+* Terminal Mastery: The RHCSA 10 Study Companion
+* RHCSA 10 Survival Guide
+* RHCSA 10 Study Notes
+
+## Titles of Books I Like
+
+* Ansible for DevOps
+* Think Stats, Think Python, Think Java
+* Automate the Boring Suff with Python
+* Eloquent Javascript
+* Clojure for the Brave and True
+* Learn Python the Hard Way
+* Learn Vimscript the Hard Way
+* Learn Kubernetes the Hard Way
+* The Kubernetes Book
+* Sudo Mastery
+* The Linux Command Line
+* Computer Networking: A Top-Down Approach
+* How to Take Smart Notes
+
+## Other titles I haven't read
+
+* Podman in Action
+* Demystifying Ansible Automation Platform
+
+## Target Audience
+
+Self-taught learner. Values practical, hands-on skills vs. theoretical
+knowledge. The "learn by doing" approach to technical skills acquisition.
+
+"Ansible for DevOps", "Automate the Boring Stuff with Python", and
+"The Kubernetes Book" are all exemplary of this.
+
+The type of learner who will type the code in by hand and make it run.
+
+This learner seeks not just to learn by wrote to pass the exam but wants depth.
+They develop a mental model for how the system works. This type of learner
+works forward from first principles. The Feynman method. Linux from Scratch.
+
+This person is a tinkerer and likes building things. The type of user that
+is likely to enjoy building a homelab and trying out things for real.
+
+This is ideal for the RHCSA because it's a practical hands-on "performance based"
+exam.
+
+The "Linux Upskill Challenge" and the "Linux Sysadmin Pipeline".
