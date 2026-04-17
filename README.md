@@ -11,13 +11,20 @@ By [Alex Kraker](https://github.com/kraker). Built with [Quarto](https://quarto.
 
 ## Building the Book
 
-Prerequisites: [Quarto](https://quarto.org/docs/get-started/) >= 1.9, R, and the `knitr` R package. (The `vagrant/` setup provisions all three on a RHEL 10 VM.)
+Prerequisites: [Quarto](https://quarto.org/docs/get-started/) >= 1.9, R, and [uv](https://docs.astral.sh/uv/). R packages (knitr, rmarkdown, ...) are pinned in `renv.lock`; Python packages (jupyter — needed by `quarto preview` despite the knitr engine) are pinned in `uv.lock`.
+
+After cloning, install the pinned deps, then build:
 
 ```sh
+R -e 'renv::restore()'   # R deps
+uv sync                   # Python deps
+
 cd book
-quarto preview    # live preview
-quarto render     # build to book/_book/
+quarto preview            # live preview
+quarto render             # build to book/_book/
 ```
+
+The `vagrant/` setup provisions Quarto, R, renv, and uv on a RHEL 10 VM.
 
 ## Dev VM
 

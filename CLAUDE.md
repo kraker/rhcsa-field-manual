@@ -27,7 +27,14 @@ quarto preview    # Live preview with hot reload
 quarto render     # Build to book/_book/
 ```
 
-Quarto >= 1.9 is required. The engine is `knitr` (so R + the `knitr` package must be installed wherever you render). There is no Python/uv dependency.
+Quarto >= 1.9 is required. Project deps are pinned at the repo root: R packages (knitr, rmarkdown, ...) in `renv.lock` via renv, Python packages (jupyter — needed by `quarto preview` despite the knitr engine) in `uv.lock` via uv. Install both after cloning:
+
+```sh
+R -e 'renv::restore()'
+uv sync
+```
+
+R resolves the renv project via `.Rprofile` at the repo root; `book/.Rprofile` is a thin shim that points R sessions started from `book/` (e.g. by Quarto) at the parent project.
 
 ## Book Structure
 
@@ -50,7 +57,7 @@ Chapters are numbered `01-17` in filenames. Most are stubs — only uncommented 
 
 ## Dev VM (vagrant/)
 
-A single RHEL 10 VM (`rhcsa-dev`, 192.168.56.20) provisioned with Quarto, R + knitr, and uv. Intended workflow is VS Code Remote SSH into the VM and `git clone` the project inside — there is no synced folder (the `kraker/rhel-10` box ships without VirtualBox Guest Additions, so the default vboxsf mount would fail; dogfooding without a synced folder for now).
+A single RHEL 10 VM (`rhcsa-dev`, 192.168.56.20) provisioned with Quarto, R (+ renv), and uv. Intended workflow is VS Code Remote SSH into the VM and `git clone` the project inside — there is no synced folder (the `kraker/rhel-10` box ships without VirtualBox Guest Additions, so the default vboxsf mount would fail; dogfooding without a synced folder for now).
 
 ```sh
 cd vagrant
@@ -59,7 +66,7 @@ cp .rhel-credentials.template .rhel-credentials   # add Red Hat dev creds
 vagrant ssh-config >> ~/.ssh/config               # for VS Code Remote SSH
 ```
 
-The box ships unregistered; the `vagrant-registration` plugin attaches it to RHSM at first boot using the credentials in `.rhel-credentials`. `provision.sh` enables CRB, installs EPEL + R + git + Quarto + uv, and installs `knitr` (dnf `R-knitr` if available, else CRAN — as of 2026-04 EPEL 10 doesn't package it, so CRAN is the working path).
+The box ships unregistered; the `vagrant-registration` plugin attaches it to RHSM at first boot using the credentials in `.rhel-credentials`. `provision.sh` enables CRB, installs EPEL + R + git + Quarto + cmake + uv + renv. Project-level R and Python deps are pinned in `renv.lock` and `uv.lock` at the repo root; after cloning, run `R -e 'renv::restore()'` and `uv sync` to populate the project libraries. `cmake` is retained because the R `fs` package (transitive dep of `rmarkdown`) builds its bundled libuv at install time.
 
 ## Content Conventions
 
