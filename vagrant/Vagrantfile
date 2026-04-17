@@ -31,13 +31,27 @@ Vagrant.configure("2") do |config|
 
   # Default `/vagrant` would map this `vagrant/` directory; remap to
   # the project root so the book lives at a clean, predictable path.
+  #
+  # type: "rsync" because the kraker/rhel-10 box doesn't ship
+  # VirtualBox Guest Additions (image-builder doesn't install them),
+  # so the default vboxsf-backed synced_folder fails. rsync is host→VM
+  # only — use `vagrant rsync-auto` from another terminal for live
+  # sync, or `git pull` inside the VM for VS Code Remote SSH workflows.
   config.vm.synced_folder ".", "/vagrant", disabled: true
-  config.vm.synced_folder "..", "/home/vagrant/rhcsa-field-manual"
+  config.vm.synced_folder "..", "/home/vagrant/rhcsa-field-manual",
+    type: "rsync",
+    rsync__exclude: [".git/", ".vagrant/", "_book/", ".quarto/"]
 
   # vagrant-registration: register the VM with RHSM at first boot using
   # the credentials sourced from .rhel-credentials by ./up.sh.
+  #
+  # auto_attach must be false on RHEL 10: subscription-manager dropped
+  # the --auto-attach flag because Simple Content Access (SCA) is the
+  # default model now. The plugin (v1.3.4) still defaults to passing
+  # the flag and the registration fails without this override.
   config.registration.username           = ENV["RHSM_USERNAME"]
   config.registration.password           = ENV["RHSM_PASSWORD"]
+  config.registration.auto_attach        = false
   config.registration.unregister_on_halt = false
 
   config.vm.provider "virtualbox" do |vb|
