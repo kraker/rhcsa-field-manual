@@ -1,0 +1,47 @@
+# Outline
+
+* Introduction
+  + What is RHEL?
+  + The RHCSA EX200 exam and exam objectives
+* Pre-requisites
+  + Who this book is for
+  + How should I learn Linux as a novice?
+    - (Or if I'm coming from Windows, etc.)
+* Advice for how to prepare
+  + Anki flashcards for memorization
+  + Type everything in; build muscle memory
+  + RTFM: `man`, `apropos`, `info`
+    - Knowing were to find the information is half the battle
+
+<!-- Out of scope; text assumes some pre-existing CLI fundamentals
+* The Bash Shell
+  + Bash shell on Linux
+  + Bash shell on MacOS
+  + gitbash on Windows
+
+* The Linux CLI
+  + File-system Navigation
+    - pwd
+    - cd
+    - ls
+-->
+
+* Getting Started
+  + Red Hat Developer account
+  + Installing RHEL Linux
+  + Reproducible Lab with Vagrant + VirtualBox
+  + Advice for Windows Users (appendix?)
+    - WSL + Vagrant + VirtualBox
+    - Windows Terminal + Git-Bash + Remote VM
+  + Cloud free tiers? (appendix?)
+
+* Fundamentals
+  + File-system navigation: `pwd`, `cd`, `ls`
+  + Files: `cat`, `file`, `touch`, `rm`, `mkdir`, `rmdir`
+    + read-only: `ls`, `tree`, `file`, `stat`, `cat`, `less`, 
+    + write: `cp`, `mv`, `rm`, `mkdir`, `touch`, `ln`
+  + Linux File-System Hierarchy Standard FHS
+  + wildcards, expansions, command-substitution
+  + streams and redirects
+  + text-munging
+  + 

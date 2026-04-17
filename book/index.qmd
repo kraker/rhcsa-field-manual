@@ -1,25 +1,32 @@
 # Introduction {.unnumbered}
 
-_The RHCSA Field Manual_ is a practical, hands-on guide to learning
-the Red Hat Enterprise Linux (RHEL) Operating System and preparing for the 
-Red Hat Certified System Administrator (RHCSA) exam (EX200). It's geared towards
-practical skills the Linux Sysadmin is likely to encounter in their day-to-day.
-This book is largely hands-on and each chapter is intended for the learner to
-work through the exercises as they go along. Labs for key topic areas should
-reinforce the material covered in the chapter. And practice exams at the end
-of the book are designed to provide comprehensive exam prep under simulated
-exam conditions.
+_The RHCSA Field Manual_ is a practical, hands-on guide to learning the Red Hat
+Enterprise Linux (RHEL) Operating System and preparing for the Red Hat Certified
+System Administrator (RHCSA) exam (EX200). It's geared towards practical skills
+the Linux Sysadmin is likely to encounter in their day-to-day. This book is
+largely hands-on and each chapter is intended for the learner to work through
+the exercises and run the commands in their terminal as they go along. Labs for
+key topic areas are designed to reinforce the material covered in the chapters.
+Practice exams at the end of the book are designed to provide comprehensive prep
+under simulated exam conditions and to assess readiness.
 
-## The RHCSA Exam
+## Who is this book for?
+
+This book is intended for IT or tech professionals with some Linux experience. A
+certain amount of proficiency with Linux and the Linux CLI is expected. This
+book isn't necessarily geared towards the novice or beginner Linux user, but see
+<section> for some helpful resources geared towards the beginner.
+
+## Why get RHCSA certified?
 
 Like all of the Red Hat certifications the exam is 100% performance-based and
 test takers must demonstrate the ability to administer systems hands-on under
 conditions simulating real-world. It's for this reason the Red Hat exams can be
 some of the most challenging but also among the most well-regarded industry
-certifications. For Linux System Administrators and those who work with Linux
-in their day-to-day, even if it's not Red Hat, becoming a Red Hat Certified
-System Administrator is a signal that you possess real battle-tested
-Linux Sysadmin chops making it arguably _the_ industry leading entry-level
-Linux cert. The certification is evidentiary of technical skills and
-aptitude that aren't just theoretical knowledge but a demonstrated ability to
-diagnose and solve real problems "hands on keyboard" in a Linux terminal.
+certifications. For Linux System Administrators and those who work with Linux in
+their day-to-day, even if it's not Red Hat, becoming a Red Hat Certified System
+Administrator is a signal that you possess real battle-tested Linux Sysadmin
+chops making it arguably _the_ industry leading entry-level Linux cert. The
+certification is evidence of technical skills and aptitude that aren't just
+theoretical knowledge but a demonstrated ability to diagnose and solve
+real-world type problems "hands on keyboard" in a Linux terminal.

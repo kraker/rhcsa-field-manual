@@ -1,0 +1,59 @@
+---
+engine: knitr
+collapse: true
+---
+
+## Primer on the Linux CLI
+
+### Bash
+
+Bash shell stands for the "Bourne Again SHell" and was written by Steve Bourne
+based on an earlier Sh. The Bash shell is the default shell in RHEL and for the
+RHCSA exam. This shell is "good enough" for our purposes and so this is what
+we'll use throughout the book. I recommend you do the same. Some sysadmin's like
+to use other shell's like "Zsh" for example and they may even try to convince
+you that this is "way better" than Bash. Early in my career I was one of those
+people who tried Zsh and a few other shell's and I spent way more time than I
+care to admit "shaving the yak" by optimizing my Zsh with all kinds of things to
+make it really cool. But what I learned is you can't really take your shell with
+you when you connect to a remote server with SSH. And Linux Sysadmin's spend a
+lot of time doing this. Bash is almost always there on remote servers (or at the
+very least it's precursor, `sh`). After a while I realized I was a lot more
+productive when I started just using the tools that were there with the
+_vanilla_ configs, including for things like Vim (or `vi`). If you don't know
+what `vim` is yet don't worry, we'll get to that in Chapter <?>. If after you've
+been a Linux Sysadmin for a while you decide you want to break with convention
+and use fancier tools, by all means do it if it helps you. But use the
+conventional tools for a while before you start breaking the rules so you know
+why you're doing it and can justify it, etc.
+
+Our first task is to get ourselves a Bash environment to start practicing
+commands. If you're running Linux then you likely already have a terminal
+running bash. 
+
+
+```{bash}
+cd
+```
+
+```{bash}
+pwd
+```
+
+```{bash}
+whoami
+```
+
+```{bash}
+ls
+```
+
+```{bash}
+ls -l
+ls -lh
+```
+
+```{bash}
+ls -lA
+ls -lAh
+```

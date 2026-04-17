@@ -1,15 +1,12 @@
-# The Linux Command Line
+# Prerequisites {.unnumbered}
 
-Just like with anything we have to walk before we can run. This is a primer
-on the Linux CLI to get you up to speed if you're a beginner (or in need of a
-refresher). If you already know the Linux CLI feel free to skip this chapter.
+Just like with anything we have to walk before we can run.
 
 ## Learning the Linux CLI
 
-A thorough treatment of Linux CLI fundamentals is outside of the scope of this
-book. We're going to briefly cover the basics but if you have the time I would
-encourage you to check out one of the following _free_ resources I'm going to
-recommend. Any of one of them functions as a stand-in for this chapter.
+A thorough treatment of Linux CLI fundamentals geared towards the novice is
+outside of the scope of this book. But if you're a beginner I can thoroughly
+endorse any of the following resources.
 
 1. [Learning the Shell](https://www.linuxcommand.org/lc3_learning_the_shell.php)
   from **LinuxCommand.org**
@@ -39,8 +36,3 @@ Becoming proficient in the Linux CLI is a pre-requisite to learning RHEL and
 preparing for the RHCSA exam. It's worth spending some time on acquiring this
 skill if you can afford it.
 
-## Primer on the Linux CLI
-
-```{bash}
-pwd
-```

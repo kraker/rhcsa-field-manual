@@ -9,17 +9,18 @@ book:
   date: "4/14/2026"
   chapters:
     - index.qmd
+    - prerequisites.qmd
     - part: "Front Matter"
       chapters:
         - preface.qmd
         - acknowledge.qmd
-    - part: "Prerequisites"
-      chapters:
-        - prereqs/00-linux-cli.qmd
-        - prereqs/01-lab-setup.qmd
-    - part: "Chapters"
-      chapters:
-        - chapters/01-exam-overview.qmd
+    # - part: "Prerequisites"
+    #   chapters:
+    #     - prereqs/00-linux-cli.qmd
+    #     - prereqs/01-lab-setup.qmd
+    # - part: "Chapters"
+    #   chapters:
+        # - chapters/01-exam-overview.qmd
         # - chapters/02-installation.qmd
         # - chapters/03-file-management.qmd
         # - chapters/04-users-groups.qmd
@@ -41,7 +42,6 @@ book:
         - practice/practice-exam-1.qmd
         - practice/practice-exam-2.qmd
   appendices:
-    - appendices/title_ideas.qmd
     - appendices/command-reference.qmd
     - appendices/glossary.qmd
 
@@ -55,4 +55,8 @@ format:
   # pdf:
   #   documentclass: scrreprt
 
-engine: knitr
+engines: ['knitr']
+
+knitr:
+  opts_knit:
+    root.dir: "~"
