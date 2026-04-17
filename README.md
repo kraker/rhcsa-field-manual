@@ -27,7 +27,7 @@ cp .rhel-credentials.template .rhel-credentials   # add your Red Hat dev creds
 ./up.sh
 ```
 
-The VM uses the [`kraker/rhel-10`](https://app.vagrantup.com/kraker/boxes/rhel-10) box published by the sibling project at `~/git-repos/vagrant-rhel-boxes/`. See [CLAUDE.md](CLAUDE.md) for more detail on the layout and dev workflow.
+The VM uses the [`kraker/rhel-10`](https://app.vagrantup.com/kraker/boxes/rhel-10) box. See [CLAUDE.md](CLAUDE.md) for more detail on the layout and dev workflow.
 
 ## License
 

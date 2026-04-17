@@ -1,54 +1,28 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-# Development environment for The RHCSA Field Manual.
-#
-# A single RHEL 10 VM that runs the book's executable shell snippets
-# through Quarto + knitr. Use VS Code's Remote SSH extension to connect
-# and edit files under /home/vagrant/rhcsa-field-manual (the synced
-# project root).
+# Dev VM for The RHCSA Field Manual: RHEL 10 with Quarto + R + knitr
+# for rendering the book's executable shell snippets.
 #
 # Quick start:
 #   cp .rhel-credentials.template .rhel-credentials   # add RH dev creds
 #   ./up.sh
 #   vagrant ssh-config >> ~/.ssh/config               # for VS Code Remote SSH
-#
-# Uses kraker/rhel-10, the box published to HCP Vagrant Registry by the
-# sibling project at https://github.com/kraker/vagrant-rhel-boxes — same
-# osbuild blueprint, same provider artifacts. The box ships unregistered;
-# the vagrant-registration plugin attaches it to the user's RHSM
-# subscription at first boot using the credentials in .rhel-credentials.
 Vagrant.configure("2") do |config|
   config.ssh.key_type = "ecdsa256"
 
-  # https://app.vagrantup.com/kraker/boxes/rhel-10
   config.vm.box      = "kraker/rhel-10"
   config.vm.hostname = "rhcsa-dev"
-
-  # Static IP. Offset from the lab boxes in ../rhcsa/vagrant
-  # (192.168.56.10/.11) so both setups can run side by side.
   config.vm.network "private_network", ip: "192.168.56.20"
 
-  # Default `/vagrant` would map this `vagrant/` directory; remap to
-  # the project root so the book lives at a clean, predictable path.
-  #
-  # type: "rsync" because the kraker/rhel-10 box doesn't ship
-  # VirtualBox Guest Additions (image-builder doesn't install them),
-  # so the default vboxsf-backed synced_folder fails. rsync is host→VM
-  # only — use `vagrant rsync-auto` from another terminal for live
-  # sync, or `git pull` inside the VM for VS Code Remote SSH workflows.
+  # No synced folder: the kraker/rhel-10 box has no VirtualBox Guest
+  # Additions, so the default vboxsf mount fails. Clone the repo
+  # inside the VM over SSH instead.
   config.vm.synced_folder ".", "/vagrant", disabled: true
-  config.vm.synced_folder "..", "/home/vagrant/rhcsa-field-manual",
-    type: "rsync",
-    rsync__exclude: [".git/", ".vagrant/", "_book/", ".quarto/"]
 
-  # vagrant-registration: register the VM with RHSM at first boot using
-  # the credentials sourced from .rhel-credentials by ./up.sh.
-  #
-  # auto_attach must be false on RHEL 10: subscription-manager dropped
-  # the --auto-attach flag because Simple Content Access (SCA) is the
-  # default model now. The plugin (v1.3.4) still defaults to passing
-  # the flag and the registration fails without this override.
+  # auto_attach must be false: RHEL 10 dropped `subscription-manager
+  # --auto-attach` in favor of Simple Content Access, but the plugin
+  # (v1.3.4) still passes the flag by default and registration fails.
   config.registration.username           = ENV["RHSM_USERNAME"]
   config.registration.password           = ENV["RHSM_PASSWORD"]
   config.registration.auto_attach        = false
@@ -56,7 +30,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.provider "virtualbox" do |vb|
     vb.name   = "rhcsa-dev"
-    vb.memory = "4096"  # 4 GB — R + Quarto can be hungry during render
+    vb.memory = "4096"
     vb.cpus   = 2
   end
 
