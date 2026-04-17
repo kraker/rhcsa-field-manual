@@ -17,9 +17,9 @@ recommend. Any of one of them functions as a stand-in for this chapter.
 ::: {.callout-tip}
 While you're there I also recommend checking out 
 [The Linux Command Line](https://www.linuxcommand.org/tlcl.php) by William
-Shotts. This is my #1 go-to recommendation for beginners that want to
-learn Linux and the Linux CLI. This is where I first learned Linux and the Linux
-CLI many years ago.
+Shotts. This is my #1 go-to recommendation for beginners that want to learn
+Linux and the Linux CLI. This is where I first learned Linux and the Linux CLI
+many years ago.
 :::
 
 2. [Command Line Crash Course](https://learnpythonthehardway.org/book/appendixa.html)
@@ -41,3 +41,6 @@ skill if you can afford it.
 
 ## Primer on the Linux CLI
 
+```{bash}
+pwd
+```

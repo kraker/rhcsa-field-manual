@@ -4,23 +4,30 @@ A hands-on guide to Red Hat Enterprise Linux 10 and the EX200 exam.
 
 By [Alex Kraker](https://github.com/kraker). Built with [Quarto](https://quarto.org/).
 
-## Prerequisites
+## Repository Layout
 
-- [Quarto](https://quarto.org/docs/get-started/) (>= 1.9)
+- `book/` — Quarto book sources
+- `vagrant/` — single-VM RHEL 10 dev environment
 
-## Usage
+## Building the Book
 
-Preview the book locally:
-
-```sh
-quarto preview
-```
-
-Render the book:
+Prerequisites: [Quarto](https://quarto.org/docs/get-started/) >= 1.9, R, and the `knitr` R package. (The `vagrant/` setup provisions all three on a RHEL 10 VM.)
 
 ```sh
-quarto render
+cd book
+quarto preview    # live preview
+quarto render     # build to book/_book/
 ```
+
+## Dev VM
+
+```sh
+cd vagrant
+cp .rhel-credentials.template .rhel-credentials   # add your Red Hat dev creds
+./up.sh
+```
+
+The VM uses the [`kraker/rhel-10`](https://app.vagrantup.com/kraker/boxes/rhel-10) box published by the sibling project at `~/git-repos/vagrant-rhel-boxes/`. See [CLAUDE.md](CLAUDE.md) for more detail on the layout and dev workflow.
 
 ## License
 
