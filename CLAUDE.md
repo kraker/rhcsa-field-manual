@@ -50,7 +50,7 @@ Chapters are numbered `01-17` in filenames. Most are stubs — only uncommented 
 
 ## Dev VM (vagrant/)
 
-A single RHEL 10 VM (`rhcsa-dev`, 192.168.56.20) provisioned with Quarto, R, and knitr. Intended workflow is VS Code Remote SSH into the VM and `git clone` the project inside — there is no synced folder (the `kraker/rhel-10` box ships without VirtualBox Guest Additions, so the default vboxsf mount would fail; dogfooding without a synced folder for now).
+A single RHEL 10 VM (`rhcsa-dev`, 192.168.56.20) provisioned with Quarto, R + knitr, and uv. Intended workflow is VS Code Remote SSH into the VM and `git clone` the project inside — there is no synced folder (the `kraker/rhel-10` box ships without VirtualBox Guest Additions, so the default vboxsf mount would fail; dogfooding without a synced folder for now).
 
 ```sh
 cd vagrant
@@ -59,7 +59,7 @@ cp .rhel-credentials.template .rhel-credentials   # add Red Hat dev creds
 vagrant ssh-config >> ~/.ssh/config               # for VS Code Remote SSH
 ```
 
-The box ships unregistered; the `vagrant-registration` plugin attaches it to RHSM at first boot using the credentials in `.rhel-credentials`. `provision.sh` enables CRB, installs EPEL + R + git + Quarto, and installs `knitr` (dnf `R-knitr` if available, else CRAN — as of 2026-04 EPEL 10 doesn't package it, so CRAN is the working path).
+The box ships unregistered; the `vagrant-registration` plugin attaches it to RHSM at first boot using the credentials in `.rhel-credentials`. `provision.sh` enables CRB, installs EPEL + R + git + Quarto + uv, and installs `knitr` (dnf `R-knitr` if available, else CRAN — as of 2026-04 EPEL 10 doesn't package it, so CRAN is the working path).
 
 ## Content Conventions
 

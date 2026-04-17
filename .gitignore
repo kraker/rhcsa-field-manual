@@ -4,3 +4,4 @@
 **/*.quarto_ipynb
 /vagrant/.vagrant/
 /vagrant/.rhel-credentials
+.venv/
