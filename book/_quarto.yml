@@ -7,6 +7,10 @@ book:
   subtitle: "A hands-on guide to Red Hat Enterprise Linux 10 and the EX200 exam"
   author: "Alex Kraker"
   date: "4/14/2026"
+  repo-url: https://github.com/kraker/rhcsa-field-manual
+  repo-branch: main
+  repo-subdir: book
+  repo-actions: [issue, source]
   chapters:
     - index.qmd
     - part: "Front Matter"
