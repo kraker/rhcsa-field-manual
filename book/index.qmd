@@ -2,7 +2,7 @@
 
 _The RHCSA Field Manual_ is a practical, hands-on guide to learning the Red Hat
 Enterprise Linux (RHEL) Operating System and preparing for the Red Hat Certified
-System Administrator (RHCSA) exam (EX200). It's geared towards practical skills
+System Administrator ([RHCSA](appendices/glossary.qmd#rhcsa)) exam (EX200). It's geared towards practical skills
 the Linux Sysadmin is likely to encounter in their day-to-day. This book is
 largely hands-on and each chapter is intended for the learner to work through
 the exercises and run the commands in their terminal as they go along. Labs for

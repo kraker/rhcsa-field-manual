@@ -9,11 +9,16 @@ book:
   date: "4/14/2026"
   chapters:
     - index.qmd
-    - prerequisites.qmd
     - part: "Front Matter"
       chapters:
         - preface.qmd
         - acknowledge.qmd
+    - part: "Prerequisites"
+      chapters:
+        - prereqs/linux-cli.qmd
+        - prereqs/redhat-account.qmd
+        - prereqs/rhcsa-exam.qmd
+
     # - part: "Prerequisites"
     #   chapters:
     #     - prereqs/00-linux-cli.qmd

@@ -1,0 +1,52 @@
+# Red Hat Developer Account
+
+You will need a Red Hat account and subscription in order to work through the
+material in this book. Later on we'll use your account to register and subscribe
+RHEL virtual machines in our lab so that we can install packages, etc. If you
+already have an account you can skip to the [next section].
+
+If you don't already have a Red Hat account head on over to
+[developers.redhat.com](https://developers.redhat.com/) and register for a _Red
+Hat Developer membership_. Click the **Register for an account** button and
+follow the prompts.
+
+![developers.redhat.com](/images/prereqs/developers.redhat.com.png)
+
+You will probably be using this account to register for your exam so make sure
+that you pick a username that you plan to use long-term (you won't be able to
+change it later). I recommend _FirstinitialLastname_, _FirstnameLastname_, or
+similar professional seeming username. For example, my Red Hat username is
+_akraker_ since my name is "Alex Kraker".
+
+![Register for a Red Hat account - username & password](/images/prereqs/register-for-rh-account-1.png)
+
+::: {.callout-note}
+There may be some scenarios where you wouldn't use your own account to register
+for the exam. For example, if you already have an account through your employer
+and they're reimbursing you for the exam voucher fee or you need to join their organization.
+:::
+
+After you pass the exam Red Hat will issue a [certification
+badge](https://rhtapps.redhat.com/verify?certId=250-131-760) attached to your
+Certification ID and this is linked to your account. This ID will follow you if
+you plan to keep going and get more certs, the
+[RHCE](../appendices/glossary.qmd#rhce) for example.
+
+Next, fill out your personal information as accurately as possible. Make sure
+that your _First name_ and _Last name_ match what is on your government issued
+ID such as a driver's license or passport.
+
+![Register for a Red Hat account - personal info](/images/prereqs/register-for-rh-account-2.png)
+
+::: {.callout-important}
+This name needs to match _exactly_ since the exam proctor will use this name to
+verify that you are who you say you are. If the names don't match, this could
+cause a false-start on exam day and use up an exam _attempt_. You can change
+this name later within Red Hat's Identity Management portal, but it's a bit of a
+hassle.
+:::
+
+Once you're done filling out your information, check boxes to _agree to terms_
+and click the **Create my account** button.
+
+![Register for a Red Hat account - accept terms](/images/prereqs/register-for-rh-account-3.png)

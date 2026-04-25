@@ -1,1 +1,13 @@
 # Glossary & Acronyms
+
+## RHCSA
+
+**Red Hat Certified System Administrator.** Red Hat's entry-level system
+administration certification, earned by passing the EX200 performance-based
+exam. The focus of this book.
+
+## RHCE
+
+**Red Hat Certified Engineer.** Red Hat's next certification beyond the RHCSA,
+focused on automation with Ansible. Earned by passing the EX294 exam; requires
+an active RHCSA as a prerequisite.

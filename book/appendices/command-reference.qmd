@@ -1156,4 +1156,4 @@ rsync -av --delete source/ dest/  # Sync and delete extras
 rsync -av user@host:/path/ local/  # Sync from remote
 ```
 
-This comprehensive command reference covers all major RHCSA topics with practical command examples organized by functional area for efficient study and quick reference during exam preparation.
+This comprehensive command reference covers all major [RHCSA](glossary.qmd#rhcsa) topics with practical command examples organized by functional area for efficient study and quick reference during exam preparation.
