@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -46,9 +81,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-f392d8de83cbad30841a53e8a1dd5547.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-c0839997b9077745497883f81bb0dffa.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-f392d8de83cbad30841a53e8a1dd5547.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-2b3a058f3f598cb5398490cdc55809d4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-9a1c32ad31f148ce65f272296b35accb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-2b3a058f3f598cb5398490cdc55809d4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -382,20 +417,14 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../appendices/title_ideas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Title Ideas</span></span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../appendices/command-reference.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Command Reference</span></span></a>
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Command Reference</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../appendices/glossary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Glossary &amp; Acronyms</span></span></a>
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Glossary &amp; Acronyms</span></span></a>
   </div>
 </li>
       </ul>
@@ -411,7 +440,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#learning-the-linux-cli" id="toc-learning-the-linux-cli" class="nav-link active" data-scroll-target="#learning-the-linux-cli"><span class="header-section-number">1.1</span> Learning the Linux CLI</a></li>
-  <li><a href="#primer-on-the-linux-cli" id="toc-primer-on-the-linux-cli" class="nav-link" data-scroll-target="#primer-on-the-linux-cli"><span class="header-section-number">1.2</span> Primer on the Linux CLI</a></li>
+  <li><a href="#primer-on-the-linux-cli" id="toc-primer-on-the-linux-cli" class="nav-link" data-scroll-target="#primer-on-the-linux-cli"><span class="header-section-number">1.2</span> Primer on the Linux CLI</a>
+  <ul class="collapse">
+  <li><a href="#bash" id="toc-bash" class="nav-link" data-scroll-target="#bash"><span class="header-section-number">1.2.1</span> Bash</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -472,8 +504,86 @@ This is a shameless plug, as I’m involved with this project.</li>
 </section>
 <section id="primer-on-the-linux-cli" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="primer-on-the-linux-cli"><span class="header-section-number">1.2</span> Primer on the Linux CLI</h2>
+<section id="bash" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="bash"><span class="header-section-number">1.2.1</span> Bash</h3>
+<p>Bash shell stands for the “Bourne Again SHell” written by Steve Bourne. The Bash shell is the default shell in RHEL and for the RHCSA exam. This shell is “good enough” for our purposes and so this is what we’ll use throughout the book. I recommend you do the same. Some sysadmin’s like to use other shell’s like “Zsh” for example and they may even try to convince you that this is “way better” than Bash. Early in my career I was one of those people who tried Zsh and a few other shell’s and I spent way more time than I care to admit “shaving the yak” by optimizing my Zsh with all kinds of things to make it really cool. But what I learned is you can’t really take your shell with you when you connect to a remote server with SSH. And Linux Sysadmin’s spend a lot of time doing this. Bash is almost always there on remote servers (or at the very least it’s precursor, <code>sh</code>). After a while I realized I was a lot more productive when I started just using the tools that were there with the <em>vanilla</em> configs, including for things like Vim (or <code>vi</code>). If you don’t know what <code>vim</code> is yet don’t worry, we’ll get to that in Chapter &lt;?&gt;. If after you’ve been a Linux Sysadmin for a while you decide you want to break with convention and use fancier tools, by all means do it if it helps you. But use the conventional tools for a while before you start breaking the rules so you know why you’re doing it and can justify it, etc.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">pwd</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>/home/vagrant</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">whoami</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>vagrant</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>rhcsa-dev.code-workspace
+rhcsa-field-manual</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> <span class="at">-l</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> <span class="at">-lh</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>total 8
+-rw-r--r--. 1 vagrant vagrant   60 Apr 17 09:02 rhcsa-dev.code-workspace
+drwxr-xr-x. 9 vagrant vagrant 4096 Apr 17 13:38 rhcsa-field-manual
+total 8.0K
+-rw-r--r--. 1 vagrant vagrant   60 Apr 17 09:02 rhcsa-dev.code-workspace
+drwxr-xr-x. 9 vagrant vagrant 4.0K Apr 17 13:38 rhcsa-field-manual</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> <span class="at">-lA</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> <span class="at">-lAh</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>total 52
+-rw-------.  1 vagrant vagrant  1462 Apr 17 11:04 .bash_history
+-rw-r--r--.  1 vagrant vagrant    18 Oct 29  2024 .bash_logout
+-rw-r--r--.  1 vagrant vagrant   144 Oct 29  2024 .bash_profile
+-rw-r--r--.  1 vagrant vagrant   522 Oct 29  2024 .bashrc
+drwxr-xr-x. 10 vagrant vagrant   119 Apr 17 13:29 .cache
+drwx------. 12 vagrant vagrant  4096 Apr 17 13:42 .claude
+-rw-------.  1 vagrant vagrant 23326 Apr 17 13:43 .claude.json
+drwxr-xr-x.  3 vagrant vagrant    48 Apr 17 13:06 .config
+drwxr-xr-x.  3 vagrant vagrant    20 Apr 17 09:04 .dotnet
+drwxr-xr-x.  3 vagrant vagrant    29 Apr 17 09:55 .ipython
+drwxr-xr-x.  5 vagrant vagrant    43 Apr 17 09:10 .local
+drwx------.  2 vagrant vagrant   143 Apr 17 09:48 .ssh
+drwxr-xr-x.  2 vagrant vagrant    61 Apr 17 13:17 .vscode-R
+drwxr-x---.  5 vagrant vagrant   157 Apr 17 17:33 .vscode-server
+-rw-r--r--.  1 vagrant vagrant    60 Apr 17 09:02 rhcsa-dev.code-workspace
+drwxr-xr-x.  9 vagrant vagrant  4096 Apr 17 13:38 rhcsa-field-manual
+total 52K
+-rw-------.  1 vagrant vagrant 1.5K Apr 17 11:04 .bash_history
+-rw-r--r--.  1 vagrant vagrant   18 Oct 29  2024 .bash_logout
+-rw-r--r--.  1 vagrant vagrant  144 Oct 29  2024 .bash_profile
+-rw-r--r--.  1 vagrant vagrant  522 Oct 29  2024 .bashrc
+drwxr-xr-x. 10 vagrant vagrant  119 Apr 17 13:29 .cache
+drwx------. 12 vagrant vagrant 4.0K Apr 17 13:42 .claude
+-rw-------.  1 vagrant vagrant  23K Apr 17 13:43 .claude.json
+drwxr-xr-x.  3 vagrant vagrant   48 Apr 17 13:06 .config
+drwxr-xr-x.  3 vagrant vagrant   20 Apr 17 09:04 .dotnet
+drwxr-xr-x.  3 vagrant vagrant   29 Apr 17 09:55 .ipython
+drwxr-xr-x.  5 vagrant vagrant   43 Apr 17 09:10 .local
+drwx------.  2 vagrant vagrant  143 Apr 17 09:48 .ssh
+drwxr-xr-x.  2 vagrant vagrant   61 Apr 17 13:17 .vscode-R
+drwxr-x---.  5 vagrant vagrant  157 Apr 17 17:33 .vscode-server
+-rw-r--r--.  1 vagrant vagrant   60 Apr 17 09:02 rhcsa-dev.code-workspace
+drwxr-xr-x.  9 vagrant vagrant 4.0K Apr 17 13:38 rhcsa-field-manual</code></pre>
+</div>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

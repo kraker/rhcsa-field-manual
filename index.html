@@ -47,9 +47,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f392d8de83cbad30841a53e8a1dd5547.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-c0839997b9077745497883f81bb0dffa.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-f392d8de83cbad30841a53e8a1dd5547.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-2b3a058f3f598cb5398490cdc55809d4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-9a1c32ad31f148ce65f272296b35accb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-2b3a058f3f598cb5398490cdc55809d4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -320,14 +320,20 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./prereqs/00-linux-cli.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Linux Command Line</span></span></a>
+  <a href="./prereqs/linux-cli.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Linux CLI</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./prereqs/01-lab-setup.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Lab Setup</span></span></a>
+  <a href="./prereqs/redhat-account.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Red Hat Developer Account</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prereqs/rhcsa-exam.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">RHCSA Exam</span></span></a>
   </div>
 </li>
       </ul>
@@ -335,29 +341,12 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Chapters</span></a>
+ <span class="menu-text">Practice Exams</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./chapters/01-exam-overview.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Exam Overview &amp; Strategy</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Practice Exams</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./practice/practice-exam-1.html" class="sidebar-item-text sidebar-link">
@@ -374,29 +363,23 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
  <span class="menu-text">Appendices</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./appendices/title_ideas.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Title Ideas</span></span></a>
-  </div>
-</li>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./appendices/command-reference.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Command Reference</span></span></a>
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Command Reference</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./appendices/glossary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Glossary &amp; Acronyms</span></span></a>
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Glossary &amp; Acronyms</span></span></a>
   </div>
 </li>
       </ul>
@@ -413,7 +396,8 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a>
   <ul class="collapse">
-  <li><a href="#the-rhcsa-exam" id="toc-the-rhcsa-exam" class="nav-link" data-scroll-target="#the-rhcsa-exam">The RHCSA Exam</a></li>
+  <li><a href="#who-is-this-book-for" id="toc-who-is-this-book-for" class="nav-link" data-scroll-target="#who-is-this-book-for">Who is this book for?</a></li>
+  <li><a href="#why-get-rhcsa-certified" id="toc-why-get-rhcsa-certified" class="nav-link" data-scroll-target="#why-get-rhcsa-certified">Why get RHCSA certified?</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -456,16 +440,22 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="introduction" class="level1 unnumbered">
 <h1 class="unnumbered">Introduction</h1>
-<p><em>The RHCSA Field Manual</em> is a practical, hands-on guide to learning the Red Hat Enterprise Linux (RHEL) Operating System and preparing for the Red Hat Certified System Administrator (RHCSA) exam (EX200). It’s geared towards practical skills the Linux Sysadmin is likely to encounter in their day-to-day. This book is largely hands-on and each chapter is intended for the learner to work through the exercises as they go along. Labs for key topic areas should reinforce the material covered in the chapter. And practice exams at the end of the book are designed to provide comprehensive exam prep under simulated exam conditions.</p>
-<section id="the-rhcsa-exam" class="level2">
-<h2 class="anchored" data-anchor-id="the-rhcsa-exam">The RHCSA Exam</h2>
-<p>Like all of the Red Hat certifications the exam is 100% performance-based and test takers must demonstrate the ability to administer systems hands-on under conditions simulating real-world. It’s for this reason the Red Hat exams can be some of the most challenging but also among the most well-regarded industry certifications. For Linux System Administrators and those who work with Linux in their day-to-day, even if it’s not Red Hat, becoming a Red Hat Certified System Administrator is a signal that you possess real battle-tested Linux Sysadmin chops making it arguably <em>the</em> industry leading entry-level Linux cert. The certification is evidentiary of technical skills and aptitude that aren’t just theoretical knowledge but a demonstrated ability to diagnose and solve real problems “hands on keyboard” in a Linux terminal.</p>
+<p><em>The RHCSA Field Manual</em> is a practical, hands-on guide to learning the Red Hat Enterprise Linux (RHEL) Operating System and preparing for the Red Hat Certified System Administrator (<a href="./appendices/glossary.html#rhcsa">RHCSA</a>) exam (EX200). It’s geared towards practical skills the Linux Sysadmin is likely to encounter in their day-to-day. This book is largely hands-on and each chapter is intended for the learner to work through the exercises and run the commands in their terminal as they go along. Labs for key topic areas are designed to reinforce the material covered in the chapters. Practice exams at the end of the book are designed to provide comprehensive prep under simulated exam conditions and to assess readiness.</p>
+<section id="who-is-this-book-for" class="level2">
+<h2 class="anchored" data-anchor-id="who-is-this-book-for">Who is this book for?</h2>
+This book is intended for IT or tech professionals with some Linux experience. A certain amount of proficiency with Linux and the Linux CLI is expected. This book isn’t necessarily geared towards the novice or beginner Linux user, but see
+<section>
+<p>for some helpful resources geared towards the beginner.</p>
+</section>
+<section id="why-get-rhcsa-certified" class="level2">
+<h2 class="anchored" data-anchor-id="why-get-rhcsa-certified">Why get RHCSA certified?</h2>
+<p>Like all of the Red Hat certifications the exam is 100% performance-based and test takers must demonstrate the ability to administer systems hands-on under conditions simulating real-world. It’s for this reason the Red Hat exams can be some of the most challenging but also among the most well-regarded industry certifications. For Linux System Administrators and those who work with Linux in their day-to-day, even if it’s not Red Hat, becoming a Red Hat Certified System Administrator is a signal that you possess real battle-tested Linux Sysadmin chops making it arguably <em>the</em> industry leading entry-level Linux cert. The certification is evidence of technical skills and aptitude that aren’t just theoretical knowledge but a demonstrated ability to diagnose and solve real-world type problems “hands on keyboard” in a Linux terminal.</p>
 
 
 </section>
 </section>
 
-</main> <!-- /main -->
+</section></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
