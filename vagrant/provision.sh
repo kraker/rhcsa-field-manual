@@ -20,7 +20,10 @@ echo "==> Installing base packages"
 # cmake is needed to build the R `fs` package (transitive dep of
 # rmarkdown via bslib → sass → fs). `fs` bundles libuv and always
 # statically links it via cmake, regardless of system libuv.
-dnf install -y git curl tar R cmake
+# libxml2-devel is needed to build the R `xml2` package (transitive
+# dep of `languageserver`, which provides LSP support for editing
+# .qmd/.R files in VS Code).
+dnf install -y git curl tar R cmake libxml2-devel
 
 echo "==> Installing latest Quarto"
 QUARTO_VERSION="$(curl -fsSL https://api.github.com/repos/quarto-dev/quarto-cli/releases/latest \
