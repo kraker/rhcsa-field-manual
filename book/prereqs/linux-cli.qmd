@@ -15,9 +15,8 @@ you _couldn't_ still work through this book and pass the [RHCSA](../appendices/g
 forwarned the learning curve is steep. But, I can thoroughly endorse any of the
 following resources to help you get up to speed:
 
-1. [Learning the Shell](https://www.linuxcommand.org/lc3_learning_the_shell.php)
-  from **LinuxCommand.org** and [The Linux Command
-  Line](https://www.linuxcommand.org/tlcl.php) by William Shotts
+1. [Learning the Shell][1] from **LinuxCommand.org** and [The Linux Command
+  Line][2] by William Shotts
 
 ::: {.callout-tip}
 This is my #1 go-to recommendation for beginners that want to learn
@@ -25,20 +24,35 @@ Linux and the Linux CLI. This is where I first learned Linux and the Linux CLI
 many years ago.
 :::
 
-2. [Command Line Crash Course](https://learnpythonthehardway.org/book/appendixa.html)
-  from **Learn Python the Hard Way** by Zed Shaw
-3. MIT **Missing Semester** Series:
-  [Introduction to the Shell](https://missing.csail.mit.edu/2026/course-shell/) &
-  [Command-line Environment](https://missing.csail.mit.edu/2026/command-line-environment/)
-
-Other notable mentions:
-
-4. [Linux Upskill Challenge](https://linuxupskillchallenge.org/)\
-  This is a shameless plug, as I'm involved with this project.
-5. [Linux Commands for Beginners](https://youtube.com/playlist?list=PLT98CRl2KxKHaKA9-4_I38sLzK134p4GJ&si=fhFuZX3oHMk0puAO)
-  YouTube Playlist by [@LearnLinuxTV](https://www.youtube.com/@LearnLinuxTV)
+2. [Command Line Crash Course][3] from **Learn Python the Hard Way** by Zed Shaw
+3. MIT **Missing Semester** Series: [Introduction to the Shell][4] &
+  [Command-line Environment][5]
+  
+[1]: https://www.linuxcommand.org/lc3_learning_the_shell.php
+[2]: https://www.linuxcommand.org/tlcl.php
+[3]: https://learnpythonthehardway.org/book/appendixa.html
+[4]: https://missing.csail.mit.edu/2026/course-shell/
+[5]: https://missing.csail.mit.edu/2026/command-line-environment/
 
 Becoming proficient in the Linux CLI is a pre-requisite to learning RHEL and
 preparing for the [RHCSA](../appendices/glossary.qmd#rhcsa) exam. If this is you, definitely check out the
 resources above. It's probably only a few days or weeks of effort to get up to
 speed on the basics. Then come back and work through the rest of this book.
+
+### Other notable mentions
+
+There are some other free Linux learning resources worth mentioning. Some of
+these are other projects I'm involved with.
+
+4. [Linux Upskill Challenge][6] I've contributed to this project as an editor
+5. The [Linux Administration Course][7] written by Scott Champine (het_tanis)
+  and maintained by the [ProLUG][8] community (I'm a _ProLUG Engineer_, come say
+  "Hi" in the [Discord][9]!)
+6. [Linux Commands for Beginners][10] YouTube Playlist by [LearnLinuxTV][11]
+
+[6]: https://linuxupskillchallenge.org/
+[7]: https://professionallinuxusersgroup.github.io/lac/syllabus.html 
+[8]: https://prolug.org/ 
+[9]: https://discord.com/invite/m6VPPD9usw
+[10]: https://youtube.com/playlist?list=PLT98CRl2KxKHaKA9-4_I38sLzK134p4GJ&si=fhFuZX3oHMk0puAO
+[11]: https://www.youtube.com/@LearnLinuxTV

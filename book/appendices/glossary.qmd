@@ -11,3 +11,10 @@ exam. The focus of this book.
 **Red Hat Certified Engineer.** Red Hat's next certification beyond the RHCSA,
 focused on automation with Ansible. Earned by passing the EX294 exam; requires
 an active RHCSA as a prerequisite.
+
+## RHLS
+
+**Red Hat Learning Subscription.** Red Hat's annual training subscription,
+bundling access to official courses, hands-on labs, and exam vouchers. Sold in
+tiers (Single Course, Standard, Premium) at varying prices and lab-hour /
+exam-attempt allowances.
