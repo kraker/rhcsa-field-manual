@@ -56,7 +56,7 @@
     "href": "prereqs/linux-cli.html#learning-the-linux-cli",
     "title": "1  Linux CLI",
     "section": "1.2 Learning the Linux CLI",
-    "text": "1.2 Learning the Linux CLI\nA thorough treatment of Linux CLI fundamentals geared towards the beginner/novice is outside of the scope of this book. This book assumes some familiarity with Linux and basic Linux CLI proficiency. That’s not to say that you couldn’t still work through this book and pass the RHCSA exam, but be forwarned the learning curve is steep. But, I can thoroughly endorse any of the following resources to help you get up to speed:\n\nLearning the Shell from LinuxCommand.org and The Linux Command Line by William Shotts\n\n\n\n\n\n\n\nTip\n\n\n\nThis is my #1 go-to recommendation for beginners that want to learn Linux and the Linux CLI. This is where I first learned Linux and the Linux CLI many years ago.\n\n\n\nCommand Line Crash Course from Learn Python the Hard Way by Zed Shaw\nMIT Missing Semester Series: Introduction to the Shell & Command-line Environment\n\nOther notable mentions:\n\nLinux Upskill Challenge\nThis is a shameless plug, as I’m involved with this project.\nLinux Commands for Beginners YouTube Playlist by (LearnLinuxTV?)\n\nBecoming proficient in the Linux CLI is a pre-requisite to learning RHEL and preparing for the RHCSA exam. If this is you, definitely check out the resources above. It’s probably only a few days or weeks of effort to get up to speed on the basics. Then come back and work through the rest of this book.",
+    "text": "1.2 Learning the Linux CLI\nA thorough treatment of Linux CLI fundamentals geared towards the beginner/novice is outside of the scope of this book. This book assumes some familiarity with Linux and basic Linux CLI proficiency. That’s not to say that you couldn’t still work through this book and pass the RHCSA exam, but be forwarned the learning curve is steep. But, I can thoroughly endorse any of the following resources to help you get up to speed:\n\nLearning the Shell from LinuxCommand.org and The Linux Command Line by William Shotts\n\n\n\n\n\n\n\nTip\n\n\n\nThis is my #1 go-to recommendation for beginners that want to learn Linux and the Linux CLI. This is where I first learned Linux and the Linux CLI many years ago.\n\n\n\nCommand Line Crash Course from Learn Python the Hard Way by Zed Shaw\nMIT Missing Semester Series: Introduction to the Shell & Command-line Environment\n\nBecoming proficient in the Linux CLI is a pre-requisite to learning RHEL and preparing for the RHCSA exam. If this is you, definitely check out the resources above. It’s probably only a few days or weeks of effort to get up to speed on the basics. Then come back and work through the rest of this book.\n\n1.2.1 Other notable mentions\nThere are some other free Linux learning resources worth mentioning. Some of these are other projects I’m involved with.\n\nLinux Upskill Challenge I’ve contributed to this project as an editor\nThe Linux Administration Course written by Scott Champine (het_tanis) and maintained by the ProLUG community (I’m a ProLUG Engineer, come say “Hi” in the Discord!)\nLinux Commands for Beginners YouTube Playlist by LearnLinuxTV",
     "crumbs": [
       "Prerequisites",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Linux CLI</span>"
@@ -71,6 +71,61 @@
     "crumbs": [
       "Prerequisites",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Red Hat Developer Account</span>"
+    ]
+  },
+  {
+    "objectID": "prereqs/rhcsa-exam.html",
+    "href": "prereqs/rhcsa-exam.html",
+    "title": "3  RHCSA Exam",
+    "section": "",
+    "text": "3.1 Exam prep costs\nAt this point it’s probably a good idea to navigate to the RHCSA (EX200) exam page and familiarize yourself with the exam. Click on the Overview, Objectives, and What you need to know tabs and read through the information there. Bookmark this page in your browser so that you can refer back to it later.\nThis book will make a best effort to cover the exam objectives (and then some) and if you’ve gained proficiency in the topics covered here then this should be more than adequate preparation to pass the exam. That being said, this book makes no guarrantees.\nNote that as a rule Red Hat doesn’t endorse any preperatory materials or guides other than it’s own. What I can say is that myself and plenty of other people have used primarily 3rd party books, courses, and other study resources outside of the official Red Hat courses and have been able to pass the RHCSA exam.\nHere’s a break-down of estimated costs associated with exam prep for the RHCSA through Red Hat’s official courses and materials.",
+    "crumbs": [
+      "Prerequisites",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>RHCSA Exam</span>"
+    ]
+  },
+  {
+    "objectID": "prereqs/rhcsa-exam.html#exam-prep-costs",
+    "href": "prereqs/rhcsa-exam.html#exam-prep-costs",
+    "title": "3  RHCSA Exam",
+    "section": "",
+    "text": "Estimated Costs\n\n\n\n\n\n\n\n\nItem\nCode\nEstimated Cost (USD)\nNotes\n\n\n\n\nRHCSA Exam Voucher\nEX200\n$500 (as of this writing)\n12-month voucher validity. No free retake — failure means purchasing a new voucher.\n\n\nRed Hat System Administration I\nRH124\n~$3,500–$5,000\nInstructor-led, ~5 days. Foundational course.\n\n\nRed Hat System Administration II\nRH134\n~$3,500–$5,000\nInstructor-led, ~5 days. Builds on RH124.\n\n\nRHCSA Rapid Track\nRH199\n~$3,500–$5,000\nCombines RH124 + RH134 at accelerated pace; assumes prior Linux experience.\n\n\nRHLS — Single Course\n—\n~$1,500–$2,500 / yr\nOne course of choice, ~100 lab hours, 1 exam + 1 retake included.\n\n\nRHLS — Standard\n—\n~$5,500–$7,500 / yr\nFull course catalog, 400 lab hours, 5 exam attempts + 2 retakes, self-paced only.\n\n\nRHLS — Premium\n—\n~$7,000–$8,000 / yr\nEverything in Standard, plus live instructor-led virtual classes.\n\n\n\n\n\n3.1.1 Three realistic paths to RHCSA\n\nVoucher only — $500 (as of this writing). Self-study with books, exam objectives, and a home lab.\nRHLS Self-study course + lab + exam voucher — ~$2,000–$2,500 total. Adds one official Red Hat course, lab access, and an included exam voucher with retake.\nFull instructor-led path — ~$4,000–$5,500 total (RH199 + EX200), or ~$7,500–$10,500 if taking RH124 and RH134 separately.\n\nFor most people it only really makes sense to pay for the official Red Hat courses or a Red Hat Learning Subscription (RHLS) if it’s being reimbursed by their employer. Fortunately the RHCSA exam is common enough that there are plenty of other resources available to help prepare for the exam, such as this book. If your employer reimburses or you have access to a Red Hat Learning Subscription through a Red Hat Partner then the official Red Hat courses are a solid prep resource. Access to Red Hat’s labs can save time setting up your own. Although, I would argue that setting up your own lab environment is a helpful skill to have for future learning and experimentation. We’ll cover setting up and automating a reproducible lab environment in [chapter ?].",
+    "crumbs": [
+      "Prerequisites",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>RHCSA Exam</span>"
+    ]
+  },
+  {
+    "objectID": "prereqs/rhcsa-exam.html#rhcsa-exam-objectives",
+    "href": "prereqs/rhcsa-exam.html#rhcsa-exam-objectives",
+    "title": "3  RHCSA Exam",
+    "section": "3.2 RHCSA Exam Objectives",
+    "text": "3.2 RHCSA Exam Objectives\n\nRefer to the Objectives tab on the RHCSA EX200 page.",
+    "crumbs": [
+      "Prerequisites",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>RHCSA Exam</span>"
+    ]
+  },
+  {
+    "objectID": "prereqs/rhcsa-exam.html#rhcsa-exam-registration",
+    "href": "prereqs/rhcsa-exam.html#rhcsa-exam-registration",
+    "title": "3  RHCSA Exam",
+    "section": "3.3 RHCSA Exam Registration",
+    "text": "3.3 RHCSA Exam Registration\nIf you already know that you will sit the RHCSA exam then it might make sense for you to purchase an exam voucher right now. Exam voucher’s are good for a year from the purchase date. Putting money towards a voucher, especially if it’s coming out of your own pocket (or if your employer only reimburses successful completion, some are like this), can solidify your commitment to studying for and ultimately taking the RHCSA exam. This plays on our human psychology which has a propensity towards loss aversion. Perhaps peradoxically this is stronger than our attraction to acquisitions. We can use this to propel us towards the RHCSA goal. As a rule of thumb, I recommend purchasing a voucher if you think you’re likely to sit the exam in the next 6 months.\n\n\n\n\n\n\nTip\n\n\n\nIf you’re paying out of pocket ask around if anybody you know who’s certified has a referral code. Red Hat usually will email a referral code good for 15% off after successful completion of any of their certification exams (3 uses). Sometimes people will share their code in the /r/RedHat subreddit, so it can be worth posting or checking there. (Or you can email me and if I have one I’ll share it.)\n\n\n\n\n\nReferral Code\n\n\n\n3.3.1 How to purchase a voucher\nThe simplest way to purchase an exam voucher is from the RHCSA exam page. Click the Get started button in the side-bar on the right (it may be in a different location depending on how your browser renders the page).\n\n\n\nRHCSA exam - get started\n\n\n\nThis should bring you to the training catalog page with the EX200 exam showing.\n\n\n\nTraining Catalog - EX200K\n\n\nClick Add To Cart. This should bring up your shopping cart. If you’re not logged in, you’ll be prompted to Login or Register.\n\n\n\nShopping Cart\n\n\nClick the Login or Register button and login again. Then, click through the prompts and add your company, billing address, and payment information. Agree to terms and Place Order.\n\n\n\nShopping Cart - Place Order\n\n\nYou should receive an email confirmation of your purchase. You may need to wait until your purchase is processed to register for the exam.",
+    "crumbs": [
+      "Prerequisites",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>RHCSA Exam</span>"
+    ]
+  },
+  {
+    "objectID": "prereqs/rhcsa-exam.html#scheduling-the-rhcsa-exam",
+    "href": "prereqs/rhcsa-exam.html#scheduling-the-rhcsa-exam",
+    "title": "3  RHCSA Exam",
+    "section": "3.4 Scheduling the RHCSA exam",
+    "text": "3.4 Scheduling the RHCSA exam",
+    "crumbs": [
+      "Prerequisites",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>RHCSA Exam</span>"
     ]
   },
   {
@@ -299,6 +354,17 @@
     "title": "Appendix B — Glossary & Acronyms",
     "section": "B.2 RHCE",
     "text": "B.2 RHCE\nRed Hat Certified Engineer. Red Hat’s next certification beyond the RHCSA, focused on automation with Ansible. Earned by passing the EX294 exam; requires an active RHCSA as a prerequisite.",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Glossary & Acronyms</span>"
+    ]
+  },
+  {
+    "objectID": "appendices/glossary.html#rhls",
+    "href": "appendices/glossary.html#rhls",
+    "title": "Appendix B — Glossary & Acronyms",
+    "section": "B.3 RHLS",
+    "text": "B.3 RHLS\nRed Hat Learning Subscription. Red Hat’s annual training subscription, bundling access to official courses, hands-on labs, and exam vouchers. Sold in tiers (Single Course, Standard, Premium) at varying prices and lab-hour / exam-attempt allowances.",
     "crumbs": [
       "Appendices",
       "<span class='chapter-number'>B</span>  <span class='chapter-title'>Glossary & Acronyms</span>"

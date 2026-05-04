@@ -389,8 +389,23 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#exam-prep-costs" id="toc-exam-prep-costs" class="nav-link active" data-scroll-target="#exam-prep-costs"><span class="header-section-number">3.1</span> Exam prep costs</a>
+  <ul class="collapse">
+  <li><a href="#three-realistic-paths-to-rhcsa" id="toc-three-realistic-paths-to-rhcsa" class="nav-link" data-scroll-target="#three-realistic-paths-to-rhcsa"><span class="header-section-number">3.1.1</span> Three realistic paths to RHCSA</a></li>
+  </ul></li>
+  <li><a href="#rhcsa-exam-objectives" id="toc-rhcsa-exam-objectives" class="nav-link" data-scroll-target="#rhcsa-exam-objectives"><span class="header-section-number">3.2</span> RHCSA Exam Objectives</a></li>
+  <li><a href="#rhcsa-exam-registration" id="toc-rhcsa-exam-registration" class="nav-link" data-scroll-target="#rhcsa-exam-registration"><span class="header-section-number">3.3</span> RHCSA Exam Registration</a>
+  <ul class="collapse">
+  <li><a href="#how-to-purchase-a-voucher" id="toc-how-to-purchase-a-voucher" class="nav-link" data-scroll-target="#how-to-purchase-a-voucher"><span class="header-section-number">3.3.1</span> How to purchase a voucher</a></li>
+  </ul></li>
+  <li><a href="#scheduling-the-rhcsa-exam" id="toc-scheduling-the-rhcsa-exam" class="nav-link" data-scroll-target="#scheduling-the-rhcsa-exam"><span class="header-section-number">3.4</span> Scheduling the RHCSA exam</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/kraker/rhcsa-field-manual/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/kraker/rhcsa-field-manual/blob/main/book/prereqs/rhcsa-exam.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -415,8 +430,168 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>At this point it’s probably a good idea to navigate to the <a href="https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam">RHCSA (EX200) exam</a> page and familiarize yourself with the exam. Click on the <strong>Overview</strong>, <strong>Objectives</strong>, and <strong>What you need to know</strong> tabs and read through the information there. Bookmark this page in your browser so that you can refer back to it later.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/prereqs/rhcsa-ex200-overview.png" class="img-fluid figure-img"></p>
+<figcaption>RHCSA exam (EX200) - Overview</figcaption>
+</figure>
+</div>
+<div class="callout-info">
+<p>Red Hat updates the exam objectives and other information on a regular basis so this page is the best <em>source of truth</em> in terms of what is covered in the exam.</p>
+</div>
+<p>This book will make a <em>best effort</em> to cover the exam objectives (and then some) and if you’ve gained proficiency in the topics covered here then this should be more than adequate preparation to pass the exam. That being said, this book makes no guarrantees.</p>
+<p>Note that as a rule Red Hat doesn’t endorse any preperatory materials or guides other than it’s own. What I can say is that myself and plenty of other people have used primarily 3rd party books, courses, and other study resources outside of the official Red Hat courses and have been able to pass the RHCSA exam.</p>
+<section id="exam-prep-costs" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="exam-prep-costs"><span class="header-section-number">3.1</span> Exam prep costs</h2>
+<p>Here’s a break-down of estimated costs associated with exam prep for the RHCSA through Red Hat’s official courses and materials.</p>
+<table class="caption-top table">
+<caption>Estimated Costs</caption>
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Code</th>
+<th>Estimated Cost (USD)</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>RHCSA Exam Voucher</td>
+<td>EX200</td>
+<td>$500 (as of this writing)</td>
+<td>12-month voucher validity. No free retake — failure means purchasing a new voucher.</td>
+</tr>
+<tr class="even">
+<td>Red Hat System Administration I</td>
+<td>RH124</td>
+<td>~$3,500–$5,000</td>
+<td>Instructor-led, ~5 days. Foundational course.</td>
+</tr>
+<tr class="odd">
+<td>Red Hat System Administration II</td>
+<td>RH134</td>
+<td>~$3,500–$5,000</td>
+<td>Instructor-led, ~5 days. Builds on RH124.</td>
+</tr>
+<tr class="even">
+<td>RHCSA Rapid Track</td>
+<td>RH199</td>
+<td>~$3,500–$5,000</td>
+<td>Combines RH124 + RH134 at accelerated pace; assumes prior Linux experience.</td>
+</tr>
+<tr class="odd">
+<td>RHLS — Single Course</td>
+<td>—</td>
+<td>~$1,500–$2,500 / yr</td>
+<td>One course of choice, ~100 lab hours, 1 exam + 1 retake included.</td>
+</tr>
+<tr class="even">
+<td>RHLS — Standard</td>
+<td>—</td>
+<td>~$5,500–$7,500 / yr</td>
+<td>Full course catalog, 400 lab hours, 5 exam attempts + 2 retakes, self-paced only.</td>
+</tr>
+<tr class="odd">
+<td>RHLS — Premium</td>
+<td>—</td>
+<td>~$7,000–$8,000 / yr</td>
+<td>Everything in Standard, plus live instructor-led virtual classes.</td>
+</tr>
+</tbody>
+</table>
+<!-- TODO: Verify accuracy of costs aggregated by Claude. -->
+<section id="three-realistic-paths-to-rhcsa" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="three-realistic-paths-to-rhcsa"><span class="header-section-number">3.1.1</span> Three realistic paths to RHCSA</h3>
+<ol type="1">
+<li><strong>Voucher only</strong> — $500 (as of this writing). Self-study with books, exam objectives, and a home lab.</li>
+<li><strong>RHLS Self-study course + lab + exam voucher</strong> — ~$2,000–$2,500 total. Adds one official Red Hat course, lab access, and an included exam voucher with retake.</li>
+<li><strong>Full instructor-led path</strong> — ~$4,000–$5,500 total (RH199 + EX200), or ~$7,500–$10,500 if taking RH124 and RH134 separately.</li>
+</ol>
+<p>For most people it only really makes sense to pay for the official Red Hat courses or a Red Hat Learning Subscription (<a href="../appendices/glossary.html#rhls">RHLS</a>) if it’s being reimbursed by their employer. Fortunately the RHCSA exam is common enough that there are plenty of other resources available to help prepare for the exam, such as this book. If your employer reimburses or you have access to a Red Hat Learning Subscription through a Red Hat Partner then the official Red Hat courses are a solid prep resource. Access to Red Hat’s labs can save time setting up your own. Although, I would argue that setting up your own lab environment is a helpful skill to have for future learning and experimentation. We’ll cover setting up and automating a reproducible lab environment in [chapter ?].</p>
+</section>
+</section>
+<section id="rhcsa-exam-objectives" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="rhcsa-exam-objectives"><span class="header-section-number">3.2</span> RHCSA Exam Objectives</h2>
+<!-- Does it make sense to reproduce the exam objectives in the book if
+learners can get them from the official page? They change frequently enough that
+this would likely be out of date and shouldn't be trusted as a source of truth
+anyways... -->
+<p>Refer to the <strong>Objectives</strong> tab on the <a href="https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam">RHCSA EX200</a> page.</p>
+</section>
+<section id="rhcsa-exam-registration" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="rhcsa-exam-registration"><span class="header-section-number">3.3</span> RHCSA Exam Registration</h2>
+<p>If you already know that you will sit the RHCSA exam then it might make sense for you to purchase an exam voucher right now. Exam voucher’s are good for a year from the purchase date. Putting money towards a voucher, especially if it’s coming out of your own pocket (or if your employer only reimburses successful completion, some are like this), can solidify your commitment to studying for and ultimately taking the RHCSA exam. This plays on our human psychology which has a propensity towards <a href="cite?">loss aversion</a>. Perhaps peradoxically this is stronger than our attraction to acquisitions. We can use this to propel us towards the RHCSA goal. As a rule of thumb, I recommend purchasing a voucher if you think you’re likely to sit the exam in the next 6 months.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you’re paying out of pocket ask around if anybody you know who’s certified has a referral code. Red Hat usually will email a referral code good for 15% off after successful completion of any of their certification exams (3 uses). Sometimes people will share their code in the <a href="https://www.reddit.com/r/redhat/">/r/RedHat</a> subreddit, so it can be worth posting or checking there. (Or you can <a href="mailto:alex@alexkraker">email me</a> and if I have one I’ll share it.)</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/prereqs/referral-code.png" class="img-fluid figure-img"></p>
+<figcaption>Referral Code</figcaption>
+</figure>
+</div>
+<section id="how-to-purchase-a-voucher" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="how-to-purchase-a-voucher"><span class="header-section-number">3.3.1</span> How to purchase a voucher</h3>
+<p>The simplest way to purchase an exam voucher is from the <a href="https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam">RHCSA exam</a> page. Click the <strong>Get started</strong> button in the side-bar on the right (it may be in a different location depending on how your browser renders the page).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/prereqs/rhcsa-ex200-get-started.png" class="img-fluid figure-img"></p>
+<figcaption>RHCSA exam - get started</figcaption>
+</figure>
+</div>
+<!--
+::: {.callout-warning}
+Make sure that you're [logged in](https://sso.redhat.com) first otherwise your
+exam voucher purchase may not be associated with your account. And it's a bit
+of a hassle to fix this later.
+:::
+-->
+<p>This should bring you to the training catalog page with the EX200 exam showing.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/prereqs/training-catalog-ex200k.png" class="img-fluid figure-img"></p>
+<figcaption>Training Catalog - EX200K</figcaption>
+</figure>
+</div>
+<p>Click <strong>Add To Cart</strong>. This should bring up your shopping cart. If you’re not logged in, you’ll be prompted to <strong>Login or Register</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/prereqs/training-catalog-shopping-cart.png" class="img-fluid figure-img"></p>
+<figcaption>Shopping Cart</figcaption>
+</figure>
+</div>
+<p>Click the <strong>Login or Register</strong> button and login again. Then, click through the prompts and add your company, billing address, and payment information. Agree to terms and <strong>Place Order</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/prereqs/shopping-cart-place-order.png" class="img-fluid figure-img"></p>
+<figcaption>Shopping Cart - Place Order</figcaption>
+</figure>
+</div>
+<p>You should receive an email confirmation of your purchase. You may need to wait until your purchase is processed to register for the exam.</p>
+</section>
+</section>
+<section id="scheduling-the-rhcsa-exam" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="scheduling-the-rhcsa-exam"><span class="header-section-number">3.4</span> Scheduling the RHCSA exam</h2>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -849,4 +1024,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/kraker/rhcsa-field-manual/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/kraker/rhcsa-field-manual/blob/main/book/prereqs/rhcsa-exam.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/kraker/rhcsa-field-manual/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/kraker/rhcsa-field-manual/blob/main/book/prereqs/rhcsa-exam.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>
