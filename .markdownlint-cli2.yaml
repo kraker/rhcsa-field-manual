@@ -1,0 +1,6 @@
+---
+ignores:
+  - book/_chapters-old/**
+  - book/_prereqs-old/**
+  - book/outline.qmd
+  - book/title_ideas.qmd

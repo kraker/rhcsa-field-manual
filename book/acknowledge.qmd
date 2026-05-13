@@ -3,3 +3,13 @@
 Firstly, I have to thank an old college buddy of mine who introduced me to Linux
 many years ago and set me down this path of developing a passion for Linux and
 open-source. Ben, if you're reading this, cheers.
+
+I'd also like to thank the following authors who's self-published free online
+textbooks both helped me acquire the skills that got me to where I am today, and
+also served as inspiration for self-publishing a forever freely available online
+manuscript.
+
+* The Linux Command Line by William Schotts
+* Think Python and Think Stats by Allen Downy
+* Automate the Boring Stuff with Python by Al Sweigart
+* Ansible for DevOps by Jeff Geerling

@@ -1,0 +1,82 @@
+# Windows Workstation Notes
+
+Under some circumstances you may be tied to Windows Desktop for a workstation.
+For example if you must use this OS on work-issued hardware such as a laptop.
+This is less than ideal, but a lot of enterprise companies default to Windows
+(or sometimes MacOS) as the only supported OS and will issue you hardware with
+it pre-installed, security hardened, and you won't be allowed administrator
+privileges.
+
+In these circumstances I still recommend acquiring some affordable hardware that
+is Linux-compatible for a Linux-based Workstation. A lot of PC desktop and
+laptop hardware is Linux-compatible. You should be able to look up if any
+hardware that you find will run Linux. Buying second-hand used hardware that's a
+few years old is often a great way to acquire hardware to run Linux on a budget.
+Ebay can be great for this and you can probably find a laptop or PC that's a few
+years old for a few hundred bucks (dollars US) at most. ThinkPad laptops are
+famously rather rugged and Linux-compatible even over a decade-old in some cases
+(I've been upgrading my personal machine to used or refurbished ThinkPad's every
+few years). Linux is lightweight enough that it will run on almost anything.
+
+:::{.callout-note}
+This has the added benefit of being something you can repurpose as hardware for
+your homelab. Any laptop or pc can easily find a second or third life as a
+headless server or hypervisor for running Virtual Machines. Repurposing old
+hardware has the added benefit of reducing e-waste that would otherwise end up
+in a landfill.
+:::
+
+## Windows Subsystem for Linux (WSL)
+
+As a last resort, I recommend installing [Windows Subsystem for Linux
+(WSL)][wsl-install] which will provide access to a Linux OS + CLI which for many
+things is all you need. I've used this as a Linux-based local development
+environment when I was forced to run Windows for some work machines. Since
+installing WSL requires admin privileges, this is probably a help desk ticket if
+you don't have admin on your system.
+
+Installing the Vagrant CLI on a WSL system should be the same as on a baremetal
+Linux system. But using it to manage VirtualBox requires some additional
+configuration that's unfortunately outside of the scope of this guide and can
+pose it's own challenges. Smhk's guide on [How to set up Ansible and Vagrant in
+WSL][vagrant-wsl-guide] may help overcome some of the pitfalls you're likely to
+encounter with this type of setup.
+
+[wsl-install]: https://learn.microsoft.com/en-us/windows/wsl/install
+[vagrant-wsl-guide]: https://smhk.net/note/2023/12/ansible-and-vagrant-in-wsl/
+
+<!--
+## VirtualBox on Windows
+
+TODO: Cover installing VirtualBox directly on Windows, when that is preferable
+to WSL, and how this changes the Vagrant workflow.
+-->
+
+<!--
+## Windows Terminal
+
+TODO: Cover Windows Terminal as the preferred terminal application for Windows
+users working with shells, WSL distributions, and SSH sessions.
+-->
+
+<!--
+## Git Bash
+
+TODO: Cover when Git Bash is sufficient for lightweight command-line workflows
+and where it falls short compared to a real Linux environment.
+-->
+
+<!--
+## Remote SSH
+
+TODO: Cover using VS Code Remote SSH, OpenSSH, or another SSH client to work
+from Windows against a separate Linux machine or VM.
+-->
+
+<!--
+## Separate Linux Machine
+
+TODO: Cover using a dedicated Linux laptop, desktop, small form-factor PC, or
+repurposed homelab host as the main RHCSA practice environment while keeping
+Windows as the daily workstation.
+-->

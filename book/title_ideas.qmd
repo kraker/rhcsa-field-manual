@@ -2,7 +2,7 @@
 
 * Learn RHEL the Hard Way\
   Zed Shaw basically owns this space and might be too similar to his title
-  "Learn Unix the Hard Way", although there are other entrants: 
+  "Learn Unix the Hard Way", although there are other entrants:
   "Learn Vimscript the Hard Way" and "Learn Kubernetes the Hard Way".
 * The RHCSA Field Manual: A hands-on guide to Red Hat Enterprise Linux 10 and the EX200 exam
 * RHCSA Certification Study Guide
@@ -19,7 +19,7 @@
   Enterprise Linux 10 and the EX200 exam
 * Teach Yourself Red Hat System Administration: Hands-on RHEL 10 prep for the RHCSA EX200 exam
 * Teach Yourself Enterprise Linux
-* Red Hat System Administration 
+* Red Hat System Administration
 * Unofficial RHCSA Study Guide
 * Terminal Mastery: The RHCSA 10 Study Companion
 * RHCSA 10 Survival Guide

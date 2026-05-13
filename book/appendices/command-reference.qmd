@@ -33,7 +33,7 @@ whoami                         # Current username
 
 # Hardware information
 lscpu                          # CPU information
-lsmem                          # Memory information  
+lsmem                          # Memory information
 lsblk                          # Block device information
 lspci                          # PCI device information
 lsusb                          # USB device information
@@ -225,7 +225,7 @@ getfacl file                # Show ACL permissions
 
 # Change permissions (symbolic)
 chmod u+x file              # Add execute for user
-chmod g-w file              # Remove write for group  
+chmod g-w file              # Remove write for group
 chmod o=r file              # Set other to read only
 chmod a+r file              # Add read for all
 chmod +x file               # Add execute for all
@@ -391,7 +391,7 @@ pgrep processname           # Find process IDs by name
 pgrep -u username           # Find processes by user
 pidof processname           # Find PID of running process
 
-# Kill processes  
+# Kill processes
 kill PID                    # Terminate process by PID
 kill -9 PID                 # Force kill process
 kill -15 PID                # Graceful termination (default)
@@ -627,10 +627,10 @@ dnf install -y nfs-utils       # Install NFS server utilities
 /home server1(rw) server2(ro)  # Different permissions per host
 
 # Export management commands
-exportfs -avr                  # Export all shares with verbose output
-exportfs -v                    # Show current exports
-exportfs -u /export/share      # Unexport specific share
-exportfs -ra                   # Re-export all shares
+exports -avr                  # Export all shares with verbose output
+exports -v                    # Show current exports
+exports -u /export/share      # Unexport specific share
+exports -ra                   # Re-export all shares
 
 # NFS service management
 systemctl enable --now nfs-server  # Start and enable NFS server
@@ -659,7 +659,7 @@ dnf install -y autofs          # Install AutoFS package
 shared -rw server.example.com:/export/shared
 data -ro,intr server:/export/data
 
-# Direct map configuration  
+# Direct map configuration
 # Format: mount-point [options] server:/path
 /mnt/shared-data -rw server:/export/data
 /opt/software -ro server:/export/software
@@ -708,8 +708,8 @@ rpcinfo -p server            # Check RPC services on server
 mount -v -t nfs server:/share /mnt  # Verbose mount output
 ping server && telnet server 2049  # Test basic and NFS connectivity
 
-# NFS server troubleshooting  
-exportfs -v                   # Show current exports
+# NFS server troubleshooting
+exports -v                   # Show current exports
 rpcinfo -p localhost          # Check local RPC services
 systemctl status nfs-server rpcbind  # Check service status
 showmount -e localhost        # Test local NFS exports
@@ -1156,4 +1156,4 @@ rsync -av --delete source/ dest/  # Sync and delete extras
 rsync -av user@host:/path/ local/  # Sync from remote
 ```
 
-This comprehensive command reference covers all major [RHCSA](glossary.qmd#rhcsa) topics with practical command examples organized by functional area for efficient study and quick reference during exam preparation.
+This comprehensive command reference covers all major [RHCSA](glossary.qmd) topics with practical command examples organized by functional area for efficient study and quick reference during exam preparation.

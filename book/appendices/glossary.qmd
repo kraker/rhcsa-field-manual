@@ -1,20 +1,177 @@
 # Glossary & Acronyms
 
-## RHCSA
+ARM
 
-**Red Hat Certified System Administrator.** Red Hat's entry-level system
-administration certification, earned by passing the EX200 performance-based
-exam. The focus of this book.
+:   **Advanced RISC Machine.** A CPU architecture used by many mobile devices,
+    single-board computers, and newer Macs. Compatibility can differ from x86_64
+    when building RHCSA lab environments.
 
-## RHCE
+CLI
 
-**Red Hat Certified Engineer.** Red Hat's next certification beyond the RHCSA,
-focused on automation with Ansible. Earned by passing the EX294 exam; requires
-an active RHCSA as a prerequisite.
+:   **Command-line interface.** A text-based interface for running commands,
+    managing files, and administering Linux systems.
 
-## RHLS
+Downstream
 
-**Red Hat Learning Subscription.** Red Hat's annual training subscription,
-bundling access to official courses, hands-on labs, and exam vouchers. Sold in
-tiers (Single Course, Standard, Premium) at varying prices and lab-hour /
-exam-attempt allowances.
+:   A project or distribution that receives, integrates, and stabilizes software
+    from an upstream source.
+
+Exam Attempt
+
+:   One use of exam eligibility to sit for a certification exam.
+
+Exam Voucher
+
+:   A purchased authorization to schedule and take a certification exam within
+    its validity period.
+
+EX200
+
+:   The exam code for the Red Hat Certified System Administrator exam.
+
+Fedora
+
+:   A community Linux distribution sponsored by Red Hat and upstream of Red Hat
+    Enterprise Linux.
+
+Hypervisor
+
+:   Software that creates, runs, and manages virtual machines.
+
+KVM
+
+:   **Kernel-based Virtual Machine.** The Linux kernel virtualization technology
+    used to run hardware-assisted virtual machines.
+
+Lab Environment
+
+:   A controlled practice environment used to safely learn, test, and repeat
+    system administration tasks.
+
+libvirt
+
+:   A virtualization management API and toolkit commonly used on Linux to manage
+    KVM/QEMU virtual machines.
+
+Linux Distribution
+
+:   A complete Linux operating system assembled from the Linux kernel, userland
+    tools, package repositories, and distribution-specific defaults. Often
+    shortened to "distro."
+
+QEMU
+
+:   A machine emulator and virtualizer often used with KVM to run virtual
+    machines.
+
+Red Hat Developer Account
+
+:   A Red Hat account used to access developer resources, subscriptions,
+    downloads, and certification services.
+
+Retake
+
+:   A subsequent exam attempt after a failed or missed attempt, if included with
+    the exam product or purchased separately.
+
+RHCE
+
+:   **Red Hat Certified Engineer.** Red Hat's next certification beyond the
+    RHCSA, focused on automation with Ansible. Earned by passing the EX294 exam;
+    requires an active RHCSA as a prerequisite.
+
+RHCSA
+
+:   **Red Hat Certified System Administrator.** Red Hat's entry-level system
+    administration certification, earned by passing the EX200 performance-based
+    exam. The focus of this book.
+
+RHEL
+
+:   **Red Hat Enterprise Linux.** Red Hat's enterprise Linux distribution and the
+    operating system used for the RHCSA exam.
+
+RHLS
+
+:   **Red Hat Learning Subscription.** Red Hat's annual training subscription,
+    bundling access to official courses, hands-on labs, and exam vouchers. Sold
+    in tiers (Single Course, Standard, Premium) at varying prices and lab-hour /
+    exam-attempt allowances.
+
+RHSM
+
+:   **Red Hat Subscription Management.** The tooling and service used to register
+    RHEL systems and attach subscriptions.
+
+Shell
+
+:   The command interpreter that reads and runs commands in a terminal. Bash is
+    the default interactive shell on many Linux systems.
+
+Subscription
+
+:   Red Hat's entitlement mechanism for access to RHEL repositories, updates, and
+    support-backed content.
+
+Terminal
+
+:   A program that provides access to a shell session.
+
+Upstream
+
+:   A project or distribution where software changes originate before flowing
+    into downstream projects.
+
+Vagrant
+
+:   A tool for defining and managing reproducible virtual machine environments
+    from a project configuration.
+
+Vagrant Box
+
+:   A packaged base image used by Vagrant to create virtual machines.
+
+Vagrant Plugin
+
+:   An extension that adds capabilities to Vagrant, such as libvirt support or
+    Red Hat registration.
+
+Vagrant Provider
+
+:   The virtualization backend Vagrant uses to run a VM, such as libvirt or
+    VirtualBox.
+
+Vagrantfile
+
+:   The Ruby-based configuration file Vagrant uses to define virtual machines,
+    providers, networking, and provisioning behavior.
+
+Virtual Machine
+
+:   A software-defined computer running as a guest on a host system. Commonly
+    abbreviated as VM.
+
+VirtualBox
+
+:   Oracle's desktop virtualization platform and one of Vagrant's supported
+    providers.
+
+Virtualization Extensions
+
+:   CPU features such as Intel VT-x or AMD-V that provide hardware support for
+    virtualization.
+
+VM
+
+:   **Virtual machine.** A software-defined computer running as a guest on a host
+    system.
+
+WSL
+
+:   **Windows Subsystem for Linux.** A Windows feature that provides a Linux user
+    space and command-line environment on Windows.
+
+x86_64
+
+:   The 64-bit Intel/AMD CPU architecture commonly used for RHEL systems and
+    RHCSA lab virtual machines.

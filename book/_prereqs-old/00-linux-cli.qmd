@@ -29,7 +29,7 @@ why you're doing it and can justify it, etc.
 
 Our first task is to get ourselves a Bash environment to start practicing
 commands. If you're running Linux then you likely already have a terminal
-running bash. 
+running bash.
 
 
 ```{bash}

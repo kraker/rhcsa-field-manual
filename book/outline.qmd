@@ -38,10 +38,10 @@
 * Fundamentals
   + File-system navigation: `pwd`, `cd`, `ls`
   + Files: `cat`, `file`, `touch`, `rm`, `mkdir`, `rmdir`
-    + read-only: `ls`, `tree`, `file`, `stat`, `cat`, `less`, 
+    + read-only: `ls`, `tree`, `file`, `stat`, `cat`, `less`,
     + write: `cp`, `mv`, `rm`, `mkdir`, `touch`, `ln`
   + Linux File-System Hierarchy Standard FHS
   + wildcards, expansions, command-substitution
   + streams and redirects
   + text-munging
-  + 
+  +

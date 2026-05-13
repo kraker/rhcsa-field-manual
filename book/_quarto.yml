@@ -6,7 +6,7 @@ book:
   title: "The RHCSA Field Manual"
   subtitle: "A hands-on guide to Red Hat Enterprise Linux 10 and the EX200 exam"
   author: "Alex Kraker"
-  date: "4/14/2026"
+  date: "5/12/2026"
   repo-url: https://github.com/kraker/rhcsa-field-manual
   repo-branch: main
   repo-subdir: book
@@ -22,6 +22,7 @@ book:
         - prereqs/linux-cli.qmd
         - prereqs/redhat-account.qmd
         - prereqs/rhcsa-exam.qmd
+        - prereqs/vagrant-lab.qmd
 
     # - part: "Prerequisites"
     #   chapters:
@@ -51,6 +52,7 @@ book:
         - practice/practice-exam-1.qmd
         - practice/practice-exam-2.qmd
   appendices:
+    - appendices/windows-workstation.qmd
     - appendices/command-reference.qmd
     - appendices/glossary.qmd
 
@@ -58,6 +60,8 @@ bibliography: references.bib
 
 format:
   html:
+    toc: true
+    toc-expand: true
     theme:
       light: yeti
       dark: cyborg
