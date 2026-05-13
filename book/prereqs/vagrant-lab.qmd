@@ -276,7 +276,7 @@ sudo usermod -aG libvirt <username>
 Verify that your user is a member of the libvirt group:
 
 ```bash
-~] groups
+~]$ groups
 myuser wheel audio realtime docker libvirt
 ```
 

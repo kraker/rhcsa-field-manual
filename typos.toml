@@ -1,0 +1,33 @@
+[files]
+extend-exclude = [
+  "book/.quarto/**",
+  "book/_book/**",
+  "book/_chapters-old/**",
+  "book/_prereqs-old/**",
+  "renv/**",
+  "renv.lock",
+  "uv.lock",
+]
+
+[default]
+locale = "en-us"
+
+[default.extend-words]
+EX200 = "EX200"
+EX200K = "EX200K"
+chage = "chage"
+libvirt = "libvirt"
+QEMU = "QEMU"
+Quarto = "Quarto"
+RHEL = "RHEL"
+RHCE = "RHCE"
+RHCSA = "RHCSA"
+RHLS = "RHLS"
+RHSM = "RHSM"
+SELinux = "SELinux"
+systemd = "systemd"
+vboxsf = "vboxsf"
+Vagrantfile = "Vagrantfile"
+VirtualBox = "VirtualBox"
+WSL = "WSL"
+x86_64 = "x86_64"
