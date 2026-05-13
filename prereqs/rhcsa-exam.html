@@ -33,7 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../practice/practice-exam-1.html" rel="next">
+<link href="../prereqs/vagrant-lab.html" rel="next">
 <link href="../prereqs/redhat-account.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -336,6 +336,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">RHCSA Exam</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../prereqs/vagrant-lab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">RHEL 10 Lab with Vagrant</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -372,14 +378,20 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../appendices/windows-workstation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Windows Workstation Notes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../appendices/command-reference.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Command Reference</span></span></a>
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Command Reference</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../appendices/glossary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Glossary &amp; Acronyms</span></span></a>
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Glossary &amp; Acronyms</span></span></a>
   </div>
 </li>
       </ul>
@@ -390,7 +402,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
@@ -433,14 +445,14 @@ ul.task-list li input[type="checkbox"] {
 <p>At this point it’s probably a good idea to navigate to the <a href="https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam">RHCSA (EX200) exam</a> page and familiarize yourself with the exam. Click on the <strong>Overview</strong>, <strong>Objectives</strong>, and <strong>What you need to know</strong> tabs and read through the information there. Bookmark this page in your browser so that you can refer back to it later.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/prereqs/rhcsa-ex200-overview.png" class="img-fluid figure-img"></p>
+<p><img src="../images/prereqs/rhcsa-exam/rhcsa-ex200-overview.png" class="img-fluid figure-img"></p>
 <figcaption>RHCSA exam (EX200) - Overview</figcaption>
 </figure>
 </div>
 <div class="callout-info">
 <p>Red Hat updates the exam objectives and other information on a regular basis so this page is the best <em>source of truth</em> in terms of what is covered in the exam.</p>
 </div>
-<p>This book will make a <em>best effort</em> to cover the exam objectives (and then some) and if you’ve gained proficiency in the topics covered here then this should be more than adequate preparation to pass the exam. That being said, this book makes no guarrantees.</p>
+<p>This book will make a <em>best effort</em> to cover the exam objectives (and then some) and if you’ve gained proficiency in the topics covered here then this should be more than adequate preparation to pass the exam. That being said, this book makes no guarantees.</p>
 <p>Note that as a rule Red Hat doesn’t endorse any preperatory materials or guides other than it’s own. What I can say is that myself and plenty of other people have used primarily 3rd party books, courses, and other study resources outside of the official Red Hat courses and have been able to pass the RHCSA exam.</p>
 <section id="exam-prep-costs" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="exam-prep-costs"><span class="header-section-number">3.1</span> Exam prep costs</h2>
@@ -514,7 +526,7 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>RHLS Self-study course + lab + exam voucher</strong> — ~$2,000–$2,500 total. Adds one official Red Hat course, lab access, and an included exam voucher with retake.</li>
 <li><strong>Full instructor-led path</strong> — ~$4,000–$5,500 total (RH199 + EX200), or ~$7,500–$10,500 if taking RH124 and RH134 separately.</li>
 </ol>
-<p>For most people it only really makes sense to pay for the official Red Hat courses or a Red Hat Learning Subscription (<a href="../appendices/glossary.html#rhls">RHLS</a>) if it’s being reimbursed by their employer. Fortunately the RHCSA exam is common enough that there are plenty of other resources available to help prepare for the exam, such as this book. If your employer reimburses or you have access to a Red Hat Learning Subscription through a Red Hat Partner then the official Red Hat courses are a solid prep resource. Access to Red Hat’s labs can save time setting up your own. Although, I would argue that setting up your own lab environment is a helpful skill to have for future learning and experimentation. We’ll cover setting up and automating a reproducible lab environment in [chapter ?].</p>
+<p>For most people it only really makes sense to pay for the official Red Hat courses or a Red Hat Learning Subscription (<a href="../appendices/glossary.html">RHLS</a>) if it’s being reimbursed by their employer. Fortunately the RHCSA exam is common enough that there are plenty of other resources available to help prepare for the exam, such as this book. If your employer reimburses or you have access to a Red Hat Learning Subscription through a Red Hat Partner then the official Red Hat courses are a solid prep resource. Access to Red Hat’s labs can save time setting up your own. Although, I would argue that setting up your own lab environment is a helpful skill to have for future learning and experimentation. We’ll cover setting up and automating a reproducible lab environment in [chapter ?].</p>
 </section>
 </section>
 <section id="rhcsa-exam-objectives" class="level2" data-number="3.2">
@@ -543,7 +555,7 @@ Tip
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/prereqs/referral-code.png" class="img-fluid figure-img"></p>
+<p><img src="../images/prereqs/rhcsa-exam/referral-code.png" class="img-fluid figure-img"></p>
 <figcaption>Referral Code</figcaption>
 </figure>
 </div>
@@ -552,13 +564,13 @@ Tip
 <p>The simplest way to purchase an exam voucher is from the <a href="https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam">RHCSA exam</a> page. Click the <strong>Get started</strong> button in the side-bar on the right (it may be in a different location depending on how your browser renders the page).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/prereqs/rhcsa-ex200-get-started.png" class="img-fluid figure-img"></p>
+<p><img src="../images/prereqs/rhcsa-exam/rhcsa-ex200-get-started.png" class="img-fluid figure-img"></p>
 <figcaption>RHCSA exam - get started</figcaption>
 </figure>
 </div>
 <!--
 ::: {.callout-warning}
-Make sure that you're [logged in](https://sso.redhat.com) first otherwise your
+Make sure that you're [logged in][red-hat-sso] first otherwise your
 exam voucher purchase may not be associated with your account. And it's a bit
 of a hassle to fix this later.
 :::
@@ -566,21 +578,21 @@ of a hassle to fix this later.
 <p>This should bring you to the training catalog page with the EX200 exam showing.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/prereqs/training-catalog-ex200k.png" class="img-fluid figure-img"></p>
+<p><img src="../images/prereqs/rhcsa-exam/training-catalog-ex200k.png" class="img-fluid figure-img"></p>
 <figcaption>Training Catalog - EX200K</figcaption>
 </figure>
 </div>
 <p>Click <strong>Add To Cart</strong>. This should bring up your shopping cart. If you’re not logged in, you’ll be prompted to <strong>Login or Register</strong>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/prereqs/training-catalog-shopping-cart.png" class="img-fluid figure-img"></p>
+<p><img src="../images/prereqs/rhcsa-exam/training-catalog-shopping-cart.png" class="img-fluid figure-img"></p>
 <figcaption>Shopping Cart</figcaption>
 </figure>
 </div>
 <p>Click the <strong>Login or Register</strong> button and login again. Then, click through the prompts and add your company, billing address, and payment information. Agree to terms and <strong>Place Order</strong>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/prereqs/shopping-cart-place-order.png" class="img-fluid figure-img"></p>
+<p><img src="../images/prereqs/rhcsa-exam/shopping-cart-place-order.png" class="img-fluid figure-img"></p>
 <figcaption>Shopping Cart - Place Order</figcaption>
 </figure>
 </div>
@@ -589,6 +601,40 @@ of a hassle to fix this later.
 </section>
 <section id="scheduling-the-rhcsa-exam" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="scheduling-the-rhcsa-exam"><span class="header-section-number">3.4</span> Scheduling the RHCSA exam</h2>
+<p>Exams are scheduled through the <a href="https://rhtapps.redhat.com/individualexamscheduler/#/Dashboard">exam scheduler</a>. You may have also received an email after purchasing your exam voucher with a link to schedule your exam. From the <a href="https://rhtapps.redhat.com/individualexamscheduler/#/Dashboard">exam schedular</a> dashboard click on the card for your exam which should be under <strong>My Exams</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/prereqs/rhcsa-exam/exam-schedular-voucher-card.png" class="img-fluid figure-img"></p>
+<figcaption>Exam Schedular - RHCSA Exam Voucher Card</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ignore the fact that this is for a different exam. I don’t have an RHCSA exam that I need to schedule. The workflow is the same for any exam.</p>
+</div>
+</div>
+<p>You will be prompted to select your <em>Country</em>. Depending on which country you may be required to provide a Photo ID verification. Next you will be prompted to set a date and time. Follow the prompts to finish scheduling your exam.</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Note that the exams are in 24-hour time by default. Be sure that you’re scheduling your exam for the correct time. For example 15:00 for 3:00PM in 12-hour time not 3:00AM! I’ve made this mistake before and used up a retake rescheduling my exam.</p>
+</div>
+</div>
 
 
 </section>
@@ -1014,8 +1060,8 @@ of a hassle to fix this later.
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../practice/practice-exam-1.html" class="pagination-link" aria-label="Practice Exam 1">
-        <span class="nav-page-text">Practice Exam 1</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../prereqs/vagrant-lab.html" class="pagination-link" aria-label="RHEL 10 Lab with Vagrant">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">RHEL 10 Lab with Vagrant</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -336,6 +336,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">RHCSA Exam</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../prereqs/vagrant-lab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">RHEL 10 Lab with Vagrant</span></span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -372,14 +378,20 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../appendices/windows-workstation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Windows Workstation Notes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../appendices/command-reference.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Command Reference</span></span></a>
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Command Reference</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../appendices/glossary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Glossary &amp; Acronyms</span></span></a>
+ <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Glossary &amp; Acronyms</span></span></a>
   </div>
 </li>
       </ul>
@@ -415,18 +427,18 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>You will need a Red Hat account and subscription in order to work through the material in this book. Later on we’ll use your account to register and subscribe RHEL virtual machines in our lab so that we can install packages, etc. If you already have an account you can skip to the [next section].</p>
+<p>You will need a Red Hat account and subscription in order to work through the material in this book. Later on we’ll use your account to register and subscribe RHEL virtual machines in our lab so that we can install packages, etc. If you already have an account you can skip to the <a href="../prereqs/rhcsa-exam.html">next section</a>.</p>
 <p>If you don’t already have a Red Hat account head on over to <a href="https://developers.redhat.com/">developers.redhat.com</a> and register for a <em>Red Hat Developer membership</em>. Click the <strong>Register for an account</strong> button and follow the prompts.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/prereqs/developers.redhat.com.png" class="img-fluid figure-img"></p>
+<p><img src="../images/prereqs/redhat-account/developers.redhat.com.png" class="img-fluid figure-img"></p>
 <figcaption>developers.redhat.com</figcaption>
 </figure>
 </div>
 <p>You will probably be using this account to register for your exam so make sure that you pick a username that you plan to use long-term (you won’t be able to change it later). I recommend <em>FirstinitialLastname</em>, <em>FirstnameLastname</em>, or similar professional seeming username. For example, my Red Hat username is <em>akraker</em> since my name is “Alex Kraker”.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/prereqs/register-for-rh-account-1.png" class="img-fluid figure-img"></p>
+<p><img src="../images/prereqs/redhat-account/register-for-rh-account-1.png" class="img-fluid figure-img"></p>
 <figcaption>Register for a Red Hat account - username &amp; password</figcaption>
 </figure>
 </div>
@@ -443,11 +455,11 @@ Note
 <p>There may be some scenarios where you wouldn’t use your own account to register for the exam. For example, if you already have an account through your employer and they’re reimbursing you for the exam voucher fee or you need to join their organization.</p>
 </div>
 </div>
-<p>After you pass the exam Red Hat will issue a <a href="https://rhtapps.redhat.com/verify?certId=250-131-760">certification badge</a> attached to your Certification ID and this is linked to your account. This ID will follow you if you plan to keep going and get more certs, the <a href="../appendices/glossary.html#rhce">RHCE</a> for example.</p>
+<p>After you pass the exam Red Hat will issue a <a href="https://rhtapps.redhat.com/verify?certId=250-131-760">certification badge</a> attached to your Certification ID and this is linked to your account. This ID will follow you if you plan to keep going and get more certs, the <a href="../appendices/glossary.html">RHCE</a> for example.</p>
 <p>Next, fill out your personal information as accurately as possible. Make sure that your <em>First name</em> and <em>Last name</em> match what is on your government issued ID such as a driver’s license or passport.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/prereqs/register-for-rh-account-2.png" class="img-fluid figure-img"></p>
+<p><img src="../images/prereqs/redhat-account/register-for-rh-account-2.png" class="img-fluid figure-img"></p>
 <figcaption>Register for a Red Hat account - personal info</figcaption>
 </figure>
 </div>
@@ -467,7 +479,7 @@ Important
 <p>Once you’re done filling out your information, check boxes to <em>agree to terms</em> and click the <strong>Create my account</strong> button.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/prereqs/register-for-rh-account-3.png" class="img-fluid figure-img"></p>
+<p><img src="../images/prereqs/redhat-account/register-for-rh-account-3.png" class="img-fluid figure-img"></p>
 <figcaption>Register for a Red Hat account - accept terms</figcaption>
 </figure>
 </div>
