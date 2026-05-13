@@ -489,7 +489,7 @@ User vagrant may run the following commands on rhel10:
 ```
 
 :::{.callout-note}
-To support standing reproducible lab environments on RHEL I'm publishing
+To support standing up reproducible lab environments on RHEL I'm publishing
 RHEL boxes to Vagrant Cloud. See the [kraker][kraker-boxes] namespace for a list
 of available boxes.
 
