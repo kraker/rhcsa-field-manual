@@ -1,5 +1,7 @@
 # The RHCSA Field Manual
 
+[![Lint](https://github.com/kraker/rhcsa-field-manual/actions/workflows/lint.yml/badge.svg)](https://github.com/kraker/rhcsa-field-manual/actions/workflows/lint.yml)
+
 A hands-on guide to Red Hat Enterprise Linux 10 and the EX200 exam.
 
 By [Alex Kraker](https://github.com/kraker). Built with [Quarto](https://quarto.org/).
