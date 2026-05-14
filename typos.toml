@@ -3,6 +3,7 @@ extend-exclude = [
   "book/.quarto/**",
   "book/_book/**",
   "book/_chapters-old/**",
+  "book/_freeze/**",
   "book/_prereqs-old/**",
   "renv/**",
   "renv.lock",
@@ -16,6 +17,8 @@ locale = "en-us"
 EX200 = "EX200"
 EX200K = "EX200K"
 chage = "chage"
+Hashi = "Hashi"
+HashiCorp = "HashiCorp"
 libvirt = "libvirt"
 QEMU = "QEMU"
 Quarto = "Quarto"
