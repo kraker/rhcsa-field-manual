@@ -1,6 +1,7 @@
 .claude/
 /book/_book/
 /book/.quarto/
+/book/**/*_cache/
 **/*.quarto_ipynb
 /vagrant/.vagrant/
 /vagrant/.rhel-credentials

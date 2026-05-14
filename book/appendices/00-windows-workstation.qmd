@@ -1,3 +1,13 @@
+---
+doc:
+  status: draft
+  revision: "2026-05-14.1"
+  last-reviewed: 2026-05-14
+  owner: akraker
+  notes:
+    - Windows workstation tradeoff notes.
+---
+
 # Windows Workstation Notes
 
 Under some circumstances you may be tied to Windows Desktop for a workstation.

@@ -15,14 +15,15 @@ book:
     - index.qmd
     - part: "Front Matter"
       chapters:
-        - preface.qmd
-        - acknowledge.qmd
+        - 00-preface.qmd
+        - 01-acknowledge.qmd
     - part: "Prerequisites"
       chapters:
-        - prereqs/linux-cli.qmd
-        - prereqs/redhat-account.qmd
-        - prereqs/rhcsa-exam.qmd
-        - prereqs/vagrant-lab.qmd
+        - prereqs/00-linux-cli.qmd
+        - prereqs/01-redhat-account.qmd
+        - prereqs/02-rhcsa-exam.qmd
+        - prereqs/03-linux-workstation.qmd
+        - prereqs/04-vagrant-lab.qmd
 
     # - part: "Prerequisites"
     #   chapters:
@@ -49,12 +50,12 @@ book:
         # - chapters/17-troubleshooting.qmd
     - part: "Practice Exams"
       chapters:
-        - practice/practice-exam-1.qmd
-        - practice/practice-exam-2.qmd
+        - practice/00-practice-exam-1.qmd
+        - practice/01-practice-exam-2.qmd
   appendices:
-    - appendices/windows-workstation.qmd
-    - appendices/command-reference.qmd
-    - appendices/glossary.qmd
+    - appendices/00-windows-workstation.qmd
+    - appendices/01-command-reference.qmd
+    - appendices/02-glossary.qmd
 
 bibliography: references.bib
 
@@ -63,13 +64,16 @@ format:
     toc: true
     toc-expand: true
     theme:
-      light: yeti
       dark: cyborg
+      light: yeti
   # pdf:
   #   documentclass: scrreprt
 
-engines: ['knitr']
+execute:
+  # re-execute a document only when its source file changes.
+  freeze: auto
 
 knitr:
   opts_knit:
+    # Default to $HOME for executable {bash} code-blocks
     root.dir: "~"

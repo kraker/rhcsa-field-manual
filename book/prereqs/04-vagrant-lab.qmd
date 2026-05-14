@@ -1,0 +1,468 @@
+---
+engine: knitr
+doc:
+  status: review
+  revision: "2026-05-14.2"
+  last-reviewed: 2026-05-14
+  owner: akraker
+  notes:
+    - Workstation guidance moved to separate prerequisite chapter.
+    - Ready for first public revision.
+---
+
+# RHEL 10 Lab with Vagrant
+
+There are a variety of ways to stand up a lab environment to practice for Red
+Hat exams. One of the more effective ways that I've found is to stand up a
+reproducible lab environment with a tool like [Vagrant][vagrant-intro].
+
+[vagrant-intro]: https://developer.hashicorp.com/vagrant/intro
+
+## Why Vagrant?
+
+What Vagrant allows us to do is define one (or a few) virtual machines (VMs)
+with code and use the `vagrant` command-line utility to manage them in a local
+virtual environment. We can spin them up, reprovision, or destroy them as many
+times as we like. This means we don't have to be afraid to break these
+instances; we can treat them as a throwaway sandbox. We also don't have to worry
+about rolling back changes we may have made to the machine to get to a known
+good state. We can just destroy the instance and start over with a fresh _box_.
+This is a very important psychological safety net that allows us the freedom to
+learn without fear of making mistakes. Restoring our lab is minimal effort in
+the form of just a couple of vagrant commands (`vagrant destroy` and `vagrant
+up`).
+
+### Labs as Code
+
+Vagrant has the added benefit of allowing me to ship chapter lab environments
+and practice exams in the form of Vagrantfile definitions and provisioning
+scripts (coming soon!).
+
+<!--
+This is somewhat similar to the fully automated lab
+environments provided by the official Red Hat courses, but you're doing some of
+the leg-work yourself in setting this up. Personally I feel that this is better
+because managing virtual environments with automation tools is a skill that will
+serve you well throughout your career.
+
+This is a pattern that shows up in "DevOps" as a form of "development testing"
+and feeds into concepts like "Continuous Integration/Continuous Deployment" or
+CI/CD... but I digress.
+-->
+
+### Vagrant as an introduction to IaC
+
+This also serves an introduction to patterns you will see in Infrastructure as
+Code (IaC) type tools like Ansible and HashiCorp's Terraform. Servers are
+"cattle not pets" is something you might hear infrastructure engineers say. More
+and more we're seeing the Linux System Administrator skillset morph into an
+"Engineering" skillset that can be scaled to a few or many hundreds or thousands
+of instances running in virtual environments. It makes sense that we should use
+some of the same tools and patterns to manage our local sandbox that we use
+everywhere else.
+
+## Workstation Prerequisites
+
+This chapter assumes you have a Linux workstation that can run local VMs.
+
+:::{.callout-important}
+If you still need to choose or install a desktop Linux system, see the [Linux
+Workstation Learning Platform][linux-workstation] chapter first.
+:::
+
+Ideally your workstation should meet the following requirements:
+
+* CPU contains virtualization extensions (Intel VT or AMD-v) and they're enabled
+  in the BIOS.
+* Minimum of 16GB RAM in order to run Linux plus a few VM's.
+* x86_64 architecture is recommended for running the Vagrant RHEL boxes.
+
+:::{.callout-note}
+ARM architecture may be workable (e.g. M-series macOS hardware), but hasn't
+been tested. If you're working through this book on ARM-based hardware, feel
+free to contribute to the [discussion][arm-discussion] with any issues or
+feedback.
+:::
+
+[linux-workstation]: 03-linux-workstation.qmd
+[arm-discussion]: https://github.com/kraker/rhcsa-field-manual/discussions/2
+
+## Install Vagrant
+
+If you're running Fedora, HashiCorp's docs provide the following one-liner that
+can be pasted into your terminal and run to both install the `hashicorp.repo`
+file and [install Vagrant][install-vagrant].
+
+```bash
+wget -O- https://rpm.releases.hashicorp.com/fedora/hashicorp.repo | sudo tee /etc/yum.repos.d/hashicorp.repo
+sudo yum list available | grep hashicorp
+sudo dnf -y install vagrant
+```
+
+:::{.callout-caution}
+It's a good idea to read and understand any command like this that is copy and
+paste out of docs you find online. Especially if it's downloading something and
+piping it to another command with `|` as this one is doing. We'll cover pipes in
+more detail later.
+:::
+
+If your workstation isn't running Fedora, then follow the documented [Vagrant
+Install][install-vagrant] for your Linux distro.
+
+[install-vagrant]: https://developer.hashicorp.com/vagrant/install
+
+## Enable Virtualization Support
+
+There are multiple virtualization providers that Vagrant supports, but the two
+common ones are [libvirt][libvirt] and [VirtualBox][oracle-virtualbox]
+(default). libvirt requires installing the [vagrant-libvirt][vagrant-libvirt]
+plugin and VirtualBox requires installing Oracle's VirtualBox. My recommendation
+is to use libvirt since most Linux distributions have some kind of out-of-the
+box Virtualization support using libvirt + KVM.
+
+[libvirt]: https://libvirt.org/
+[oracle-virtualbox]: https://www.virtualbox.org/wiki/Downloads
+[vagrant-libvirt]: https://vagrant-libvirt.github.io/vagrant-libvirt/
+
+Choose either: [install libvirt](#option-1-install-libvirt-recommended) or
+[install VirtualBox](#option-2-install-virtualbox).
+
+### [Option 1] Install libvirt (recommended)
+
+[libvirt][libvirt] is a virtualization API that supports
+multiple OS platforms and hypervisors. On most Linux distros this is the
+Linux [KVM][kvm] and [QEMU][qemu] emulator.
+
+First, verify that our CPU has virtualization extensions:
+
+```{bash}
+grep -E '^flags.*(vmx|svm)' /proc/cpuinfo | head -2
+```
+
+If nothing is printed when this command is run, virtualization isn't supported.
+
+To enable virtualization support using `libvirt` we'll use what are known as a
+package _group_ to install a set of libraries, scripts, and utilities that
+provide support for "Virtualization" on the Fedora Desktop OS.
+
+```{bash}
+sudo dnf group info virtualization
+```
+
+:::{.callout-note}
+Note the _mandatory_, _default_, and _optional_ packages that will be installed
+if we install this group.
+:::
+
+Next install the virtualization group.
+
+```bash
+sudo dnf install @virtualization
+```
+
+Then start and enable the libvirtd service daemon:
+
+```bash
+sudo systemctl enable --now libvirtd
+```
+
+Add your user to the `libvirt` group so that your local user is allowed to
+manage VMs without root privileges via `sudo`.
+
+```bash
+sudo usermod -aG libvirt <username>
+```
+
+Verify that your user is a member of the libvirt group:
+
+```{bash}
+groups
+```
+
+[kvm]: https://linux-kvm.org/page/Main_Page
+[qemu]: https://wiki.qemu.org/Index.html
+[fedora-virtualization]: https://docs.fedoraproject.org/en-US/quick-docs/virtualization-getting-started/
+
+#### Further reading
+
+[Fedora: Virtualization - Getting Started (libvirt)][fedora-virtualization]
+
+### [Option 2] Install VirtualBox
+
+Alternatively, you may [install VirtualBox][oracle-virtualbox]. This is the
+default provider that Vagrant supports out of the box (no special plugin needed
+as in `vagrant-libvirt`). If you choose to go this route, then I recommend _not_
+installing libvirt alongside it. This is known to conflict with VirtualBox as
+both hypervisors compete for the CPU's virtualization extensions. Ideally pick
+one or the other as you're preferred hypervisor for standing up your RHCSA lab
+VMs.
+
+If you install VirtualBox on one of the rpm-family distros (i.e. Oracle Linux,
+RHEL, Fedora, or openSUSE) I recommend installing Oracle's published
+`virtualbox.repo` file and installing VirtualBox using the system package
+manager (`yum`, `dnf`, or `zypper`). That way if there are updates available
+they will automatically become available whenever repositories are refreshed as
+in a system update (e.g. `dnf update`)
+
+Install VirtualBox on Fedora:
+
+```bash
+wget -O- https://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo | sudo tee /etc/yum.repos.d/virtualbox.repo
+sudo dnf -y install VirtualBox-7.2
+```
+
+:::{.callout-important}
+Be sure to verify that the version of VirtualBox you install is [supported by
+Vagrant][virtualbox-version].
+:::
+
+[virtualbox-version]: https://developer.hashicorp.com/vagrant/docs/providers/virtualbox
+
+### Install Vagrant Plugins
+
+Install the [vagrant-libvirt][vagrant-libvirt] plugin:
+
+```bash
+vagrant plugin install vagrant-libvirt
+```
+
+And install the [vagrant-registration][vagrant-registration] plugin:
+
+```bash
+vagrant plugin install vagrant-registration
+```
+
+:::{.callout-caution}
+Although you may be able to install the `vagrant-libvirt` and
+`vagrant-registration` plugins using `dnf` (e.g. `dnf install
+vagrant-registration`); this is not recommended due to compatibility issues that
+may arise as a result of dependency and version mismatch between the vagrant
+packages available in repos compared to vagrant's own plugin manager.
+:::
+
+To list vagrant plugins:
+
+```{bash}
+vagrant plugin list
+```
+
+[vagrant-registration]: https://github.com/projectatomic/adb-vagrant-registration
+
+## Stand up a RHEL 10 VM using Vagrant
+
+Next let's stand up a RHEL 10 VM using Vagrant. I recommend creating a directory
+to use for RHCSA lab stuff.
+
+```bash
+mkdir ~/rhcsa-lab && cd ~/rhcsa-lab
+```
+
+Next fetch the pre-baked Vagrantfile for RHEL 10 from the
+[vagrant-rhel-boxes][vagrant-rhel-boxes] project:
+
+```bash
+wget https://raw.githubusercontent.com/kraker/vagrant-rhel-boxes/refs/heads/main/Vagrantfile
+```
+
+Or copy and paste the code below into a new `Vagrantfile`.
+
+Review the contents of `Vagrantfile` (e.g. `cat Vagrantfile`):
+
+```ruby
+Vagrant.configure("2") do |config|
+  config.vm.box = "kraker/rhel-10"
+  config.vm.hostname = "rhel10"
+
+  config.registration.auto_attach = false
+
+  if ENV['RHSM_ORG'] && ENV['RHSM_ACTIVATIONKEY']
+    config.registration.org           = ENV['RHSM_ORG']
+    config.registration.activationkey = ENV['RHSM_ACTIVATIONKEY']
+  elsif ENV['RHSM_USERNAME'] && ENV['RHSM_PASSWORD']
+    config.registration.username = ENV['RHSM_USERNAME']
+    config.registration.password = ENV['RHSM_PASSWORD']
+  end
+
+  cpus = 2
+  memory = 2048
+
+  config.vm.provider :libvirt do |libvirt|
+    libvirt.cpus = cpus
+    libvirt.memory = memory
+    libvirt.video_type = "virtio"
+  end
+
+  config.vm.provider :virtualbox do |vb|
+    vb.cpus = cpus
+    vb.memory = memory
+    vb.gui = false
+  end
+
+  config.vm.synced_folder ".", "/vagrant", disabled: true
+end
+```
+
+Stand-up the `rhel10` VM using your chosen provider:
+
+```bash
+vagrant up --provider=libvirt  # or --provider=virtualbox
+```
+
+The first time you run `vagrant up` the vagrant-registration plugin will
+automatically prompt you if you want to register the system. Go ahead and press
+**Enter** for the default, "yes".
+
+:::{.callout-note}
+You may see `[fog][WARNING] Unrecognized arguments: libvirt_ip_command` when
+using the libvirt provider. This is a known `vagrant-libvirt`/Fog compatibility
+warning. If `vagrant status` and `vagrant ssh` continue to work, it can be
+safely ignored.
+:::
+
+Next you will be prompted to enter your username and password. Use the same
+username and password you used to create your Red Hat Developer's Account.
+
+```bash
+...
+==> default: Registering box with vagrant-registration...
+    default: Would you like to register the system now (default: yes)? [y|n]y
+    default: username: akraker
+    default: password:
+==> default: Registration successful.
+==> default: Waiting for machine to boot. This may take a few minutes...
+...
+```
+
+:::{.callout-tip title="Non-interactive registration" collapse="true"}
+For non-interactive username/password registration, the `Vagrantfile` above also
+accepts `RHSM_USERNAME` + `RHSM_PASSWORD` environment variables that can be set
+in your shell.
+
+```bash
+export RHSM_USERNAME="your_redhat_username"
+export RHSM_PASSWORD="your_redhat_password"
+```
+
+Although this isn't necessarily the most secure practice, you may also add the
+two lines above to your `~/.bashrc` so that the environment variables are
+persistent across shell sessions. Only do this if you're reasonably certain
+your workstation is secure.
+
+Obviously don't use plaintext username/password on shared systems and or
+anything which might be exposed publicly.
+:::
+
+Next run `vagrant status` and you should see the machine is running:
+
+```{bash, echo=-1}
+cd ~/rhcsa-lab
+vagrant status
+```
+
+SSH into the machine with `vagrant ssh`:
+
+```{bash, echo=-1}
+cd ~/rhcsa-lab
+vagrant ssh
+```
+
+Verify that the system is registered by running `sudo dnf repolist` to refresh
+Red Hat repos.
+
+```bash
+sudo dnf repolist
+```
+
+```{bash}
+#| echo: false
+#| cache: true
+cd ~/rhcsa-lab && vagrant ssh -c "sudo dnf repolist" 2>/dev/null
+```
+
+Note that by default vagrant sets up `vagrant` as the login user:
+
+```bash
+whoami
+```
+
+```{bash}
+#| echo: false
+#| cache: true
+cd ~/rhcsa-lab && vagrant ssh -c "whoami" 2>/dev/null
+```
+
+And gives this user passwordless sudoers privileges by default:
+
+```bash
+sudo -l
+```
+
+```{bash}
+#| echo: false
+cd ~/rhcsa-lab && vagrant ssh -c "sudo -l | tail -2" 2>/dev/null
+```
+
+:::{.callout-note}
+To support standing up reproducible lab environments on RHEL I'm publishing
+RHEL boxes to Vagrant Cloud. See the [kraker][kraker-boxes] namespace for a list
+of available boxes.
+
+_Don't see what you need? Please open a [request][vagrant-rhel-boxes-issues]!_
+:::
+
+[vagrant-rhel-boxes]: https://github.com/kraker/vagrant-rhel-boxes
+[kraker-boxes]: https://portal.cloud.hashicorp.com/vagrant/discover/kraker
+[vagrant-rhel-boxes-issues]: https://github.com/kraker/vagrant-rhel-boxes/issues
+
+### Vagrant CLI quickstart
+
+From a directory with a `Vagrantfile` and a box defined such as the one we
+created above.
+
+Spin up or start a box:
+
+```bash
+vagrant up  # Defaults to the virtualbox provider if running the first time
+# or
+vagrant up --provider=libvirt
+```
+
+To check the status of a running box:
+
+```bash
+vagrant status
+```
+
+To shutdown a box:
+
+```bash
+vagrant halt
+```
+
+To destroy a box and start over:
+
+```bash
+vagrant destroy
+```
+
+Connect to a box with SSH:
+
+```bash
+vagrant ssh
+```
+
+See the [Vagrant CLI docs][vagrant-cli] for a complete reference.
+
+:::{.callout-tip}
+You can also use `vagrant --help` and `vagrant COMMAND --help` as Vagrant CLI
+references.
+:::
+
+[vagrant-cli]: https://developer.hashicorp.com/vagrant/docs/cli
+
+## LAB: Vagrant Exercise
+
+To familiarize yourself further with what all Vagrant can do; working through
+the [quick start tutorials][vagrant-quick-start] is recommended as an exercise.
+
+[vagrant-quick-start]: https://developer.hashicorp.com/vagrant/tutorials/get-started

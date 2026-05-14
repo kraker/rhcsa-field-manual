@@ -1,6 +1,13 @@
 ---
 title: Command Reference
 engine: knitr
+doc:
+  status: draft
+  revision: "2026-05-14.1"
+  last-reviewed: 2026-05-14
+  owner: akraker
+  notes:
+    - Substantial command reference appendix.
 ---
 
 # Command Reference
@@ -1156,4 +1163,4 @@ rsync -av --delete source/ dest/  # Sync and delete extras
 rsync -av user@host:/path/ local/  # Sync from remote
 ```
 
-This comprehensive command reference covers all major [RHCSA](glossary.qmd) topics with practical command examples organized by functional area for efficient study and quick reference during exam preparation.
+This comprehensive command reference covers all major [RHCSA](02-glossary.qmd) topics with practical command examples organized by functional area for efficient study and quick reference during exam preparation.

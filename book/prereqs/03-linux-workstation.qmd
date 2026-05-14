@@ -1,0 +1,183 @@
+---
+doc:
+  status: review
+  revision: "2026-05-14.1"
+  last-reviewed: 2026-05-14
+  owner: akraker
+  notes:
+    - Split from Vagrant lab chapter.
+    - Ready for first public revision.
+---
+
+# Linux Workstation Learning Platform
+
+The best way to learn Linux is to use it. Use it as your daily driver if you
+can.
+
+_If you're already running Linux feel free to skip to the [next chapter][vagrant-lab]_
+
+:::{.callout-note}
+If you're required to use Windows as your workstation, see the
+[Windows workstation appendix][windows-workstation] for notes on tradeoffs and
+possible paths. The main lab path assumes a Linux workstation.
+:::
+
+[vagrant-lab]: 04-vagrant-lab.qmd
+[windows-workstation]: /appendices/00-windows-workstation.qmd
+
+## Linux Hardware
+
+If you aren't already running Linux I recommend setting up a _Linux
+Workstation_ that you can use as an RHCSA learning platform. _Immersion_ is the
+strategy we're going for here. It doesn't have to be your main machine if
+you're not ready to commit to that yet. Installing Linux can be a great way to
+revive old hardware if you have any collecting dust in a closet such as an old
+laptop or PC. Linux is lightweight and portable enough that it will run on
+almost anything. Often used hardware can be found for a bargain on sites like
+eBay.
+
+Make sure whatever hardware you use meets the following requirements:
+
+* Linux-compatible
+* CPU contains virtualization extensions: Intel VT or AMD-V
+* Minimum of 16GB RAM is recommended, but 24-32GB wouldn't hurt for running VMs
+  since those can be somewhat memory intensive.
+* x86_64 architecture is recommended for running the Vagrant RHEL boxes.
+
+:::{.callout-note}
+ARM architecture may be workable (e.g. M-series macOS hardware), but hasn't
+been tested. If you're working through this book on ARM-based hardware, feel
+free to contribute to the [discussion][arm-discussion] with any issues or
+feedback.
+:::
+
+[arm-discussion]: https://github.com/kraker/rhcsa-field-manual/discussions/2
+
+## Choosing a Distro
+
+While preparing for your RHCSA exam I recommend dogfooding a Linux distribution
+("distro" for short) from the Red Hat family. The lowest-friction
+recommendation is Fedora. Fedora is the community-driven Linux project upstream
+from RHEL[^fedora-rhel]. I'm writing this book from my ThinkPad laptop running
+[Fedora Workstation][fedora-workstation].
+
+:::{.callout-tip}
+If you just want an _easy button_ for RHCSA prep, [install Fedora][fedora-install].
+:::
+
+Here's a short list of workstation options in roughly the order that I would
+recommend them:
+
+* Red Hat family:
+  * [Fedora Workstation][fedora-workstation]
+  * [RHEL Workstation](https://developers.redhat.com/products/rhel/download)
+* RHEL-compatible derivatives:
+  * [Rocky Linux](https://rockylinux.org/download)
+  * [AlmaLinux](https://almalinux.org/get-almalinux/)
+* Other RPM-family distributions:
+  * [openSUSE Leap](https://get.opensuse.org/leap/16.0/)
+
+[fedora-workstation]: https://fedoraproject.org/workstation/
+[fedora-install]: https://docs.fedoraproject.org/en-US/quick-docs/creating-and-using-a-live-installation-image/
+
+### What About Other Linux Distros?
+
+There are other Linux distros which aren't part of the RHEL ecosystem that are
+worth mentioning. Just bear in mind this may increase your learning curve if
+you're learning two different flavors of Linux at the same time. But for a
+Linux Workstation I don't presume to know what's best for you. There is no
+single right answer to "What is the best Linux distro?".
+
+Nearly all mainstream desktop Linux distributions can support virtualization and
+run the Vagrant binaries needed for the lab setup in the next chapter. The main
+tradeoff is that the further you get from the RHEL ecosystem, the more likely
+you are to run into different package manager syntax, different defaults, and
+documentation that doesn't map directly to this book.
+
+:::{.callout-warning}
+Be forewarned that support for distros outside of the Enterprise Linux
+ecosystem will be limited. This is a guide to the RHCSA after all. Community
+contributions in the form of [discussion threads][discussions] are encouraged.
+:::
+
+Definitely do your own research, but I've listed a few recommended Linux OSes
+that should be more than capable as a platform for spinning up RHEL lab
+VMs using Vagrant:
+
+* [Linux Mint][linux-mint] - If you're used to driving your OS with a GUI such
+  as with Windows, I've heard this is a relatively friendly desktop OS to start
+  with.
+* [Ubuntu Desktop][ubuntu-desktop] - Mint forked off of Ubuntu Desktop, but
+  before Mint, Canonical's Ubuntu was usually the go-to recommendation for new
+  Linux users.
+* [openSUSE Leap][opensuse-leap] - An RPM-based distribution, but not a RHEL
+  derivative.
+
+:::{.callout-caution}
+Vagrant with the libvirt provider can be tricky on openSUSE. See the
+[Vagrant on openSUSE discussion][opensuse-vagrant-discussion] for details.
+:::
+
+[discussions]: https://github.com/kraker/rhcsa-field-manual/discussions
+[linux-mint]: https://www.linuxmint.com/
+[ubuntu-desktop]: https://ubuntu.com/desktop
+[opensuse-leap]: https://get.opensuse.org/leap/16.0/
+[opensuse-vagrant-discussion]: https://github.com/kraker/rhcsa-field-manual/discussions/1
+
+### Advanced Desktop Options
+
+There are a variety of other Linux distributions that might be worth trying out
+if you're curious. [Debian][debian] is upstream from Ubuntu and Mint; the
+purists among you might prefer this. There's also [Arch Linux][arch], which is
+great if you want a minimalist distro where you have a lot more control. And in
+a similar vein there's [Gentoo Linux][gentoo]. Be forewarned these are not for
+the faint of heart. But if you like troubleshooting and learning about the
+intricacies of your own system in detail, these might be for you.
+
+:::{.callout-note}
+If you enjoy this level of tinkering with your own system, this is actually
+great supplemental training for this type of career. A lot of us found
+ourselves on this path because we enjoy this (myself included). You will learn
+quite a lot of transferable skills by installing Arch manually, for instance.
+This is a worthy side quest if you're up for it.
+:::
+
+:::{.callout-tip}
+Famously Arch Linux has the best wiki in the business. Old habits die hard and
+the [Arch Wiki][arch-wiki] is still one of my first ports of call when looking
+something up or troubleshooting.
+:::
+
+[debian]: https://www.debian.org
+[arch]: https://archlinux.org/
+[gentoo]: https://www.gentoo.org/
+[arch-wiki]: https://wiki.archlinux.org/title/Main_page
+
+## Install Linux
+
+I recommend searching for and following the installation documentation for
+whatever Linux OS you choose to install. Here's a link to the
+[Fedora Install][fedora-install] documentation for convenience.
+
+:::{.callout-tip}
+Fedora uses the same Anaconda installer as RHEL. This has the added benefit of
+being very similar to how you would install RHEL from an ISO (or other type of
+bootable image). You won't need to install RHEL manually on the exam. The
+Red Hat environment will already be set up for you. But it's useful background
+to know how to install RHEL this way. This is another benefit to dogfooding with
+Fedora.
+:::
+
+By the end of the install, you should have:
+
+* A working Linux desktop
+* A user account with sudo privileges
+* Network access
+* At least 16GB RAM available on the host
+* CPU virtualization enabled in firmware/BIOS
+* Enough free disk space for one or more lab VMs
+
+After you have a working Linux workstation, continue with the
+[Vagrant lab setup][vagrant-lab].
+
+[^fedora-rhel]: [Fedora and Red Hat Enterprise Linux](https://docs.fedoraproject.org/en-US/quick-docs/fedora-and-red-hat-enterprise-linux/).

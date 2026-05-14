@@ -1,3 +1,13 @@
+---
+doc:
+  status: draft
+  revision: "2026-05-14.1"
+  last-reviewed: 2026-05-14
+  owner: akraker
+  notes:
+    - Red Hat account setup walkthrough.
+---
+
 # Red Hat Developer Account
 
 You will need a Red Hat account and subscription in order to work through the
@@ -50,7 +60,7 @@ and click the **Create my account** button.
 
 ![Register for a Red Hat account - accept terms](/images/prereqs/redhat-account/register-for-rh-account-3.png)
 
-[rhcsa-exam]: rhcsa-exam.qmd
+[rhcsa-exam]: 02-rhcsa-exam.qmd
 [red-hat-developers]: https://developers.redhat.com/
 [certification-badge]: https://rhtapps.redhat.com/verify?certId=250-131-760
-[rhce]: ../appendices/glossary.qmd
+[rhce]: ../appendices/02-glossary.qmd

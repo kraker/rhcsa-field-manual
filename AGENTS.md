@@ -72,12 +72,21 @@ The box ships unregistered; the `vagrant-registration` plugin attaches it to RHS
 
 - Each chapter maps to an RHCSA exam objective area
 - Executable bash code blocks use `{bash}` (knitr-evaluated); static examples use plain `bash`
-- Prose links in `.qmd` files should use reference-style links. Put each link
-  reference definition at the bottom of the section where the label is first
-  referenced, immediately before the next heading. Keep link reference
-  definitions before footnote definitions in that section so Pandoc doesn't fold
-  them into the footnote body. Leave image links inline unless there is a
-  specific reason to convert them.
+- Prefer reference-style links in `.qmd` prose when they improve Markdown
+  readability, especially for links embedded inside sentences or paragraphs.
+  Put each link reference definition at the bottom of the section where the
+  label is first referenced, immediately before the next heading.
+- Inline Markdown links are acceptable when they are clearer than a reference
+  link, such as short list items where the link is the whole bullet, compact
+  callout text, or cases where extracting the URL would make the source harder
+  to scan. If a list item points to a URL that already has a reference-style
+  link definition in the same document, prefer reusing that reference label so
+  future URL changes only need to happen in one place. Leave image links inline
+  unless there is a specific reason to convert them.
+- Footnotes are appropriate for asides, source context, or supporting detail
+  that would interrupt the main prose. Footnotes may contain reference-style
+  links. Keep link reference definitions before footnote definitions in that
+  section so Pandoc doesn't fold later definitions into the footnote body.
 - Glossary entries use Pandoc definition list syntax (`Term` followed by
   `:   Definition`) rather than heading-per-term markup. Cross-links should
   point to the glossary page, not term-specific anchors.

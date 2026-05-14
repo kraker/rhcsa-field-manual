@@ -1,3 +1,13 @@
+---
+doc:
+  status: draft
+  revision: "2026-05-14.1"
+  last-reviewed: 2026-05-14
+  owner: akraker
+  notes:
+    - Initial glossary and acronym list.
+---
+
 # Glossary & Acronyms
 
 ARM

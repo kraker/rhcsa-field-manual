@@ -1,3 +1,13 @@
+---
+doc:
+  status: draft
+  revision: "2026-05-14.1"
+  last-reviewed: 2026-05-14
+  owner: akraker
+  notes:
+    - Initial acknowledgements draft.
+---
+
 # Acknowledgements {.unnumbered }
 
 Firstly, I have to thank an old college buddy of mine who introduced me to Linux

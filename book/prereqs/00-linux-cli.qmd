@@ -1,5 +1,12 @@
 ---
-title: Linux CLI
+title: Linux CLI Fundamentals
+doc:
+  status: review
+  revision: "2026-05-14.2"
+  last-reviewed: 2026-05-14
+  owner: akraker
+  notes:
+    - Prerequisite resource chapter.
 ---
 
 ## Prerequisites
@@ -35,7 +42,7 @@ preparing for the [RHCSA][rhcsa] exam. If this is you, definitely check out the
 resources above. It's probably only a few days or weeks of effort to get up to
 speed on the basics. Then come back and work through the rest of this book.
 
-[rhcsa]: ../appendices/glossary.qmd
+[rhcsa]: ../appendices/02-glossary.qmd
 [learning-the-shell]: https://www.linuxcommand.org/lc3_learning_the_shell.php
 [linux-command-line]: https://www.linuxcommand.org/tlcl.php
 [command-line-crash-course]: https://learnpythonthehardway.org/book/appendixa.html

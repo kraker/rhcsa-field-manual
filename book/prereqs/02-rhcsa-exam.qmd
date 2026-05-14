@@ -1,3 +1,14 @@
+---
+doc:
+  status: draft
+  revision: "2026-05-14.1"
+  last-reviewed: 2026-05-14
+  owner: akraker
+  notes:
+    - RHCSA exam overview and registration notes.
+    - Verify costs before publication.
+---
+
 # RHCSA Exam
 
 At this point it's probably a good idea to navigate to the
@@ -66,7 +77,7 @@ Although, I would argue that setting up your own lab environment is a helpful
 skill to have for future learning and experimentation. We'll cover setting up
 and automating a reproducible lab environment in [chapter ?].
 
-[rhls]: ../appendices/glossary.qmd
+[rhls]: ../appendices/02-glossary.qmd
 
 ## RHCSA Exam Objectives
 
