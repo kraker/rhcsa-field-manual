@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Appendix C — Glossary &amp; Acronyms – The RHCSA Field Manual</title>
+<title>1&nbsp; Linux CLI Fundamentals – The RHCSA Field Manual</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,7 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../appendices/command-reference.html" rel="prev">
+<link href="../prereqs/01-redhat-account.html" rel="next">
+<link href="../01-acknowledge.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -42,12 +43,10 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2b3a058f3f598cb5398490cdc55809d4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-9a1c32ad31f148ce65f272296b35accb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-2b3a058f3f598cb5398490cdc55809d4.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-f392d8de83cbad30841a53e8a1dd5547.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-c0839997b9077745497883f81bb0dffa.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -79,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-sidebar floating quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -221,10 +220,8 @@ ul.task-list li input[type="checkbox"] {
         changeGiscusTheme();
       }
     };
-    const authorPrefersDark = false;
+    const authorPrefersDark = true;
     const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
     // Dark / light mode switch
     window.quartoToggleColorScheme = () => {
@@ -250,7 +247,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../appendices/windows-workstation.html">Appendices</a></li><li class="breadcrumb-item"><a href="../appendices/glossary.html"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Glossary &amp; Acronyms</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../prereqs/00-linux-cli.html">Prerequisites</a></li><li class="breadcrumb-item"><a href="../prereqs/00-linux-cli.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Linux CLI Fundamentals</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -296,13 +293,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../preface.html" class="sidebar-item-text sidebar-link">
+  <a href="../00-preface.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preface</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../acknowledge.html" class="sidebar-item-text sidebar-link">
+  <a href="../01-acknowledge.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Acknowledgements</span></a>
   </div>
 </li>
@@ -319,26 +316,32 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../prereqs/linux-cli.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Linux CLI</span></span></a>
+  <a href="../prereqs/00-linux-cli.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Linux CLI Fundamentals</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../prereqs/redhat-account.html" class="sidebar-item-text sidebar-link">
+  <a href="../prereqs/01-redhat-account.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Red Hat Developer Account</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../prereqs/rhcsa-exam.html" class="sidebar-item-text sidebar-link">
+  <a href="../prereqs/02-rhcsa-exam.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">RHCSA Exam</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../prereqs/vagrant-lab.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">RHEL 10 Lab with Vagrant</span></span></a>
+  <a href="../prereqs/03-linux-workstation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Linux Workstation Learning Platform</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../prereqs/04-vagrant-lab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">RHEL 10 Lab with Vagrant</span></span></a>
   </div>
 </li>
       </ul>
@@ -354,13 +357,13 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practice/practice-exam-1.html" class="sidebar-item-text sidebar-link">
+  <a href="../practice/00-practice-exam-1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Practice Exam 1</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../practice/practice-exam-2.html" class="sidebar-item-text sidebar-link">
+  <a href="../practice/01-practice-exam-2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Practice Exam 2</span></a>
   </div>
 </li>
@@ -377,19 +380,19 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../appendices/windows-workstation.html" class="sidebar-item-text sidebar-link">
+  <a href="../appendices/00-windows-workstation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Windows Workstation Notes</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../appendices/command-reference.html" class="sidebar-item-text sidebar-link">
+  <a href="../appendices/01-command-reference.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Command Reference</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../appendices/glossary.html" class="sidebar-item-text sidebar-link active">
+  <a href="../appendices/02-glossary.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Glossary &amp; Acronyms</span></span></a>
   </div>
 </li>
@@ -400,16 +403,26 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link active" data-scroll-target="#prerequisites"><span class="header-section-number">1.1</span> Prerequisites</a></li>
+  <li><a href="#learning-the-linux-cli" id="toc-learning-the-linux-cli" class="nav-link" data-scroll-target="#learning-the-linux-cli"><span class="header-section-number">1.2</span> Learning the Linux CLI</a>
+  <ul class="collapse">
+  <li><a href="#other-notable-mentions" id="toc-other-notable-mentions" class="nav-link" data-scroll-target="#other-notable-mentions"><span class="header-section-number">1.2.1</span> Other notable mentions</a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/kraker/rhcsa-field-manual/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/kraker/rhcsa-field-manual/blob/main/book/prereqs/00-linux-cli.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../appendices/windows-workstation.html">Appendices</a></li><li class="breadcrumb-item"><a href="../appendices/glossary.html"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Glossary &amp; Acronyms</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../prereqs/00-linux-cli.html">Prerequisites</a></li><li class="breadcrumb-item"><a href="../prereqs/00-linux-cli.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Linux CLI Fundamentals</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Appendix C — Glossary &amp; Acronyms</h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Linux CLI Fundamentals</span></h1>
 </div>
 
 
@@ -426,150 +439,46 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<dl>
-<dt>ARM</dt>
-<dd>
-<p><strong>Advanced RISC Machine.</strong> A CPU architecture used by many mobile devices, single-board computers, and newer Macs. Compatibility can differ from x86_64 when building RHCSA lab environments.</p>
-</dd>
-<dt>CLI</dt>
-<dd>
-<p><strong>Command-line interface.</strong> A text-based interface for running commands, managing files, and administering Linux systems.</p>
-</dd>
-<dt>Downstream</dt>
-<dd>
-<p>A project or distribution that receives, integrates, and stabilizes software from an upstream source.</p>
-</dd>
-<dt>Exam Attempt</dt>
-<dd>
-<p>One use of exam eligibility to sit for a certification exam.</p>
-</dd>
-<dt>Exam Voucher</dt>
-<dd>
-<p>A purchased authorization to schedule and take a certification exam within its validity period.</p>
-</dd>
-<dt>EX200</dt>
-<dd>
-<p>The exam code for the Red Hat Certified System Administrator exam.</p>
-</dd>
-<dt>Fedora</dt>
-<dd>
-<p>A community Linux distribution sponsored by Red Hat and upstream of Red Hat Enterprise Linux.</p>
-</dd>
-<dt>Hypervisor</dt>
-<dd>
-<p>Software that creates, runs, and manages virtual machines.</p>
-</dd>
-<dt>KVM</dt>
-<dd>
-<p><strong>Kernel-based Virtual Machine.</strong> The Linux kernel virtualization technology used to run hardware-assisted virtual machines.</p>
-</dd>
-<dt>Lab Environment</dt>
-<dd>
-<p>A controlled practice environment used to safely learn, test, and repeat system administration tasks.</p>
-</dd>
-<dt>libvirt</dt>
-<dd>
-<p>A virtualization management API and toolkit commonly used on Linux to manage KVM/QEMU virtual machines.</p>
-</dd>
-<dt>Linux Distribution</dt>
-<dd>
-<p>A complete Linux operating system assembled from the Linux kernel, userland tools, package repositories, and distribution-specific defaults. Often shortened to “distro.”</p>
-</dd>
-<dt>QEMU</dt>
-<dd>
-<p>A machine emulator and virtualizer often used with KVM to run virtual machines.</p>
-</dd>
-<dt>Red Hat Developer Account</dt>
-<dd>
-<p>A Red Hat account used to access developer resources, subscriptions, downloads, and certification services.</p>
-</dd>
-<dt>Retake</dt>
-<dd>
-<p>A subsequent exam attempt after a failed or missed attempt, if included with the exam product or purchased separately.</p>
-</dd>
-<dt>RHCE</dt>
-<dd>
-<p><strong>Red Hat Certified Engineer.</strong> Red Hat’s next certification beyond the RHCSA, focused on automation with Ansible. Earned by passing the EX294 exam; requires an active RHCSA as a prerequisite.</p>
-</dd>
-<dt>RHCSA</dt>
-<dd>
-<p><strong>Red Hat Certified System Administrator.</strong> Red Hat’s entry-level system administration certification, earned by passing the EX200 performance-based exam. The focus of this book.</p>
-</dd>
-<dt>RHEL</dt>
-<dd>
-<p><strong>Red Hat Enterprise Linux.</strong> Red Hat’s enterprise Linux distribution and the operating system used for the RHCSA exam.</p>
-</dd>
-<dt>RHLS</dt>
-<dd>
-<p><strong>Red Hat Learning Subscription.</strong> Red Hat’s annual training subscription, bundling access to official courses, hands-on labs, and exam vouchers. Sold in tiers (Single Course, Standard, Premium) at varying prices and lab-hour / exam-attempt allowances.</p>
-</dd>
-<dt>RHSM</dt>
-<dd>
-<p><strong>Red Hat Subscription Management.</strong> The tooling and service used to register RHEL systems and attach subscriptions.</p>
-</dd>
-<dt>Shell</dt>
-<dd>
-<p>The command interpreter that reads and runs commands in a terminal. Bash is the default interactive shell on many Linux systems.</p>
-</dd>
-<dt>Subscription</dt>
-<dd>
-<p>Red Hat’s entitlement mechanism for access to RHEL repositories, updates, and support-backed content.</p>
-</dd>
-<dt>Terminal</dt>
-<dd>
-<p>A program that provides access to a shell session.</p>
-</dd>
-<dt>Upstream</dt>
-<dd>
-<p>A project or distribution where software changes originate before flowing into downstream projects.</p>
-</dd>
-<dt>Vagrant</dt>
-<dd>
-<p>A tool for defining and managing reproducible virtual machine environments from a project configuration.</p>
-</dd>
-<dt>Vagrant Box</dt>
-<dd>
-<p>A packaged base image used by Vagrant to create virtual machines.</p>
-</dd>
-<dt>Vagrant Plugin</dt>
-<dd>
-<p>An extension that adds capabilities to Vagrant, such as libvirt support or Red Hat registration.</p>
-</dd>
-<dt>Vagrant Provider</dt>
-<dd>
-<p>The virtualization backend Vagrant uses to run a VM, such as libvirt or VirtualBox.</p>
-</dd>
-<dt>Vagrantfile</dt>
-<dd>
-<p>The Ruby-based configuration file Vagrant uses to define virtual machines, providers, networking, and provisioning behavior.</p>
-</dd>
-<dt>Virtual Machine</dt>
-<dd>
-<p>A software-defined computer running as a guest on a host system. Commonly abbreviated as VM.</p>
-</dd>
-<dt>VirtualBox</dt>
-<dd>
-<p>Oracle’s desktop virtualization platform and one of Vagrant’s supported providers.</p>
-</dd>
-<dt>Virtualization Extensions</dt>
-<dd>
-<p>CPU features such as Intel VT-x or AMD-V that provide hardware support for virtualization.</p>
-</dd>
-<dt>VM</dt>
-<dd>
-<p><strong>Virtual machine.</strong> A software-defined computer running as a guest on a host system.</p>
-</dd>
-<dt>WSL</dt>
-<dd>
-<p><strong>Windows Subsystem for Linux.</strong> A Windows feature that provides a Linux user space and command-line environment on Windows.</p>
-</dd>
-<dt>x86_64</dt>
-<dd>
-<p>The 64-bit Intel/AMD CPU architecture commonly used for RHEL systems and RHCSA lab virtual machines.</p>
-</dd>
-</dl>
+<section id="prerequisites" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="prerequisites"><span class="header-section-number">1.1</span> Prerequisites</h2>
+<p>Just like with anything we have to walk before we can run.</p>
+</section>
+<section id="learning-the-linux-cli" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="learning-the-linux-cli"><span class="header-section-number">1.2</span> Learning the Linux CLI</h2>
+<p>A thorough treatment of Linux CLI fundamentals geared towards the beginner/novice is outside of the scope of this book. This book assumes some familiarity with Linux and basic Linux CLI proficiency. That’s not to say that you <em>couldn’t</em> still work through this book and pass the <a href="../appendices/02-glossary.html">RHCSA</a> exam, but be forwarned the learning curve is steep. But, I can thoroughly endorse any of the following resources to help you get up to speed:</p>
+<ol type="1">
+<li><a href="https://www.linuxcommand.org/lc3_learning_the_shell.php">Learning the Shell</a> from <strong>LinuxCommand.org</strong> and <a href="https://www.linuxcommand.org/tlcl.php">The Linux Command Line</a> by William Shotts</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is my #1 go-to recommendation for beginners that want to learn Linux and the Linux CLI. This is where I first learned Linux and the Linux CLI many years ago.</p>
+</div>
+</div>
+<ol start="2" type="1">
+<li><a href="https://learnpythonthehardway.org/book/appendixa.html">Command Line Crash Course</a> from <strong>Learn Python the Hard Way</strong> by Zed Shaw</li>
+<li>MIT <strong>Missing Semester</strong> Series: <a href="https://missing.csail.mit.edu/2026/course-shell/">Introduction to the Shell</a> &amp; <a href="https://missing.csail.mit.edu/2026/command-line-environment/">Command-line Environment</a></li>
+</ol>
+<p>Becoming proficient in the Linux CLI is a pre-requisite to learning RHEL and preparing for the <a href="../appendices/02-glossary.html">RHCSA</a> exam. If this is you, definitely check out the resources above. It’s probably only a few days or weeks of effort to get up to speed on the basics. Then come back and work through the rest of this book.</p>
+<section id="other-notable-mentions" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="other-notable-mentions"><span class="header-section-number">1.2.1</span> Other notable mentions</h3>
+<p>There are some other free Linux learning resources worth mentioning. Some of these are other projects I’m involved with.</p>
+<ol start="4" type="1">
+<li><a href="https://linuxupskillchallenge.org/">Linux Upskill Challenge</a> I’ve contributed to this project as an editor</li>
+<li>The <a href="https://professionallinuxusersgroup.github.io/lac/syllabus.html">Linux Administration Course</a> written by Scott Champine (het_tanis) and maintained by the <a href="https://prolug.org/">ProLUG</a> community (I’m a <em>ProLUG Engineer</em>, come say “Hi” in the <a href="https://discord.com/invite/m6VPPD9usw">Discord</a>!)</li>
+<li><a href="https://youtube.com/playlist?list=PLT98CRl2KxKHaKA9-4_I38sLzK134p4GJ&amp;si=fhFuZX3oHMk0puAO">Linux Commands for Beginners</a> YouTube Playlist by <a href="https://www.youtube.com/@LearnLinuxTV">LearnLinuxTV</a></li>
+</ol>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -987,11 +896,14 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../appendices/command-reference.html" class="pagination-link" aria-label="Command Reference">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Command Reference</span></span>
+      <a href="../01-acknowledge.html" class="pagination-link" aria-label="Acknowledgements">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Acknowledgements</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="../prereqs/01-redhat-account.html" class="pagination-link" aria-label="Red Hat Developer Account">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Red Hat Developer Account</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->
@@ -999,4 +911,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/kraker/rhcsa-field-manual/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/kraker/rhcsa-field-manual/blob/main/book/appendices/glossary.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/kraker/rhcsa-field-manual/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li><li><a href="https://github.com/kraker/rhcsa-field-manual/blob/main/book/prereqs/00-linux-cli.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>
