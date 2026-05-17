@@ -1,5 +1,9 @@
 # The RHCSA Field Manual
 
+> [!NOTE]
+> This repository has moved to Codeberg and is archived on GitHub.
+> The current project lives at <https://codeberg.org/kraker/rhcsa-field-manual>.
+
 [![Lint](https://github.com/kraker/rhcsa-field-manual/actions/workflows/lint.yml/badge.svg)](https://github.com/kraker/rhcsa-field-manual/actions/workflows/lint.yml)
 
 A hands-on guide to Red Hat Enterprise Linux 10 and the EX200 exam.
