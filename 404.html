@@ -5,13 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex">
     <meta http-equiv="refresh" content="0; url=https://kraker.codeberg.page/rhcsa-field-manual/">
-    <link rel="canonical" href="https://kraker.codeberg.page/rhcsa-field-manual/">
     <title>The RHCSA Field Manual moved to Codeberg</title>
     <script>
-      const target = new URL("https://kraker.codeberg.page/rhcsa-field-manual/");
-      target.search = window.location.search;
-      target.hash = window.location.hash;
-      window.location.replace(target.toString());
+      const targetOrigin = "https://kraker.codeberg.page";
+      const legacyPrefix = "/rhcsa-field-manual";
+      let path = window.location.pathname;
+
+      if (path === legacyPrefix) {
+        path = `${legacyPrefix}/`;
+      } else if (!path.startsWith(`${legacyPrefix}/`)) {
+        path = `${legacyPrefix}${path}`;
+      }
+
+      window.location.replace(`${targetOrigin}${path}${window.location.search}${window.location.hash}`);
     </script>
   </head>
   <body>
